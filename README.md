@@ -1,2 +1,2 @@
 # e15 Course Work
-<https://hesweb.dev/e15>
+[E-15 Course](https://hesweb.dev/e15)

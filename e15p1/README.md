@@ -1,5 +1,5 @@
 ## Project 1
 
-## Material Design Components
+## Material Design Component
 
 https://material.io/develop/web/

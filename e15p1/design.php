@@ -6,11 +6,59 @@
  function palindrome($_userStr, $_resultsCol)
  {
     //var_dump($_userStr, $_resultsCol[0]);
-    var_dump(str_split($_userStr));
+    $userArray = str_split($_userStr);
+    $userArrayReversed = array_reverse($userArray);
+
+
+    for($i = 0; $i < count($userArray); $i++){
+
+      $nonReverseValue = strtolower($userArray[$i]);
+      $reverseValue = strtolower($userArrayReversed[$i]);
+
+      if($nonReverseValue != $reverseValue){
+        //var_dump('nonReverse: '.$nonReverseValue, 'Reverse: '.$reverseValue);
+        //var_dump( nl2br("\n") );
+        //var_dump('Not a Palindrome');
+        $_resultsCol[0] = FALSE;
+
+      }/*else{
+        var_dump('nonReverse: '.$nonReverseValue, 'Reverse: '.$reverseValue);
+        var_dump( nl2br("\n") );
+        var_dump('Palindrome');
+      }*/
+
+    }
+    
+    //var_dump( nl2br("\n") );
+    //var_dump($_resultsCol[0]);
+
+    return $_resultsCol;
+
+
+
  }
 
- function vowelCount($userStr, $resultsCol)
+ function vowelCount($_userStr2, $_resultsCol2)
  {
+  $userArray = str_split($_userStr2);
+  $vowelArr = ['a', 'e', 'i', 'o', 'u'];
+  $vowelCount = 0;
+
+  for($i = 0; $i < count($userArray); $i++){
+      
+    $userStrValue = strtolower($userArray[$i]);
+    $vowelSearch = array_search($userStrValue, $vowelArr);
+
+    if(strtolower(gettype($vowelSearch)) === "integer"){
+      $vowelCount++;
+    }
+
+  }
+  
+  $_resultsCol2[1] = $vowelCount;
+  return $_resultsCol2;
+
+
 
  }
 
@@ -24,11 +72,20 @@
 
  }
  
- //drivers
- $userStr = "user_string";
- $resultsCol = [TRUE, 1, 2];
+ //drivers              
+ $userStr = "racecar";
+ $refineUserString = preg_replace("/[^a-zA-Z]/", "", $userStr);
+ $resultsCol = [TRUE, 0, 0];
 
- palindrome($userStr, $resultsCol);
+
+ $resultsCol1 = palindrome($refineUserString, $resultsCol);
+ $resultsCol2 = vowelCount($refineUserString, $resultsCol1);
+
+ var_dump( $resultsCol1);
+
+ var_dump( nl2br("\n") );
+
+ var_dump($resultsCol2);
 
 
 

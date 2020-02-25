@@ -59,11 +59,58 @@
   return $_resultsCol2;
 
 
-
  }
 
- function letterShift($userStr, $resultsCol)
+ function letterShift($_userStr3, $_resultsCol3)
  {
+
+  $userArray = str_split($_userStr3);
+  $alphabetArr = ['A','B','C','D','E', 
+                  'F','G','H','I','J',
+                  'K','L','M','N','O',
+                  'P','Q','R','S','T',
+                  'U','V','W','X','Y','Z'];
+
+  $newStrArr = [];
+
+
+    foreach($userArray as $key => $value) {
+
+      $userStrValue = strtoupper($value);
+
+      //letter shift
+      $letterSearch = array_search($userStrValue, $alphabetArr);
+      $newLetter = $alphabetArr[$letterSearch + 1];
+    
+      //var_dump($userStrValue, $letterSearch);
+
+      //var_dump($newLetter);
+
+      //case test 
+      $getCharCase = (ctype_upper($value)) ? strtoupper($newLetter) : strtolower($newLetter);     
+      //var_dump($getCharCase);    
+      array_push($newStrArr, $getCharCase);
+
+      
+      //var_dump($getCharCase);
+
+
+
+  }
+
+  //var_dump( nl2br("\n") );
+  
+  //var_dump($newStrArr);
+
+  //var_dump( nl2br("\n") );
+
+  //var_dump( implode($newStrArr) );
+
+  $_resultsCol3[2] = implode($newStrArr);
+  return $_resultsCol3;
+
+  
+
 
  }
 
@@ -73,19 +120,33 @@
  }
  
  //drivers              
- $userStr = "racecar";
+ $userStr = "abC123";
  $refineUserString = preg_replace("/[^a-zA-Z]/", "", $userStr);
  $resultsCol = [TRUE, 0, 0];
 
+ //var_dump($refineUserString, strlen($refineUserString));
 
- $resultsCol1 = palindrome($refineUserString, $resultsCol);
- $resultsCol2 = vowelCount($refineUserString, $resultsCol1);
+ if(strlen($refineUserString) > 0){
+  $resultsCol1 = palindrome($refineUserString, $resultsCol);
+  $resultsCol2 = vowelCount($refineUserString, $resultsCol1);
+  $resultsCol3 = letterShift($refineUserString, $resultsCol2);
 
- var_dump( $resultsCol1);
+  var_dump( $resultsCol3);
 
- var_dump( nl2br("\n") );
+ }else{
+   //alert user
+ }
 
- var_dump($resultsCol2);
+
+ 
+ 
+ //letterShift($refineUserString, $resultsCol2);
+
+ //var_dump( $resultsCol1);
+
+ //var_dump( nl2br("\n") );
+
+ //var_dump($resultsCol2);
 
 
 

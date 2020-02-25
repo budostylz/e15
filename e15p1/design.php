@@ -114,13 +114,32 @@
 
  }
 
- function viewHelper($tag, $resultsCol, $strViewCol)
+ function viewHelper($_resultsCol4)
  {
+    $palindromeStr = "";
+    $vowelCountStr = "";
+    $letterShiftStr = "";
+    $strViewCol = [];
 
+    //set palindrome results for view
+    ($_resultsCol4[0]) ? array_push($strViewCol, "This is a Palindrome") : array_push($strViewCol, "This is not a Palindrome");
+  
+
+    //set vowel count results for view
+     array_push($strViewCol, strval($_resultsCol4[1]));
+   
+
+     //set letter shift results for view
+     array_push($strViewCol, strval($_resultsCol4[2]));
+
+     return $strViewCol;
+
+  
+  
  }
  
  //drivers              
- $userStr = "abC123";
+ $userStr = "noodle";
  $refineUserString = preg_replace("/[^a-zA-Z]/", "", $userStr);
  $resultsCol = [TRUE, 0, 0];
 
@@ -130,8 +149,17 @@
   $resultsCol1 = palindrome($refineUserString, $resultsCol);
   $resultsCol2 = vowelCount($refineUserString, $resultsCol1);
   $resultsCol3 = letterShift($refineUserString, $resultsCol2);
+  $viewResults = viewHelper($resultsCol3);
 
-  var_dump( $resultsCol3);
+  
+
+  echo $viewResults[0];
+  echo nl2br("\n");
+  echo $viewResults[1];
+  echo nl2br("\n");
+  echo $viewResults[2];
+
+ 
 
  }else{
    //alert user

@@ -138,190 +138,38 @@
   
  }
  
- //drivers              
- $userStr = "noodle";
- $refineUserString = preg_replace("/[^a-zA-Z]/", "", $userStr);
- $resultsCol = [TRUE, 0, 0];
+ //drivers        
+ if (isset($_POST['submit'])) {
 
- //var_dump($refineUserString, strlen($refineUserString));
 
- if(strlen($refineUserString) > 0){
-  $resultsCol1 = palindrome($refineUserString, $resultsCol);
-  $resultsCol2 = vowelCount($refineUserString, $resultsCol1);
-  $resultsCol3 = letterShift($refineUserString, $resultsCol2);
-  $viewResults = viewHelper($resultsCol3);
 
-  
 
-  echo $viewResults[0];
-  echo nl2br("\n");
-  echo $viewResults[1];
-  echo nl2br("\n");
-  echo $viewResults[2];
-
+  $userStr = $_POST['userInput'];
+  $refineUserString = preg_replace("/[^a-zA-Z]/", "", $userStr);
+  $resultsCol = [TRUE, 0, 0];
  
-
- }else{
-   //alert user
- }
-
-
+  //var_dump($refineUserString, strlen($refineUserString));
  
+  if(strlen($refineUserString) > 0){
+   $resultsCol1 = palindrome($refineUserString, $resultsCol);
+   $resultsCol2 = vowelCount($refineUserString, $resultsCol1);
+   $resultsCol3 = letterShift($refineUserString, $resultsCol2);
+   $viewResults = viewHelper($resultsCol3);
  
- //letterShift($refineUserString, $resultsCol2);
-
- //var_dump( $resultsCol1);
-
- //var_dump( nl2br("\n") );
-
- //var_dump($resultsCol2);
-
-
-
- /*
-
-
- //main
-str, 
-resultsCol,
-strViewCol
-
-
-//input(s): string, resultsCol
-//output(s): array
-function palindrome(str, resultsCol){
+   
+ 
+   echo $viewResults[0];
+   echo nl2br("\n");
+   echo $viewResults[1];
+   echo nl2br("\n");
+   echo $viewResults[2];
+ 
   
-  resultsCol[0] = true;
-  
-  strArr = str.ToArray();//turn string to array
-  
-  strArrReverse = str.ToArrayAndReverse();//turn into array then reverse
-  
-  for(var i = 0; i < strArr.length; i++){
-    for(var j = 0; j < strArrReverse.length; j++){
-      
-      strArrValue = strArr[i];
-      strArrReverseValue = strArr[j];
-      
-      if(strArrValue != strArrReverseValue){
-        
-        resultsCol[0] = false.toString();
-        
-      }
-
-    }
-    
-  }
-  
-  return resultsCol;
-  
-  
-}
-
-
-//input(s): string, resultsCol
-//output(s): array
-function vowelCount(str, resultsCol){
-  
-  vowelCounter = 0;
-  resultsCol[1] = 0;
-  vowelArr = ['A', 'E', 'I', 'O', 'U'];
-  strArr = str.ToArray();//turn string to array
-  
-    for(var i = 0; i < strArr.length; i++){
-      
-      strArrValue = strArr[i].toUpper();
-      vowelTest = vowelArr.find(strArrValue);
-      
-      if(vowelTest == true){
-        vowelCounter++;
-        resultsCol[1] = vowelCounter.toString();
-      }
-
-    }
-
-
-  
-  return resultsCol;
-  
-  
-}
-
-
-
-//input(s): string, resultsCol
-//output(s): array
-function letterShift(str, resultsCol){
-  
-  alphabetArr = ['A','B','C',...];
-  strArr = str.ToArray();//turn string to array
-  newStrArr = [];
-  
-  for(var i = 0; i < strArr.length; i++){
-      
-      strArrValue = strArr[i].toUpper();
-      charIndex = alphabetArr.indexOf(strArrValue);//current alphabetArr index
-      nextCharValue = alphabetArr[charIndex + 1];//next alphabetArr index
-      
-      //test for upper lower case
-      testUpperCaseStr = strArrValue.testUpperCase();
-      testUpperCaseAlphabet = nextCharValue.testUpperCase();
-      
-      if(testUpperCaseStr == testUpperCaseAlphabet){
-         nextCharValue.UpperCase();
-      }else{
-         nextCharValue.UpperCase();
-      }
-      
-      
-
-      
-      newStrArr.push(nextCharValue);
-      
-      
-
-  }
-
-  newStr = newStrArr.ToString();
-  resultsCol[2] = newStr;
-
-  return resultsCol;
-  
-  
-}
-
-
-
-//input(s): tag, resultsCol:[testPalindrome, vowelCount, letterShift], strViewCol
-//output(s): 
-function viewHelper(tag, resultsCol, strViewCol){
-  
-  testPalindromeStr = "";
-  vowelCountStr = "";
-  letterShiftStr = "";
-  
-  
-  //set palindrome results for view
-  if(resultsCol[0] == true){
-    testPalindromeStr = "This is a Palindrome";
-    strViewCol[0].push(testPalindromeStr);
+ 
   }else{
-        testPalindromeStr = "This is not a Palindrome";
-        strViewCol[0].push(testPalindromeStr);
-
+    //alert user
   }
-  
-  //set vowel count results for view
-  vowelCountStr = "Vowel Count:" + resultsCol[1];
-  stringViewCol[1] =  vowelCountStr;
-  
-  //set letter shift results for view
-  letterShiftStr = "Letter Shift Result:" + resultsCol[2];
-  stringViewCol[1] =  letterShiftStr;
-  
 
-  return strViewCol;
-  
 
   
 }
@@ -330,4 +178,67 @@ function viewHelper(tag, resultsCol, strViewCol){
 
 
 
- */
+
+
+
+
+
+ ?>
+
+ 
+<!DOCTYPE html>
+<html>
+<title>String Generator</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="css/stringGenerator.css">
+
+
+<body>
+
+    <div class="container">
+
+        <div class="item"></div>
+
+        <div class="item">
+
+            <form action="" method="post">
+
+                <h2>String Generator</h2>
+                <p>Enter a String to Determine Palindrome, Vowel Count and Letter Shift.</p>
+                <input name='userInput' type="text">
+                <input name="submit" type="submit" class="buttons"></input>
+
+                
+
+                <div class="resultDisplay">
+                    <div>
+                        <h1>Palindrome?</h1>
+                        <div class="results">YES</div>
+                    </div>
+                    <div>
+                        <h1>Vowel Count</h1>
+                        <div class="results">0</div>
+                    </div>
+                    <div>
+                        <h1>Letter Shift</h1>
+                        <div class="results">wreerds</div>
+                    </div>
+                </div>
+                
+
+
+            </form>
+
+        </div>
+
+        <div class="item"></div>
+
+
+    </div>
+
+</body>
+
+</html>
+
+

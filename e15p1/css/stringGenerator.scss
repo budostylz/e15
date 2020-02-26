@@ -1,0 +1,28 @@
+
+/*button styles*/
+$black-button-color: #000000;
+$textColor: #FFFFFF;
+
+.buttons {
+    background-color: $black-button-color;
+    border: none;
+    color: $textColor;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+$layout: grid;
+$column-positioning: auto auto auto;
+
+.container {
+    display: $layout;
+    grid-template-columns: $column-positioning;
+}
+
+.item {
+    font-size: 20px;
+    text-align: center;
+  }

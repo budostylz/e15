@@ -1,0 +1,23 @@
+/*button styles*/
+.buttons {
+  background-color: #000000;
+  border: none;
+  color: #FFFFFF;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+.item {
+  font-size: 20px;
+  text-align: center;
+}
+
+/*# sourceMappingURL=stringGenerator.css.map */

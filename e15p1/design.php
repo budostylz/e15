@@ -138,7 +138,8 @@
   
  }
  
- //drivers        
+ //drivers  
+   
  if (isset($_POST['submit'])) {
 
 
@@ -148,7 +149,7 @@
   $refineUserString = preg_replace("/[^a-zA-Z]/", "", $userStr);
   $resultsCol = [TRUE, 0, 0];
  
-  //var_dump($refineUserString, strlen($refineUserString));
+
  
   if(strlen($refineUserString) > 0){
    $resultsCol1 = palindrome($refineUserString, $resultsCol);
@@ -156,18 +157,12 @@
    $resultsCol3 = letterShift($refineUserString, $resultsCol2);
    $viewResults = viewHelper($resultsCol3);
  
-   
- 
-   echo $viewResults[0];
-   echo nl2br("\n");
-   echo $viewResults[1];
-   echo nl2br("\n");
-   echo $viewResults[2];
- 
+
   
- 
   }else{
     //alert user
+    $viewResults = ['','',''];//define/clear viewResults
+
   }
 
 
@@ -214,15 +209,15 @@
                 <div class="resultDisplay">
                     <div>
                         <h1>Palindrome?</h1>
-                        <div class="results">YES</div>
+                        <div class="results"><?php echo $viewResults[0]; ?></div>
                     </div>
                     <div>
                         <h1>Vowel Count</h1>
-                        <div class="results">0</div>
+                        <div class="results"><?php echo $viewResults[1]; ?></div>
                     </div>
                     <div>
                         <h1>Letter Shift</h1>
-                        <div class="results">wreerds</div>
+                        <div class="results"><?php echo $viewResults[2]; ?></div>
                     </div>
                 </div>
                 

@@ -1,9 +1,23 @@
-## Project 1
+# Project 1
++ By: *Shaun Lewis*
++ [Production URL:](http://e15p1.budoapps.com/)
 
-## Material Design Component
+## Outside resources
 
-https://material.io/develop/web/
+[PhP Documentation](https://www.php.net/docs.php)
 
-## JQuery
+[Production Site](http://e15p1.budoapps.com/)
 
-## CSSGrid
+[Sass: CSS with superpowers](https://sass-lang.com/)
+
+[CSS Grid Layout Module](https://www.w3schools.com/css/css_grid.asp)
+
+[jQuery](https://jquery.com/)
+
+
+
+
+
+
+## Notes for instructor
+Applied Sass and CSS Grid Layout for improved styles. Applied jQuery for improved interactivity.

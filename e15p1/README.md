@@ -1,6 +1,6 @@
 # Project 1
 + By: *Shaun Lewis*
-+ [Production Site](http://e15p1.budoapps.com/)
++ Production URL: <http://e15p1.budoapps.com/>
 
 ## Outside resources
 
@@ -13,10 +13,6 @@
 [CSS Grid Layout Module](https://www.w3schools.com/css/css_grid.asp)
 
 [jQuery](https://jquery.com/)
-
-
-
-
 
 
 ## Notes for instructor

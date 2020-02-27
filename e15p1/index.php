@@ -1,11 +1,8 @@
 <?php
 
 
- 
-
  function palindrome($_userStr, $_resultsCol)
  {
-    //var_dump($_userStr, $_resultsCol[0]);
     $userArray = str_split($_userStr);
     $userArrayReversed = array_reverse($userArray);
 
@@ -16,25 +13,13 @@
       $reverseValue = strtolower($userArrayReversed[$i]);
 
       if($nonReverseValue != $reverseValue){
-        //var_dump('nonReverse: '.$nonReverseValue, 'Reverse: '.$reverseValue);
-        //var_dump( nl2br("\n") );
-        //var_dump('Not a Palindrome');
         $_resultsCol[0] = FALSE;
 
-      }/*else{
-        var_dump('nonReverse: '.$nonReverseValue, 'Reverse: '.$reverseValue);
-        var_dump( nl2br("\n") );
-        var_dump('Palindrome');
-      }*/
+      }
 
     }
     
-    //var_dump( nl2br("\n") );
-    //var_dump($_resultsCol[0]);
-
     return $_resultsCol;
-
-
 
  }
 
@@ -77,40 +62,16 @@
     foreach($userArray as $key => $value) {
 
       $userStrValue = strtoupper($value);
-
-      //letter shift
       $letterSearch = array_search($userStrValue, $alphabetArr);
       $newLetter = $alphabetArr[$letterSearch + 1];
-    
-      //var_dump($userStrValue, $letterSearch);
-
-      //var_dump($newLetter);
-
-      //case test 
       $getCharCase = (ctype_upper($value)) ? strtoupper($newLetter) : strtolower($newLetter);     
-      //var_dump($getCharCase);    
       array_push($newStrArr, $getCharCase);
 
-      
-      //var_dump($getCharCase);
 
-
-
-  }
-
-  //var_dump( nl2br("\n") );
-  
-  //var_dump($newStrArr);
-
-  //var_dump( nl2br("\n") );
-
-  //var_dump( implode($newStrArr) );
+    }
 
   $_resultsCol3[2] = implode($newStrArr);
   return $_resultsCol3;
-
-  
-
 
  }
 
@@ -121,72 +82,45 @@
     $letterShiftStr = "";
     $strViewCol = [];
 
-    //set palindrome results for view
-    ($_resultsCol4[0]) ? array_push($strViewCol, "This is a Palindrome") : array_push($strViewCol, "This is not a Palindrome");
+    ($_resultsCol4[0]) ? array_push($strViewCol, "Yes") : array_push($strViewCol, "No");
   
-
-    //set vowel count results for view
      array_push($strViewCol, strval($_resultsCol4[1]));
-   
-
-     //set letter shift results for view
      array_push($strViewCol, strval($_resultsCol4[2]));
 
      return $strViewCol;
-
-  
-  
+ 
  }
  
- //drivers  
-   
- if (isset($_POST['submit'])) {
+ $viewResults = ['','',''];
 
+  if (isset($_POST['submit'])) {
 
-
-
-  $userStr = $_POST['userInput'];
-  $refineUserString = preg_replace("/[^a-zA-Z]/", "", $userStr);
-  $resultsCol = [TRUE, 0, 0];
- 
-
- 
-  if(strlen($refineUserString) > 0){
-   $resultsCol1 = palindrome($refineUserString, $resultsCol);
-   $resultsCol2 = vowelCount($refineUserString, $resultsCol1);
-   $resultsCol3 = letterShift($refineUserString, $resultsCol2);
-   $viewResults = viewHelper($resultsCol3);
- 
+    $userStr = $_POST['userInput'];
+    $refineUserString = preg_replace("/[^a-zA-Z]/", "", $userStr);
+    $resultsCol = [TRUE, 0, 0];
 
   
-  }else{
-    //alert user
-    $viewResults = ['','',''];//define/clear viewResults
-
-  }
-
-
+    if(strlen($refineUserString) > 0){
+      $resultsCol1 = palindrome($refineUserString, $resultsCol);
+      $resultsCol2 = vowelCount($refineUserString, $resultsCol1);
+      $resultsCol3 = letterShift($refineUserString, $resultsCol2);
+      $viewResults = viewHelper($resultsCol3);
   
+    }
+
 }
-
-
-
-
-
-
-
-
-
 
  ?>
 
  
 <!DOCTYPE html>
 <html>
-<title>String Generator</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="css/stringGenerator.css">
+
+<head>
+  <title>String Generator</title>
+  <link rel="stylesheet" href="css/stringGenerator.css">
+  <script type="text/javascript" src="libs/jquery-3.4.1.min.js"></script>
+</head>
 
 
 <body>
@@ -208,32 +142,26 @@
 
                 <div class="resultDisplay">
                     <div>
-                        <h1>Palindrome?</h1>
-                        <div class="results"><?php echo $viewResults[0]; ?></div>
+                        <h1>Is <em><?php echo $refineUserString ?></em> a Palindrome?</h1>
+                        <div class="results" id="palindrome"><?php echo $viewResults[0]; ?></div>
                     </div>
                     <div>
-                        <h1>Vowel Count</h1>
-                        <div class="results"><?php echo $viewResults[1]; ?></div>
+                        <h1><em><?php echo $refineUserString ?></em> Vowel Count</h1>
+                        <div class="results" id="vowelcount"><?php echo $viewResults[1]; ?></div>
                     </div>
                     <div>
-                        <h1>Letter Shift</h1>
-                        <div class="results"><?php echo $viewResults[2]; ?></div>
+                        <h1><em><?php echo $refineUserString ?></em> Letter Shift</h1>
+                        <div class="results" id="lettershift"><?php echo $viewResults[2]; ?></div>
                     </div>
                 </div>
-                
-
-
-            </form>
-
+        </form>
         </div>
-
         <div class="item"></div>
-
-
     </div>
 
-</body>
+    <script type="text/javascript" src="js/hideResults.js"></script>
 
+</body>
 </html>
 
 

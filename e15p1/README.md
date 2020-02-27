@@ -1,6 +1,6 @@
 # Project 1
 + By: *Shaun Lewis*
-+ [Production URL:](http://e15p1.budoapps.com/)
++ [Production Site](http://e15p1.budoapps.com/)
 
 ## Outside resources
 

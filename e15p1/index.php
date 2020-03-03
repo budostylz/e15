@@ -90,6 +90,7 @@
      return $strViewCol;
  
  }
+
  
  $viewResults = ['','',''];
 

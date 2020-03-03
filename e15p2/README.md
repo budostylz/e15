@@ -20,11 +20,14 @@ Applied Sass and CSS Grid Layout for improved styles. Applied jQuery for improve
 
 ## Model, View, Controller Outline
 
-1. Model: Google Places JavaScript API. Bars and Drinks entities(raw JSON data which sends to server for processing).
+1. Model: Google Places JavaScript API. 
+
+                Bars and Drinks entities(raw JSON data which sends to server for processing).
 
 2. View: OrderView and ConfirmationView. 
-        OrderView will be the view for users to find a bar and order drinks.
-        ConfirmationView will be the view for order confirmation.
+
+                OrderView will be the view for users to find a bar and order drinks.
+                ConfirmationView will be the view for order confirmation.
 
 3. Controller: BarController
                 Action: GetBar(): Get selected Bar Name and returns an image of the bar.

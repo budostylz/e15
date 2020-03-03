@@ -16,7 +16,7 @@
 ## Notes for instructor
 Applied Sass and CSS Grid Layout for improved styles. Applied jQuery for improved interactivity.
 
-##--------------------------------------THIS SECTION WILL BE OMITTED FOR FINAL BUILD----------------------------------------------------------------
+# THIS SECTION WILL BE OMITTED FOR FINAL BUILD
 
 ## Model, View, Controller Outline
 

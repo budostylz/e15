@@ -29,7 +29,9 @@ Applied Sass and CSS Grid Layout for improved styles. Applied jQuery for improve
                 OrderView will be the view for users to find a bar and order drinks.
                 ConfirmationView will be the view for order confirmation.
 
-3. Controller: BarController
+3. Controller: 
+
+               BarController
                 Action: GetBar(): Get selected Bar Name and returns an image of the bar.
                     Inputs(BarName), Outputs(BarImage)
                

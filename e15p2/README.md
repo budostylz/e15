@@ -13,7 +13,9 @@ Applied Sass and CSS Grid Layout for improved styles. Applied jQuery for improve
 
 # THIS SECTION WILL BE OMITTED FOR FINAL BUILD
 
-[How to get data for menu and product listings from Google Places API?](https://stackoverflow.com/questions/52711117/how-to-get-data-for-menu-and-product-listings-from-google-places-api)
+## [How to get data for menu and product listings from Google Places API?](https://stackoverflow.com/questions/52711117/how-to-get-data-for-menu-and-product-listings-from-google-places-api)
+
+## [Quickstart: Setup the Vision API](https://cloud.google.com/vision/docs/setup)
 
 ## Model, View, Controller Outline
 

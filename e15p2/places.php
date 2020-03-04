@@ -148,6 +148,6 @@
       <ul id="places"></ul>
       <button id="more">More results</button>
     </div>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAsgmWDDpksIyJ3FQOwWMNrSPilKkZYYYA&libraries&libraries=places&callback=initMap" async defer></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCpA7zt5LNca-SqgR31J8Q_HKl9KD9VPHQ&libraries&libraries=places&callback=initMap" async defer></script>
   </body>
 </html>

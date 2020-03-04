@@ -8,11 +8,12 @@
 [Places Search](https://developers.google.com/maps/documentation/javascript/examples/place-search)
 
 
-
 ## Notes for instructor
 Applied Sass and CSS Grid Layout for improved styles. Applied jQuery for improved interactivity.
 
 # THIS SECTION WILL BE OMITTED FOR FINAL BUILD
+
+[How to get data for menu and product listings from Google Places API?](https://stackoverflow.com/questions/52711117/how-to-get-data-for-menu-and-product-listings-from-google-places-api)
 
 ## Model, View, Controller Outline
 

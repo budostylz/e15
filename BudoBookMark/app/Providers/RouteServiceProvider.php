@@ -30,7 +30,8 @@ class RouteServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //
+        //define route model bindings, pattern filters, etc
+        //return void
 
         parent::boot();
     }

@@ -9,6 +9,10 @@
 
 [Laravel API Tutorial: How to Build and Test a RESTful API](https://www.toptal.com/laravel/restful-laravel-api-tutorial)
 
+[How to create simple REST api in laravel 5?](https://medium.com/oceanize-geeks/how-to-create-simple-rest-api-in-laravel-5-d6f6f79a78dd)
+
+[The Cocktail DB](https://www.thecocktaildb.com/api.php)
+
 ## Notes for instructor
 Applied Sass and CSS Grid Layout for improved styles. Applied jQuery for improved interactivity.
 

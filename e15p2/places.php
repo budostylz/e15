@@ -90,6 +90,7 @@
 
         // Create the places service.
         var service = new google.maps.places.PlacesService(map);
+        console.log('service', service);
         var getNextPage = null;
         var moreButton = document.getElementById('more');
         moreButton.onclick = function() {
@@ -100,6 +101,7 @@
         // Perform a nearby search.
         service.nearbySearch(
             {location: pyrmont, radius: 500, type: ['store']},
+
             function(results, status, pagination) {
               if (status !== 'OK') return;
 
@@ -109,13 +111,37 @@
                 pagination.nextPage();
               };
             });
+
+        service.getDetails(
+          { placeId: "7f4a3fdd07bb7911b51838d1c9055b08ee1c9293" },
+
+          function(results, status, pagination) {
+              if (status !== 'OK') return;
+
+              createMarkers(results);
+              moreButton.disabled = !pagination.hasNextPage;
+              getNextPage = pagination.hasNextPage && function() {
+                pagination.nextPage();
+              };
+          });
+
+          console.log(service.getDetails);
       }
+
+
+
+      
 
       function createMarkers(places) {
         var bounds = new google.maps.LatLngBounds();
         var placesList = document.getElementById('places');
 
         for (var i = 0, place; place = places[i]; i++) {
+
+          if(place.name == 'Cafe Morso'){
+            console.log(place)
+          }
+
           var image = {
             url: place.icon,
             size: new google.maps.Size(71, 71),
@@ -148,6 +174,8 @@
       <ul id="places"></ul>
       <button id="more">More results</button>
     </div>
+    
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCpA7zt5LNca-SqgR31J8Q_HKl9KD9VPHQ&libraries&libraries=places&callback=initMap" async defer></script>
   </body>
 </html>
+

@@ -7,6 +7,7 @@
 
 [Places Search](https://developers.google.com/maps/documentation/javascript/examples/place-search)
 
+[Laravel API Tutorial: How to Build and Test a RESTful API](https://www.toptal.com/laravel/restful-laravel-api-tutorial)
 
 ## Notes for instructor
 Applied Sass and CSS Grid Layout for improved styles. Applied jQuery for improved interactivity.

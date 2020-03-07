@@ -2,13 +2,13 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>Directly accessing Street View data</title>
-    <link rel="stylesheet" href="placesearch.css" />
+    <title>Place Search</title>
+    <link rel="stylesheet" href="css/placesearch.css" />
     <!-- Latest compiled and minified CSS -->
-    <script src="jquery-3.4.1.min.js"></script>
+    <script src="libs/jquery-3.4.1.min.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAC9uJbDkVAVXfKALyaigk71zOA8Sd6g7o&libraries=places"></script>
     <link rel="stylesheet" @media (min-width: @screen-md-min)  href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-    <script src="placesearch.js"></script> 
+    <script src="js/placesearch.js"></script> 
 </head>
 <body>
     <div id="locationField"><input id="autocomplete" placeholder="Enter a Place or Address" type="text" /></div>

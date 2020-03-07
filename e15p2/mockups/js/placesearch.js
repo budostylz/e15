@@ -53,9 +53,11 @@ $(document).ready(function () {
 
         //Callback1, Search PlaceResult object specification at https://developers.google.com/maps/documentation/javascript/3.exp/reference
         function getNearBySearch(results, status) {
+            console.log('getNearBySearch');
             if (!(status === "ZERO_RESULTS")) {
                 $('#placeInfo').empty();//clear child nodes
                 for (var i = 0; i < results.length; i++) {
+                    console.log('results', results[i]);
                     var placeDetailsRequest = { placeId: results[i].place_id }; //Search placeDetailsRequest at https://developers.google.com/maps/documentation/javascript/3.exp/reference
                     service.getDetails(placeDetailsRequest, getPlaceDetails);
                 }//end for
@@ -67,6 +69,7 @@ $(document).ready(function () {
 
         //Callback2, Search PlaceResult object specification at https://developers.google.com/maps/documentation/javascript/3.exp/reference
         function getPlaceDetails(place, status) {
+            console.log('getPlaceDetails');
             if (place != null) {
                 //console.log(place);//obj
                 getPlaceInfo(place);
@@ -76,6 +79,7 @@ $(document).ready(function () {
 
         //Place Information, Search PlaceResult object specification at https://developers.google.com/maps/documentation/javascript/3.exp/reference
         function getPlaceInfo(place) {
+            console.log('getPlaceInfo');
             var lat = place.geometry.location.lat().toFixed(6);
             var lng = place.geometry.location.lng().toFixed(6);
             //get location information
@@ -90,9 +94,21 @@ $(document).ready(function () {
 
         //Place Reviews, Search PlaceResult object specification at https://developers.google.com/maps/documentation/javascript/3.exp/reference
         function getReviews(place) {//get user reviews about a place
+            console.log('getReviews');
             if (place.reviews) {
                 $('#reviews').empty();//clear child nodes
                 for (var i = 0; i < place.reviews.length; i++) {
+
+                    if (place) {
+                        console.log('place', place);
+                        if (place.photos)
+                            console.log('place photos', place.photos[0].getUrl());
+                    }
+
+
+
+
+
                     var author = place.reviews[i].author_name;
                     var url = place.reviews[i].author_url;
                     var rating = place.reviews[i].rating;
@@ -115,6 +131,7 @@ $(document).ready(function () {
 
         //Street view implementation https://developers.google.com/maps/documentation/javascript/examples/streetview-simple
         function getStreetView(data, result) {//get street views
+            console.log('getStreetView');
             try {
                 if (result === "OK") {
                     var marker = new google.maps.Marker({//Search Marker class at https://developers.google.com/maps/documentation/javascript/3.exp/reference
@@ -134,6 +151,7 @@ $(document).ready(function () {
 
         //Modified API AutoComplete() from https://developers.google.com/maps/documentation/javascript/examples/places-autocomplete
         function autoSearch() {
+            console.log('autoSearch');
             var place = autocomplete.getPlace();
             var placeId = place.place_id;
             var latLng = { lat: place.geometry.location.lat(), lng: place.geometry.location.lng() };

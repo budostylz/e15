@@ -1,20 +1,30 @@
-# Project 2
+# Project 3
 + By: *Shaun Lewis*
-+ Production URL: <http://e15p2.budoapps.com/>
++ Production URL: <http://e15p3.budoapps.com/>
 + Project Synopsis: Form where users select a bar and order drinks.
 
 ## Outside resources
 
 [Places Search](https://developers.google.com/maps/documentation/javascript/examples/place-search)
 
+[Create REST API in Laravel with authentication using Passport](https://medium.com/techcompose/create-rest-api-in-laravel-with-authentication-using-passport-133a1678a876)
+
+[Laravel API Tutorial: How to Build and Test a RESTful API](https://www.toptal.com/laravel/restful-laravel-api-tutorial)
+
+[How to create simple REST api in laravel 5?](https://medium.com/oceanize-geeks/how-to-create-simple-rest-api-in-laravel-5-d6f6f79a78dd)
+
 [The Cocktail DB](https://www.thecocktaildb.com/api.php)
 
-
-
 ## Notes for instructor
+Applied Sass and CSS Grid Layout for improved styles. Applied jQuery for improved interactivity.
 
 # THIS SECTION WILL BE OMITTED FOR FINAL BUILD
 
+## [How to get data for menu and product listings from Google Places API?](https://stackoverflow.com/questions/52711117/how-to-get-data-for-menu-and-product-listings-from-google-places-api)
+
+## [Quickstart: Setup the Vision API](https://cloud.google.com/vision/docs/setup)
+
+## Model, View, Controller Outline
 
 1. Model: Google Places JavaScript API. 
 
@@ -47,6 +57,6 @@
                 Action: Get bartender data and returns collection of available bartenders.
                     Inputs(none), Output(BartenderCollection)
 
-[Place Search Component](http://placesearch.budoapps.com/)
+
 
 

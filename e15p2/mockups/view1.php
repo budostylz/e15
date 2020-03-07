@@ -9,11 +9,11 @@
     <link rel="stylesheet" href="css/view.css" />
 
     <!-- Latest compiled and minified CSS -->
-   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 </head>
 <body>
+
+    <div id="map"></div>
+    <div id="pano"></div>
 
     <form>
 
@@ -21,7 +21,7 @@
             <div class="grid-item">
                 <div class="form-group">
                     <label for="exampleInputEmail1">Find a Bar</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Type a Place to Drink">
+                    <input type="text" class="form-control" id="autocomplete" aria-describedby="emailHelp" placeholder="Type a Place to Drink">
                 </div>
             </div>
 
@@ -34,16 +34,31 @@
 
             </div>
 
+
             <div class="grid-item">
                 <div>
-                    <img src="images/bar.JPG" alt="Smiley face" height="200" width="200">                       
+                    <label id="barName"></label>
+                </div>
+
+            </div>
+            <div class="grid-item">
+                <div>
+                <label id="drinkName">Drink Name</label>
+
+                </div>
+            </div>
+
+            <div class="grid-item">
+                
+                <div>
+                    <img id="placePic" src="" alt="No Pic For This Place" height="200" width="200">                       
                 </div>
 
             </div>
 
             <div class="grid-item">
                 <div>
-                    <img src="https://www.thecocktaildb.com/images/media/drink/zvsre31572902738.jpg" alt="Smiley face" height="200" width="200">                       
+                    <img id="drinkPic" src="" alt="Couldn't Find Your Drink" height="200" width="200">                       
                 </div>
             </div>
 
@@ -112,6 +127,16 @@
             </div>
     </form>
 
+
+
+   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  
+   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAC9uJbDkVAVXfKALyaigk71zOA8Sd6g7o&libraries=places"></script>
+   <script src="js/barPic.js"></script>
+   <script src="js/drinkPic.js"></script>
+   <script src="js/placesearch2.js"></script> 
 
 
 

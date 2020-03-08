@@ -18,6 +18,10 @@ class BookController extends Controller
     //action:show
     public function show($title)
     {
-        return 'Results for the book displaying from show action: '.$title;
+        //return 'Results for the book displaying from show action: '.$title;
+
+        return view('books.show')->with([
+            'title' => $title
+        ]);
     }
 }

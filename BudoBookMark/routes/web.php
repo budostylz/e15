@@ -11,15 +11,6 @@
 |
 */
 
-Route::post('/books', function() {
-    return 'Version A';
-});
+Route::get('/books', 'BookController@index');
 
-Route::get('/books/{id?}', function() {
-    return 'Version B';
-});
-
-Route::get('/books', function() {
-   return 'Version C';
-});
-
+Route::get('/books/{title}', 'BookController@show');

@@ -11,6 +11,8 @@
 |
 */
 
+Route::get('/', 'BookController@index');
+
 Route::get('/books', 'BookController@index');
 
 Route::get('/books/{title}', 'BookController@show');

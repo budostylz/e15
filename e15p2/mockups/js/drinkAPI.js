@@ -50,9 +50,6 @@ var DRINKS_API = (function () {
 
 }());
 
-DRINKS_API.init('https://www.thecocktaildb.com/api/json/v1/1/filter.php?a=Alcoholic');
-
-DRINKS_API.init('https://www.thecocktaildb.com/api/json/v1/1/filter.php?a=Non_Alcoholic');
 
 
 

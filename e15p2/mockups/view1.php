@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -15,13 +17,15 @@
     <div id="map"></div>
     <div id="pano"></div>
 
-    <form>
+    <form action="" method="post">
 
         <div class="grid-container">
             <div class="grid-item">
                 <div class="form-group">
-                    <label for="exampleInputEmail1">Find a Bar</label>
-                    <input type="text" class="form-control" id="autocomplete" aria-describedby="emailHelp" placeholder="Type a Place to Drink">
+                    <label>Find a Bar</label>
+                    <input type="text" class="form-control" id="autocomplete" placeholder="Type a Place to Drink">
+                    <input type="text" class="form-control" id="placeType" placeholder="">
+
                 </div>
             </div>
 
@@ -134,11 +138,20 @@
    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
   
    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAC9uJbDkVAVXfKALyaigk71zOA8Sd6g7o&libraries=places"></script>
+   
+   <script src="libs/jquery-3.4.1.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.15/lodash.min.js"></script>
    <script src="js/barPic.js"></script>
+   <script src="js/drinkAPI.js" ></script>
    <script src="js/drinkPic.js"></script>
    <script src="js/placesearch2.js"></script> 
 
 
 
+
+
+
 </body>
 </html>
+
+

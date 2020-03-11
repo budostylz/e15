@@ -2,6 +2,9 @@
 //reset session storage
 sessionStorage.clear();
 
+//hide drink pic
+$('#drinkPic').hide();
+
 //load api object to session storage
 DRINKS_API.init('https://www.thecocktaildb.com/api/json/v1/1/filter.php?a=Alcoholic');
 DRINKS_API.init('https://www.thecocktaildb.com/api/json/v1/1/filter.php?a=Non_Alcoholic');
@@ -9,6 +12,7 @@ DRINKS_API.init('https://www.thecocktaildb.com/api/json/v1/1/filter.php?a=Non_Al
 
 
 var DrinkClass = (function () {
+
 
     //set fuse
     var options = {
@@ -29,22 +33,58 @@ var DrinkClass = (function () {
             //console.log('userInput', userInput)
             var fuse = new Fuse(obj, options);
             var result = fuse.search(userInput);
-            (result.length > 0) ? $('#drinkResult').show() : $('#drinkResult').hide();
             $('#drinkResult').empty();
+
+            if (result.length > 0) {
+
+                $('#drinkResult').show();
+                $('#drinkPic').show();
+
+
+            } else {
+                $('#drinkResult').hide();
+                $('#drinkName').text('');
+                $('#drinkPic').prop('src', '');
+                $('#drinkPic').hide();
+            }
+
+
+
+
 
 
 
             $.each(result, function (index, o) {
 
-                $('#drinkResult').append(
-                    $('<option></option>').val(o.strDrink).html(o.strDrink).attr('url', o.strDrinkThumb)
-                );
+                console.log(index, o);
+
+                if (index == 0) {
+
+                    $('#drinkResult').append(
+                        $('<option></option>').val('intro').html('Select a Drink')
+                    );
+
+                    $('#drinkResult').append(
+                        $('<option></option>').val(o.strDrink).html(o.strDrink).attr('url', o.strDrinkThumb)
+                    );
+
+                } else {
+
+                    $('#drinkResult').append(
+                        $('<option></option>').val(o.strDrink).html(o.strDrink).attr('url', o.strDrinkThumb)
+                    );
+
+                }
+
+
+
             });
 
 
         }
         catch (e) {
             console.log(e);
+            alert('Network is a Bit Slow. \nReload Page to Get Your Drink.');
         }
     }
 

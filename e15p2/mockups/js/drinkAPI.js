@@ -61,11 +61,14 @@ var DRINKS_API = (function () {
         }
         catch (e) {
             console.log(e);
+            alert('Network is a Bit Slow. \nReload Page to Get Your Drink.');
+
         }
     }
 
     function error_Func(e) {
         try {
+            alert('Network is a Bit Slow. \nReload Page to Get Your Drink.');
             console.log('error', e);
         }
         catch (e) {

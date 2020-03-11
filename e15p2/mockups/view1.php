@@ -55,7 +55,7 @@
             </div>
             <div class="grid-item">
                 <div>
-                <label id="drinkName">Drink Name</label>
+                <label id="drinkName"></label>
 
                 </div>
             </div>

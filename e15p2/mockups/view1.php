@@ -24,7 +24,6 @@
                 <div class="form-group">
                     <label>Find a Bar</label>
                     <input type="text" class="form-control" id="autocomplete" placeholder="Type a Place to Drink">
-                    <input type="text" class="form-control" id="placeType" placeholder="">
 
                 </div>
             </div>
@@ -32,9 +31,11 @@
 
             <div class="grid-item">
                 <div class="form-group">
-                    <label for="exampleInputPassword1">Find a Drink</label>
-                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Type a Drink">
+                    <label for="getDrink">Find a Drink</label>
+                    <input type="text" class="form-control" id="getDrink" placeholder="Type a Drink">
+                    <input type="text" class="form-control" id="getDrinkResult">
                 </div>
+                
 
             </div>
 

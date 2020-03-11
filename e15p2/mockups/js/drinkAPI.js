@@ -1,7 +1,5 @@
 var DRINKS_API = (function () {
 
-
-
     function calls(url) {
         try {
 
@@ -25,7 +23,6 @@ var DRINKS_API = (function () {
     function success_Func(data) {
         try {
 
-
             //console.log(data.drinks, data.drinks.length)
 
             if (typeof (Storage) !== "undefined") {
@@ -34,8 +31,9 @@ var DRINKS_API = (function () {
 
                 if (sessionStorage.length > 0) {
                     //sessionStorage.setItem('drinkData', obj);
-                    let drinkData = sessionStorage.getItem('drinkData')
-                    obj = _.sortBy(JSON.parse(drinkData).concat(data.drinks), [function (o) { return o.strDrink; }]);
+                    let drinkData = sessionStorage.getItem('drinkData');
+                    obj = JSON.parse(drinkData).concat(data.drinks);
+                    obj = _.sortBy(obj, [function (o) { return o.strDrink; }]);
                     //console.log('obj2', obj2);
                     //console.log('concat', obj);
 
@@ -50,26 +48,15 @@ var DRINKS_API = (function () {
 
                     //console.log(obj)
 
-
-
-
                 } else {
                     sessionStorage.setItem('drinkData', obj);
 
                 }
 
 
-                //console.log(sessionStorage.length)
-
-
-
             } else {
                 console.log('storage not supported');
             }
-
-
-
-
 
         }
         catch (e) {

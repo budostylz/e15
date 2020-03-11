@@ -2,6 +2,8 @@
     display: grid;
     grid-template-columns: auto auto;
     padding: 10px;
+    grid-row-gap: 15px;
+    grid-row-gap: 50px;  
   }
   .grid-item {
     background-color: rgba(255, 255, 255, 0.8);
@@ -63,4 +65,16 @@
 
   #getDrinkResult{
     width:"50px";
+  }
+
+  .drinkResults{
+    
+    justify-self:center;
+    
+  }
+
+  #drinkResult{
+    
+    display:none;
+    
   }

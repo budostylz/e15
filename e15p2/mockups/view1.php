@@ -5,9 +5,7 @@
 <head>
     <meta charset="utf-8">
     <title>View 1</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" 
-                           integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" 
-                           crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="css/view.css" />
 
     <!-- Latest compiled and minified CSS -->
@@ -29,13 +27,22 @@
             </div>
 
 
-            <div class="grid-item">
+            <div class="grid-item drinkResults">
                 <div class="form-group">
                     <label for="getDrink">Find a Drink</label>
                     <input type="text" class="form-control" id="getDrink" placeholder="Type a Drink">
-                    <input type="text" class="form-control" id="getDrinkResult">
+                    
+                    <select id="drinkResult">
+                        <!--
+                        <option value="">Volvosssssssssssssssssssssssss</option>
+                        <option value="saab">Saab</option>
+                        <option value="mercedes">Mercedes</option>
+                        <option value="audi">Audi</option>
+-->
+                    </select>
+
+                    
                 </div>
-                
 
             </div>
 
@@ -84,6 +91,9 @@
                     <a class="dropdown-item" href="#">4</a>
                     <a class="dropdown-item" href="#">5</a>
                 </div>
+
+
+
             </div>
             </div>
     
@@ -134,16 +144,18 @@
 
 
 
-   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-  
+   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAC9uJbDkVAVXfKALyaigk71zOA8Sd6g7o&libraries=places"></script>
    
    <script src="libs/jquery-3.4.1.min.js"></script>
    <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.15/lodash.min.js"></script>
-   <script src="js/barPic.js"></script>
+  
    <script src="js/drinkAPI.js" ></script>
+
+   <script src="libs/fuse.js"></script>
+   <script src="js/barPic.js"></script>
    <script src="js/drinkPic.js"></script>
    <script src="js/placesearch2.js"></script> 
 

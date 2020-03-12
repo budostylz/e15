@@ -76,7 +76,6 @@
 
 
             <div class="grid-item">
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
             </div>
             <div class="grid-item">
 

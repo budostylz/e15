@@ -29,7 +29,7 @@ var DrinkClass = (function () {
     function getOptions(obj, userInput) {
         try {
 
-            //console.log('obj', obj)
+            console.log('obj', obj)
             //console.log('userInput', userInput)
             var fuse = new Fuse(obj, options);
             var result = fuse.search(userInput);
@@ -49,14 +49,9 @@ var DrinkClass = (function () {
             }
 
 
-
-
-
-
-
             $.each(result, function (index, o) {
 
-                console.log(index, o);
+                //console.log(index, o);
 
                 if (index == 0) {
 

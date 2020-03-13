@@ -9,7 +9,11 @@
 
 [The Cocktail DB](https://www.thecocktaildb.com/api.php)
 
+[Fuse.js](https://fusejs.io/)
 
+[jQuery](https://jquery.com/)
+
+[Bootstrap](https://getbootstrap.com/)
 
 ## Notes for instructor
 

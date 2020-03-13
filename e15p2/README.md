@@ -15,7 +15,7 @@
 
 [Bootstrap](https://getbootstrap.com/)
 
-(A Complete Guide to Grid)[https://css-tricks.com/snippets/css/complete-guide-grid/]
+[https://css-tricks.com/snippets/css/complete-guide-grid/](A Complete Guide to Grid)
 
 ## Notes for instructor
 

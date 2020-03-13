@@ -23,19 +23,13 @@ class BarController extends Controller
     }
 
     //action:drink
-    public function drink($title)
+    public function drink()
     {
-        //return 'Results for the book displaying from show action: '.$title;
-
-        return view('books.show')->with([
-            'title' => $title
-        ]);
     }
 
     //action:toGo
     public function toGo()
     {
-        return 'Here are all the books...';
 
     }
 }

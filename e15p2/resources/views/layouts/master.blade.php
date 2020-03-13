@@ -16,7 +16,6 @@
     <div id="pano"></div>
 
     <form action="" method="post">@yield('content1')</form>
-    
     @yield('content2')
 
 

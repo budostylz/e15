@@ -6,10 +6,10 @@ sessionStorage.clear();
 $('#drinkPic').hide();
 $('#numberOfDrinksDiv').hide();
 
-
+//console.log('menu', menu.drinks)
 //load api object to session storage
-DRINKS_API.init('https://www.thecocktaildb.com/api/json/v1/1/filter.php?a=Alcoholic');
-DRINKS_API.init('https://www.thecocktaildb.com/api/json/v1/1/filter.php?a=Non_Alcoholic');
+//DRINKS_API.init('https://www.thecocktaildb.com/api/json/v1/1/filter.php?a=Alcoholic');
+//DRINKS_API.init('https://www.thecocktaildb.com/api/json/v1/1/filter.php?a=Non_Alcoholic');
 
 
 
@@ -31,7 +31,7 @@ var DrinkClass = (function () {
     function getOptions(obj, userInput) {
         try {
 
-            console.log('obj', obj)
+            //console.log('obj', obj)
             //console.log('userInput', userInput)
             var fuse = new Fuse(obj, options);
             var result = fuse.search(userInput);
@@ -100,9 +100,7 @@ var DrinkClass = (function () {
 
 $('#getDrink').keyup(function (e) {
     let userInput = $(this).val();
-    let drinkData = sessionStorage.getItem('drinkData');
-    let obj = JSON.parse(drinkData);
-    DrinkClass.init(obj, userInput);
+    DrinkClass.init(menu.drinks, userInput);
 });
 
 $('#drinkResult').change(function (e) {

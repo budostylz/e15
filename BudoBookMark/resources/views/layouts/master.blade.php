@@ -16,6 +16,7 @@
 
 <section>
     @yield('content')
+    @yield('form')
 </section>
 
 <footer>

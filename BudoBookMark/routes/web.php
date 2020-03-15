@@ -11,10 +11,19 @@
 |
 */
 
+Route::get('/books', 'BookController@index'); //GET
 
+// Make sure the create route comes before `/books/{title?}` so it takes precedence
+Route::get('/books/create', 'BookController@create');
 
-Route::get('/', 'BookController@index');
-
-Route::get('/books', 'BookController@index');
+// Note the use of the post method in this route
+Route::post('/books', 'BookController@store'); //POST
 
 Route::get('/books/{title}', 'BookController@show');
+
+Route::get('/', 'BookController@welcome');
+
+Route::get('/search', 'BookController@search');
+
+
+

@@ -1,29 +1,42 @@
 <?php
 
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider within a group which
-| contains the "web" middleware group. Now create something great!
-|
-*/
+Route::get('/example2', function () {
+    dump(Arr::sort(['a', 'z', 'g']));
+});
 
-Route::get('/books', 'BookController@index'); //GET
+# Example route used to demonstrate error pages
+Route::get('/example', function () {
+    $foo = [1,2,3];
 
-// Make sure the create route comes before `/books/{title?}` so it takes precedence
+    # dump, die
+    //dd($foo);
+
+    # dump, die, debug
+    //ddd($foo);
+
+    Log::info($foo);
+
+    ddd(storage_path('temp'));
+
+    return view('abc');
+});
+
+# Misc. Pages
+Route::get('/', 'PageController@welcome');
+Route::get('/support', 'PageController@support');
+
+
+# Books
 Route::get('/books/create', 'BookController@create');
+Route::post('/books', 'BookController@store');
 
-// Note the use of the post method in this route
-Route::post('/books', 'BookController@store'); //POST
-
-Route::get('/books/{title}', 'BookController@show');
-
-Route::get('/', 'BookController@welcome');
+Route::get('/books', 'BookController@index');
+Route::get('/books/{slug?}', 'BookController@show');
 
 Route::get('/search', 'BookController@search');
 
+Route::get('/list', 'BookController@list');
 
-
+# This was an example route to show multiple parameters;
+# Not a feature we're actually building, so I'm commenting out
+# Route::get('/filter/{category}/{subcategory?}', 'BookController@filter');

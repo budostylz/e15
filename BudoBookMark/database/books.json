@@ -3,7 +3,7 @@
         "title": "The Great Gatsby",
         "author": "F. Scott Fitzgerald",
         "published_year": 1925,
-        "cover": "https://hes-bookmark.s3.amazonaws.com/the-great-gatsby.jpg",
+        "cover_url": "https://hes-bookmark.s3.amazonaws.com/the-great-gatsby.jpg",
         "info_url": "https://en.wikipedia.org/wiki/The_Great_Gatsby",
         "purchase_url": "http://www.barnesandnoble.com/w/the-great-gatsby-francis-scott-fitzgerald/1116668135?ean=9780743273565",
         "tags": [
@@ -18,7 +18,7 @@
         "title": "The Bell Jar",
         "author": "Sylvia Plath",
         "published_year": 1963,
-        "cover": "https://hes-bookmark.s3.amazonaws.com/the-bell-jar.jpg",
+        "cover_url": "https://hes-bookmark.s3.amazonaws.com/the-bell-jar.jpg",
         "info_url": "https://en.wikipedia.org/wiki/The_Bell_Jar",
         "purchase_url": "http://www.barnesandnoble.com/w/bell-jar-sylvia-plath/1100550703?ean=9780061148514",
         "tags": [
@@ -33,7 +33,7 @@
         "title": "I Know Why the Caged Bird Sings",
         "author": "Maya Angelou",
         "published_year": 1969,
-        "cover": "https://hes-bookmark.s3.amazonaws.com/i-know-why-the-caged-bird-sings.jpg",
+        "cover_url": "https://hes-bookmark.s3.amazonaws.com/i-know-why-the-caged-bird-sings.jpg",
         "info_url": "https://en.wikipedia.org/wiki/I_Know_Why_the_Caged_Bird_Sings",
         "purchase_url": "http://www.barnesandnoble.com/w/i-know-why-the-caged-bird-sings-maya-angelou/1100392955?ean=9780345514400",
         "tags": [
@@ -48,7 +48,7 @@
         "title": "Harry Potter and the Philosopher’s Stone",
         "author": "J.K. Rowling",
         "published_year": 1997,
-        "cover": "https://hes-bookmark.s3.amazonaws.com/harry-pottern-and-the-philosophers-stone.jpg",
+        "cover_url": "https://hes-bookmark.s3.amazonaws.com/harry-pottern-and-the-philosophers-stone.jpg",
         "info_url": "https://en.wikipedia.org/wiki/Harry_Potter_and_the_Philosopher%27s_Stone",
         "purchase_url": "https://www.barnesandnoble.com/w/harry-potter-and-the-sorcerers-stone-j-k-rowling/1100036321?ean=9780590353427",
         "tags": [
@@ -63,7 +63,7 @@
         "title": "Harry Potter and the Chamber of Secrets",
         "author": "J.K. Rowling",
         "published_year": 1998,
-        "cover": "https://hes-bookmark.s3.amazonaws.com/harry-potter-and-the-chamber-of-secrets.jpg",
+        "cover_url": "https://hes-bookmark.s3.amazonaws.com/harry-potter-and-the-chamber-of-secrets.jpg",
         "info_url": "https://en.wikipedia.org/wiki/Harry_Potter_and_the_Chamber_of_Secrets",
         "purchase_url": "https://www.barnesandnoble.com/w/harry-potter-and-the-chamber-of-secrets-j-k-rowling/1004338523?ean=9780439064873",
         "tags": [
@@ -78,7 +78,7 @@
         "title": "Harry Potter and the Prisoner of Azkaban",
         "author": "J.K. Rowling",
         "published_year": 1999,
-        "cover": "https://hes-bookmark.s3.amazonaws.com/harry-potter-and-the-prisoner-of-azkaban.jpg",
+        "cover_url": "https://hes-bookmark.s3.amazonaws.com/harry-potter-and-the-prisoner-of-azkaban.jpg",
         "info_url": "https://en.wikipedia.org/wiki/Harry_Potter_and_the_Prisoner_of_Azkaban",
         "purchase_url": "https://www.barnesandnoble.com/w/harry-potter-and-the-prisoner-of-azkaban-j-k-rowling/1100178339?ean=9780439136365",
         "tags": [

@@ -15,37 +15,26 @@
         {{ csrf_field() }}
 
         <label for='title'>* Title</label>
-        <input type='text' name='title' id='title' value='{{ old("title") }}'>
+        <input type='text' name='title' id='title'>
 
         <label for='author'>* Author</label>
-        <input type='text' name='author' id='author' value='{{ old("author") }}'>
+        <input type='text' name='author' id='author'>
 
         <label for='published_year'>* Published Year (YYYY)</label>
-        <input type='text' name='published_year' id='published_year' value='{{ old("published_year") }}'>
+        <input type='text' name='published_year' id='published_year'>
 
         <label for='cover_url'>Cover URL</label>
-        <input type='text' name='cover_url' id='cover_url' value='{{ old("cover_url") }}'>
+        <input type='text' name='cover_url' id='cover_url' value='http://'>
 
         <label for='info_url'>* Wikipedia URL</label>
-        <input type='text' name='info_url' id='info_url' value='{{ old("info_url") }}'>
+        <input type='text' name='info_url' id='info_url' value='http://'>
 
         <label for='purchase_url'>* Purchase URL </label>
-        <input type='text' name='purchase_url' id='purchase_url' value='{{ old("purchase_url") }}'>
+        <input type='text' name='purchase_url' id='purchase_url' value='http://'>
 
         <label for='description'>Description</label>
-        <textarea name='description' value='{{ old("description") }}'></textarea>
+        <textarea name='description'></textarea>
 
         <input type='submit' value='Add a book'>
     </form>
-
-    @if(count($errors) > 0)
-        <ul>
-            @foreach ($errors->all() as $error)
-                <li>{{ $error }}</li>
-            @endforeach
-        </ul>
-    @endif
-
-
-
 @endsection

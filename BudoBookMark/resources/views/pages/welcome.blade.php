@@ -1,10 +1,13 @@
 @extends('layouts.master')
 
-@section('content')
-    <h1>Welcome to Bookmark...</h1>
+@section('head')
+<link href='/css/pages/welcome.css' rel='stylesheet'>
 @endsection
 
-@section('form')
+@section('content')
+<p>
+    Welcome to Bookmark&mdash; an online book journal that let’s you track and share a history of books you’ve read.
+</p>
 
 <form method='GET' action='/search'>
 
@@ -13,7 +16,7 @@
     <fieldset>
         <label for='searchTerms'>
             Search terms:
-            <input type='text' name='searchTerms' id='searchTerms' value='{{ $searchTerms }}'>        
+            <input type='text' name='searchTerms' value='{{ old('searchTerms', $searchTerms) }}'>
         </label>
     </fieldset>
 
@@ -27,7 +30,7 @@
             name='searchType' 
             id='title' 
             value='title'
-            {{ ($searchType == 'title' or is_null($searchType)) ? 'checked' : '' }}
+            {{ (old('searchType') == 'title' or $searchType == 'title') ? 'checked' : '' }}
         >
         <label for='title'> Title</label>
         
@@ -36,7 +39,7 @@
             name='searchType' 
             id='author' 
             value='author'
-            {{ ($searchType == 'author') ? 'checked' : '' }} 
+            {{ (old('searchType') == 'author' or $searchType == 'author') ? 'checked' : '' }}
         >
         <label for='author'> Author</label>
         
@@ -44,12 +47,21 @@
 
     <input type='submit' class='btn btn-primary' value='Search'>
 
+    @if(count($errors) > 0)
+    <ul class='alert alert-danger error'>
+        @foreach ($errors->all() as $error)
+            <li>{{ $error }}</li>
+        @endforeach
+    </ul>
+    @endif
+
 </form>
 
 @if(!is_null($searchResults))
     @if(count($searchResults) == 0)
         <div class='results alert alert-warning'>
             No results found.
+            <a href='/books/create'>Want to add this book to our library?</a>
         </div>
     @else
         <div class='results alert alert-primary'>
@@ -59,7 +71,7 @@
 
             <ul>
                 @foreach($searchResults as $slug => $book)
-                    <li><a href='/books/{{ $slug }}'> {{ $book['title']   }}</a></li>
+                <li><a href='/books/{{ $slug }}'> {{ $book['title'] }}</a></li>
                 @endforeach
             </ul>
         </div>

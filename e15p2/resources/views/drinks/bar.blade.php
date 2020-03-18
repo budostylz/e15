@@ -6,7 +6,8 @@
     <div id="map"></div>
     <div id="pano"></div>
 
-    <form action="" method="post">
+    <form method="POST" action="/search">
+       {{ csrf_field() }}
             <div class="grid-container">
                 <div class="grid-item">
                     <div class="form-group">
@@ -19,12 +20,15 @@
 
                 <div class="grid-item drinkResults">
                     <div class="form-group">
-                        <label for="getDrink">Find a Drink</label>
-                        <input type="text" class="form-control" id="getDrink" placeholder="Type a Drink">
-                        <button type="submit" class="btn btn-primary">Submit</button>
+                        <label for="getDrink">Select a Drink Below</label>
+                        <br/>
+                        <select id="drinkResult" name="getDrink"></select>
+
+                        <button type="submit" class="btn btn-primary">View Drink</button>
+
 
                         
-                        <select id="drinkResult"></select>
+                        
       
                     </div>
 
@@ -39,7 +43,22 @@
                 </div>
                 <div class="grid-item">
                     <div>
-                    <label id="drinkName"></label>
+
+                        @if(!is_null($drinkResults))
+
+                             @foreach($drinkResults as $slug => $drink)
+
+                                <label id="drinkName"> {{ $drink['strDrink'] }} </label>
+
+                             @endforeach
+
+
+                        @endif
+
+
+
+
+                    
 
                     </div>
                 </div>
@@ -53,9 +72,29 @@
                 </div>
 
                 <div class="grid-item">
-                    <div>
-                        <img id="drinkPic" src="" alt="Couldn't Find Your Drink" height="200" width="200">                       
-                    </div>
+
+
+                    @if(!is_null($drinkResults))
+
+                                @if(count($drinkResults) == 0)
+
+                                    <strong>No drinks found</strong>
+
+                                @else
+
+                                        @foreach($drinkResults as $slug => $drink)
+
+                                            <div> 
+                                                <img src="{{ $drink['strDrinkThumb'] }}" alt="Couldn't Find Your Drink" height="200" width="200">                       
+                                            </div>
+
+                                        @endforeach
+                                @endif
+
+
+                            @endif
+
+
                 </div>
 
 
@@ -130,7 +169,7 @@
 
 
 
-   <script src="js/drinkModel.js"></script> 
+   <script src="js/drinkModel.js"></script>
 
    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
@@ -141,7 +180,7 @@
    <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.15/lodash.min.js"></script>
   
 
-   <script src="libs/fuse.js"></script>
+   <!--<script src="libs/fuse.js"></script>-->
    <script src="js/barPic.js"></script>
    <script src="js/drinkPic.js"></script>
    <script src="js/placesearch2.js"></script> 

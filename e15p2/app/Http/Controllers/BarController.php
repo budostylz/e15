@@ -12,13 +12,14 @@ class BarController extends Controller
     //action:bar
     public function bar()
     {
-        # Work that was previously happening in the routes file is now happening here
-        //return 'Here are all the books...';
 
-        //call actions here
+
+        $getDrink = session('getDrink', null);
+        $drinkResults = session('drinkResults');
 
         return view('drinks.bar')->with([
-            'title' => 'test'
+            'getDrink' => $getDrink,
+            'drinkResults' => $drinkResults
         ]);
 
 
@@ -27,21 +28,33 @@ class BarController extends Controller
 
     public function search(Request $request)
     {
-        $searchTerm = "ab";
+
+        $request->validate([
+            'getDrink' => 'required'
+        ]);
+        
+        $getDrink = $request->input('getDrink', null);
+        //dump($getDrink);
+
+        
+        
         $drinkArr = json_decode(file_get_contents(database_path('drinks.json')), true);
         //dump($drinkArr["drinks"]);
 
-        $searchResults = array_filter($drinkArr["drinks"], function ($drink) use ($searchTerm) {
-            return Str::contains(strtolower($drink["strDrink"]), strtolower($searchTerm));
+        $drinkResults = array_filter($drinkArr["drinks"], function ($drink) use ($getDrink) {
+            return Str::contains(strtolower($drink["strDrink"]), strtolower($getDrink));
         });
 
-        dump($searchResults);
+        //dump($drinkResults);
 
-
-
-
+        return redirect('/')->with([
+            'getDrink' => $getDrink,
+            'drinkResults' => $drinkResults
+        ]);
 
         
+
+
 
         
 

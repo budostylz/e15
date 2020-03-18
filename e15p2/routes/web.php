@@ -14,4 +14,4 @@ use Illuminate\Support\Facades\Route;
 */
 Route::get('/', 'BarController@bar');
 
-Route::get('/search', 'BarController@search');
+Route::post('/search', 'BarController@search');

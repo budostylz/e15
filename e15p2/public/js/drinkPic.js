@@ -1,8 +1,5 @@
 
 
-//hide drink dom pieces
-$('#drinkPic').hide();
-$('#numberOfDrinksDiv').hide();
 
 //console.log('menu', menu.drinks)
 //load api object to session storage

@@ -92,7 +92,7 @@
                                 @endif
 
 
-                            @endif
+                    @endif
 
 
                 </div>
@@ -102,19 +102,24 @@
                 </div>
                 <div class="grid-item">
 
-                <div class="drinkQuantityList">
-                <div id="numberOfDrinksDiv">
-                    <label>Select Number of Drinks</label>
-                        <select id="numberOfDrinks">
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
-                        </select>
-                </div>
+                    @if(!is_null($drinkResults))
 
+                            <div>
+                                <div>
+                                    <label>Select Number of Drinks</label>
+                                        <select>
+                                            <option>1</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                            <option>5</option>
+                                        </select>
+                                </div>
 
-                </div>
+                            </div>
+
+                        @endif
+
                 </div>
         
             </div> 

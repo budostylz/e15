@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Arr;
+use Str;
 
 class BarController extends Controller
 {
@@ -22,14 +24,29 @@ class BarController extends Controller
 
     }
 
-    //action:drink
-    public function drink()
+
+    public function search(Request $request)
     {
+        $searchTerm = "ab";
+        $drinkArr = json_decode(file_get_contents(database_path('drinks.json')), true);
+        //dump($drinkArr["drinks"]);
+
+        $searchResults = array_filter($drinkArr["drinks"], function ($drink) use ($searchTerm) {
+            return Str::contains(strtolower($drink["strDrink"]), strtolower($searchTerm));
+        });
+
+        dump($searchResults);
+
+
+
+
+
+        
+
+        
+
+
+
     }
 
-    //action:toGo
-    public function toGo()
-    {
-
-    }
 }

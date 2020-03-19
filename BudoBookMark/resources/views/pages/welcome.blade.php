@@ -71,7 +71,7 @@
 
             <ul>
                 @foreach($searchResults as $slug => $book)
-                <li><a href='/books/{{ $slug }}'> {{ $book['title'] }}</a></li>
+                    <li><a href='/books/{{ $slug }}'> {{ $book['title'] }}</a></li>
                 @endforeach
             </ul>
         </div>

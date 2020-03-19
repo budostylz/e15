@@ -12,6 +12,8 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::get('/', 'BarController@bar');
+Route::get('/', 'DrinkController@drink');
 
-Route::post('/search', 'BarController@search');
+Route::get('/dict', 'DrinkController@dictionary');
+
+Route::post('/confirm', 'DrinkController@confirm');

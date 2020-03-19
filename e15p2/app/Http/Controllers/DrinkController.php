@@ -6,11 +6,11 @@ use Illuminate\Http\Request;
 use Arr;
 use Str;
 
-class BarController extends Controller
+class DrinkController extends Controller
 {
 
     //action:bar
-    public function bar()
+    public function drink()
     {
 
 
@@ -25,9 +25,25 @@ class BarController extends Controller
 
     }
 
-
-    public function search(Request $request)
+    public function dictionary()
     {
+        $drinkArr = json_decode(file_get_contents(database_path('drinks.json')), true)['drinks'];
+
+        //dump($drinkArr);
+
+        return view('drinks.dictionary')->with([
+            'drinkArr' => $drinkArr
+        ]);
+
+    }
+
+    //was testing this but not going to use it for this app, inspiration from Ms.Susan Buck
+    public function confirm(Request $request)
+    {
+
+        dump($request);
+
+        /*
 
         $request->validate([
             'getDrink' => 'required'
@@ -52,11 +68,9 @@ class BarController extends Controller
             'drinkResults' => $drinkResults
         ]);
 
-        
+        */
 
-
-
-        
+      
 
 
 

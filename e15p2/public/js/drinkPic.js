@@ -1,5 +1,8 @@
 
+//reset session storage
+sessionStorage.clear();
 
+//hide drink dom pieces
 
 //console.log('menu', menu.drinks)
 //load api object to session storage
@@ -11,23 +14,22 @@
 var DrinkClass = (function () {
 
 
+    //set fuse
+    var options = {
+        shouldSort: true,
+        threshold: 0.6,
+        location: 0,
+        distance: 100,
+        maxPatternLength: 32,
+        minMatchCharLength: 1,
+        keys: ["strDrink"]
+    };
 
 
-    function getOptions(obj) {
+    function getOptions(obj, userInput) {
         try {
 
-            //console.log(obj);
-
-            $.each(obj, function (index, o) {
-
-                //console.log(index, o);
-                $('#drinkResult').append(
-                    $('<option></option>').val(o.strDrink).html(o.strDrink).attr('url', o.strDrinkThumb)
-                );
-
-            });
-
-            /*
+            //console.log(obj, userInput);
             //console.log('obj', obj)
             //console.log('userInput', userInput)
             var fuse = new Fuse(obj, options);
@@ -41,16 +43,40 @@ var DrinkClass = (function () {
 
             } else {
                 $('#drinkResult').hide();
+                $('#drinkResults').hide();
+
                 $('#drinkName').text('');
                 $('#drinkPic').prop('src', '');
-                $('#drinkPic').hide();
-                $('#numberOfDrinksDiv').hide();
+                //$('#drinkPic').hide();
+                //$('#numberOfDrinksDiv').hide();
             }
 
 
-            
+            $.each(result, function (index, o) {
 
-            */
+                //console.log(index, o);
+
+                if (index == 0) {
+
+                    $('#drinkResult').append(
+                        $('<option></option>').val('intro').html('Select a Drink')
+                    );
+
+                    $('#drinkResult').append(
+                        $('<option></option>').val(o.strDrink).html(o.strDrink).attr('url', o.strDrinkThumb)
+                    );
+
+                } else {
+
+                    $('#drinkResult').append(
+                        $('<option></option>').val(o.strDrink).html(o.strDrink).attr('url', o.strDrinkThumb)
+                    );
+
+                }
+
+
+
+            });
 
 
         }
@@ -63,8 +89,8 @@ var DrinkClass = (function () {
 
     return {
 
-        init: function (obj) {
-            getOptions(obj);
+        init: function (obj, userInput) {
+            getOptions(obj, userInput);
 
 
         }
@@ -72,29 +98,30 @@ var DrinkClass = (function () {
 
 }());
 
-//drivers
-DrinkClass.init(menu.drinks);
 
-
+$('#getDrink').keyup(function (e) {
+    let userInput = $(this).val();
+    DrinkClass.init(menu.drinks, userInput);
+});
 
 $('#drinkResult').change(function (e) {
 
-    /*let drinkName = $(this).val();
+    let drinkName = $(this).val();
     let drinkUrl = $('option:selected', this).attr('url');
 
     console.log(drinkName, drinkUrl);
 
     $('#drinkName').text(drinkName);
     $('#drinkPic').prop('src', drinkUrl);
-    $('#drinkPic').show();
-    $('#numberOfDrinksDiv').show();*/
+    $('#drinkResults').show();
+
 
 
 });
 
 $('#numberOfDrinks').change(function () {
 
-    //console.log(true);
+    console.log(true);
     //let drinkQuantity = $(this).val();
     //console.log(drinkQuantity);
 

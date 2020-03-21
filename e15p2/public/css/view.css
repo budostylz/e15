@@ -93,6 +93,12 @@
   text-align: center;
 }
 
+.grid-item-error {
+  padding: 20px;
+  font-size: 20px;
+  text-align: center;
+}
+
 #placeType{
   display:none;
 }
@@ -107,6 +113,11 @@
   
 }
 
-#drinkResult, #drinkResults{
+.yes-no-buttons{
+  font-size:20px;
+}
+
+
+#drinkUrl, #drinkResult, #drinkResults{
   display:none;
 }

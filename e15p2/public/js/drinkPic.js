@@ -1,15 +1,18 @@
 
-//reset session storage
-sessionStorage.clear();
-
-//hide drink dom pieces
-
-//console.log('menu', menu.drinks)
-//load api object to session storage
-//DRINKS_API.init('https://www.thecocktaildb.com/api/json/v1/1/filter.php?a=Alcoholic');
-//DRINKS_API.init('https://www.thecocktaildb.com/api/json/v1/1/filter.php?a=Non_Alcoholic');
 
 
+//integrate in DrinkClass
+let drinkResult = $('#drinkResult option:selected').text();
+let drinkUrl = $('#drinkUrl').val();
+console.log(drinkResult, drinkUrl);
+
+if (drinkResult.length > 0) {
+
+    $('#drinkPic').prop('src', drinkUrl);
+    $('#drinkResult').show();
+    $('#drinkResults').show();
+
+}
 
 var DrinkClass = (function () {
 
@@ -82,7 +85,6 @@ var DrinkClass = (function () {
         }
         catch (e) {
             console.log(e);
-            //alert('Network is a Bit Slow. \nReload Page to Get Your Drink.');
         }
     }
 
@@ -111,22 +113,13 @@ $('#drinkResult').change(function (e) {
 
     console.log(drinkName, drinkUrl);
 
+    $('#drinkUrl').val(drinkUrl);
     $('#drinkName').text(drinkName);
     $('#drinkPic').prop('src', drinkUrl);
     $('#drinkResults').show();
 
-
-
 });
 
-$('#numberOfDrinks').change(function () {
-
-    console.log(true);
-    //let drinkQuantity = $(this).val();
-    //console.log(drinkQuantity);
-
-
-});
 
 
 

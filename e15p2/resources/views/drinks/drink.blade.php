@@ -1,10 +1,7 @@
 @extends('layouts.master')
 
 
-@section('content1')
-
-    <div id="map"></div>
-    <div id="pano"></div>
+@section('drink')
 
     <form method="POST" action="/confirm">
        {{ csrf_field() }}
@@ -29,9 +26,13 @@
                 <div class="grid-item drinkResults">
                     <div class="form-group">
                         <label for="getDrink">Type Your Favorite Drink</label>
+                        <input type="text" class="form-control" id="drinkUrl" name="drinkUrl" value='{{ old("drinkUrl") }}''>
+
                         <br/>
                         <input type="text" class="form-control" id="getDrink" name="getDrink" value='{{ old("getDrink")}}' placeholder="Type a Drink">
-                        <select id="drinkResult"></select>
+                        <select id="drinkResult" name="drinkResult" value='{{ old("drinkResult") }}'>
+                            <option {{ old("drinkResult") == "Select a Drink" ? "selected" : "" }} value='{{ old("drinkResult") }}'>{{ old("drinkResult") }}</option>
+                        </select>
                     </div>
     
 
@@ -44,42 +45,37 @@
                 </div>
 
                 <div class="grid-item">
-                    <div class="form-group form-check">
+                        <div class="form-group form-check">      
                             <label class="form-check-label" for="exampleCheck1">Are these Drinks to Go?</label>
                             <div class="btn-group btn-group-toggle" data-toggle="buttons" id="btnCol" name="btnCol">
-                                <label class="btn btn-secondary">
+                                <label class="{{ ( old("drinksToGo") == 'Yes' or $drinksToGo == 'Yes') ? 'btn btn-secondary focus active' : 'btn btn-secondary' }}">
                                     <input 
                                         type="radio" 
-                                        name="togoYes"
-                                        id="togoYes"  
+                                        name="drinksToGo"
+                                        id="drinksToGoYes"  
                                         value='Yes'
-                                        {{ ( old("togoYes") == 'Yes' or $togoYes == 'Yes') ? 'checked' : '' }}
+                                        {{ ( old("drinksToGo") == 'Yes' or $drinksToGo == 'Yes') ? 'checked' : '' }}
                                     > Yes
                                 </label>
-                                <label class="btn btn-secondary">
+                                <label class=" {{ ( old("drinksToGo") == 'No' or $drinksToGo == 'No') ? 'btn btn-secondary focus active' : 'btn btn-secondary' }}  ">
                                     <input 
                                       type="radio" 
-                                      name="togoNo"
-                                      id="togoNo"   
+                                      name="drinksToGo"
+                                      id="drinksToGoNo"   
                                       value='No'
-                                      {{ ( old("togoNo") == 'No' or $togoNo == 'No') ? 'checked' : '' }}
-
+                                      {{ ( old("drinksToGo") == 'No' or $drinksToGo == 'No') ? 'checked' : '' }}
                                     > No
                                 </label>
                             </div>
-                        
-                    </div> 
+
+                        </div> 
                 </div>
             </div> 
-
             <hr>
-            
-
             <div class="grid-container2">
                 <div class="grid-item2">
                     <div>
                         <label class="form-check-label" for="exampleCheck1">Available Servers</label>
-
                     </div>
                 </div>
                 
@@ -88,8 +84,8 @@
             <div class="grid-container3">
                 <div class="grid-item3">
                     <div>
-                        <img src="images/bartender.PNG" alt="Smiley face" height="100" width="100">   
-                        <label class="form-check-label" for="exampleCheck1">I'm a Rockstar Server</label>
+                        <img src="images/bartender.PNG" height="100" width="100">   
+                        <label class="form-check-label">I'm a Rockstar Server</label>
                     
                     </div>
                 </div>
@@ -98,35 +94,19 @@
 
                     <div class="grid-item4">
                         <button type="submit" class="btn btn-primary">Order Drink</button>
+
                     </div>
 
+                    @if(count($errors) > 0)
+                        <ol class="alert alert-danger error">
+                            @foreach( $errors->all() as $errorItem)
+                                <li> {{ $errorItem }} </li>
+                            @endforeach
+                        </ol>
+                    @endif
 
                 </div>
         </form>
-
-@endsection
-
-
-@section('content2')
-
-
-
-   <script src="js/drinkModel.js"></script>
-
-   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
-   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
-   
-   <!--<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAC9uJbDkVAVXfKALyaigk71zOA8Sd6g7o&libraries=places"></script>-->
-   
-   <script src="libs/jquery-3.4.1.min.js"></script>
-   <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.15/lodash.min.js"></script>
-  
-
-   <script src="libs/fuse.js"></script>
-   <script src="js/barPic.js"></script>
-   <script src="js/drinkPic.js"></script>
-   <!--<script src="js/placesearch2.js"></script>-->
 
 @endsection
 

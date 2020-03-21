@@ -15,11 +15,19 @@ class DrinkController extends Controller
 
 
         $getDrink = session('getDrink', null);
+        $drinkResult = session('drinkResult');
         $drinkResults = session('drinkResults');
+        $togoYes = session('togoYes');
+        $togoNo = session('togoNo'); 
+
 
         return view('drinks.bar')->with([
             'getDrink' => $getDrink,
-            'drinkResults' => $drinkResults
+            'drinkResult' => $drinkResult,
+            'drinkResults' => $drinkResults,
+            'togoYes' => $togoYes,
+            'togoNo' => $togoNo
+
         ]);
 
 
@@ -41,16 +49,42 @@ class DrinkController extends Controller
     public function confirm(Request $request)
     {
 
-        dump($request);
+        //dump($request);
+
+        /*$request->validate([
+            'togoNo' => 'required',
+            'togoYes' => 'required'
+
+        ]);*/
+
+        $getDrink = $request->input('getDrink', null);
+        $numberOfDrinks = $request->input('numberOfDrinks', null);
+        $togoYes = $request->input('togoYes', null);
+        $togoNo = $request->input('togoNo', null);
+
+        dump($getDrink);
+        dump($togoNo);
+        dump($togoYes);
+
+
+        /*return redirect('/')->with([
+            'togoNo' => $togoNo
+        ]);*/
+
+
+        //dump($getDrink);
+        //dump($numberOfDrinks);
+        //dump($togoYes);
+        //dump($togoNo);
+
+
+        //dump($request->all());
+
 
         /*
 
-        $request->validate([
-            'getDrink' => 'required'
-        ]);
+       
         
-        $getDrink = $request->input('getDrink', null);
-        //dump($getDrink);
 
         
         

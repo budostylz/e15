@@ -12,7 +12,6 @@
             <div class="grid-container-nav">
 
                 <div class="grid-item drinkResults">
-
                     <div>
                         <ul class="nav">
                             <li class="nav-item">
@@ -20,13 +19,8 @@
                             </li>          
                         </ul>
                     </div>
-                    <hr />
-
-                
+                    <hr />        
                 </div>
-
-            
-            
             </div>
 
             <div class="grid-container">
@@ -34,9 +28,9 @@
 
                 <div class="grid-item drinkResults">
                     <div class="form-group">
-                        <label for="getDrink">Select a Drink Below</label>
+                        <label for="getDrink">Type Your Favorite Drink</label>
                         <br/>
-                        <input type="text" class="form-control" id="getDrink" placeholder="Type a Drink">
+                        <input type="text" class="form-control" id="getDrink" name="getDrink" value='{{ old("getDrink")}}' placeholder="Type a Drink">
                         <select id="drinkResult"></select>
                     </div>
     
@@ -44,7 +38,7 @@
                     <div id="drinkResults">
                         <img id="drinkPic" src="" alt="Couldn't Find Your Drink" height="200" width="200" style="">
                         <br />
-                        <input id="numberOfDrinks" type="text" placeholder="Type Number of Drinks">
+                        <input id="numberOfDrinks" name="numberOfDrinks" value='{{ old("numberOfDrinks")}}' type="text" placeholder="Type Number of Drinks">
                     </div>
 
                 </div>
@@ -52,14 +46,28 @@
                 <div class="grid-item">
                     <div class="form-group form-check">
                             <label class="form-check-label" for="exampleCheck1">Are these Drinks to Go?</label>
-                            <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                            <div class="btn-group btn-group-toggle" data-toggle="buttons" id="btnCol" name="btnCol">
                                 <label class="btn btn-secondary">
-                                    <input type="radio" name="options" id="option2"> Yes
+                                    <input 
+                                        type="radio" 
+                                        name="togoYes"
+                                        id="togoYes"  
+                                        value='Yes'
+                                        {{ ( old("togoYes") == 'Yes' or $togoYes == 'Yes') ? 'checked' : '' }}
+                                    > Yes
                                 </label>
                                 <label class="btn btn-secondary">
-                                    <input type="radio" name="options" id="option3"> No
+                                    <input 
+                                      type="radio" 
+                                      name="togoNo"
+                                      id="togoNo"   
+                                      value='No'
+                                      {{ ( old("togoNo") == 'No' or $togoNo == 'No') ? 'checked' : '' }}
+
+                                    > No
                                 </label>
                             </div>
+                        
                     </div> 
                 </div>
             </div> 

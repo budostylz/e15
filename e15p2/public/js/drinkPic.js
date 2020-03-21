@@ -2,7 +2,7 @@
 
 
 //integrate in DrinkClass
-let drinkResult = $('#drinkResult option:selected').text()
+let drinkResult = $('#drinkResult option:selected').text();
 let drinkUrl = $('#drinkUrl').val();
 console.log(drinkResult, drinkUrl);
 

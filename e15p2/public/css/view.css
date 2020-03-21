@@ -14,7 +14,7 @@
   grid-row-gap: 50px;  
 }
 
-.grid-container-dict
+.grid-container-dict{
   display: grid;
   grid-template-columns: auto auto auto auto;
   padding: 10px;

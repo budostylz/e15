@@ -60,7 +60,7 @@ class DrinkController extends Controller
 
         //dump($drinkResult);
         //dump($numberOfDrinks);
-        dump($drinksToGo);
+        //dump($drinksToGo);
         //dump($drinkUrl);
 
       

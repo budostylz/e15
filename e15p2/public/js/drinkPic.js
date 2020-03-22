@@ -35,7 +35,7 @@ var DrinkClass = (function () {
 
         }
         catch (e) {
-            console.log('entry', e)
+            console.log('entry', e);
         }
     }
 

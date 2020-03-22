@@ -52,6 +52,8 @@ Applied Sass and CSS Grid Layout for improved styles. Applied jQuery for improve
 
 + 3 Inputs: Dropdown, TextField, Radio Button
 
++ Resuse Ms. Buck's search algorithm for drink dictionary (This commit is the latest one compared to the quiz).
+
 ![Image URL Field](https://github.com/budostylz/e15/blob/master/e15p2/public/images/drinkUrl.PNG)
 
 

@@ -17,7 +17,6 @@ var DrinkClass = (function () {
             if (tag == 0) {
                 let favoriteDrink = $('#favoriteDrink option:selected').text();
                 let drinkUrl = $('#drinkUrl').val();
-                console.log(favoriteDrink, drinkUrl);
 
                 if (favoriteDrink.length > 0) {
 

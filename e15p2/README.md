@@ -21,4 +21,9 @@
 
 ## Notes for instructor
 
++ Optimal Browsers: Chrome, Firefox, Edge
+
++ Drink URL is hidden field image url inputs.
+
+
 

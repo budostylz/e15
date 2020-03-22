@@ -11,7 +11,6 @@ use Str;
 class DrinkController extends Controller
 {
 
-    //action:bar
     public function drink()
     {
 
@@ -58,10 +57,6 @@ class DrinkController extends Controller
         $drinksToGo = $request->input('drinksToGo', null);
         $drinkUrl = $request->input('drinkUrl', null);
 
-        //dump($favoriteDrink);
-        //dump($numberOfDrinks);
-        //dump($drinksToGo);
-        //dump($drinkUrl);
 
       
         return view('drinks.confirm')->with([

@@ -4,7 +4,7 @@
 //integrate in DrinkClass
 let drinkResult = $('#drinkResult option:selected').text();
 let drinkUrl = $('#drinkUrl').val();
-console.log(drinkResult, drinkUrl);
+//console.log(drinkResult, drinkUrl);
 
 if (drinkResult.length > 0) {
 

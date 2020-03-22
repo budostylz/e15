@@ -13,7 +13,11 @@
                         <ul class="nav">
                             <li class="nav-item">
                                 <a class="nav-link active" href="/">Back to Menu</a>
+                            </li>  
+                            <li class="nav-item">
+                                <a class="nav-link active" href="/dict">Drink Dictionary</a>
                             </li>          
+        
                         </ul>
                     </div>
                     <hr />        

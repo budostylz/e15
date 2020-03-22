@@ -56,14 +56,15 @@ class DrinkController extends Controller
         $numberOfDrinks = $request->input('numberOfDrinks', null);
         $drinksToGo = $request->input('drinksToGo', null);
         $drinkUrl = $request->input('drinkUrl', null);
-
+        $serverPics = ['images/bartender.PNG','images/bartender2.PNG'];
 
       
         return view('drinks.confirm')->with([
             'favoriteDrink' => $favoriteDrink,
             'numberOfDrinks' => $numberOfDrinks,
             'drinksToGo' => $drinksToGo,
-            'drinkUrl' => $drinkUrl
+            'drinkUrl' => $drinkUrl,
+            'serverPics' => $serverPics
         ]);
 
     }

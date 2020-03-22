@@ -11,6 +11,7 @@ var DrinkClass = (function () {
         keys: ["strDrink"]
     };
 
+
     function entry(obj, userInput, tag) {
         try {
 

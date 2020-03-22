@@ -22,7 +22,7 @@
             <div class="grid-container2">
                 <div class="grid-item">
                     <div>
-                        <img src="images/bartender.PNG" height="100" width="100">   
+                        <img src="{{$serverPics[rand(0,1)]}}" height="100" width="100">   
                         <p class="form-check-label">
                             Thank you for ordering, drink responsibly.
                         </p>

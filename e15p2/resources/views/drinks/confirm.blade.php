@@ -34,7 +34,7 @@
                 <div class="grid-item">
                     <div>
                            <label>
-                              {{ $numberOfDrinks }},  
+                              {{ $numberOfDrinks }},
                               {{ $favoriteDrink }} 
                               {{Str::plural('Drink', (int)$numberOfDrinks)}} 
                               {{ (filter_var($drinksToGo, FILTER_VALIDATE_BOOLEAN)) ? 'to Go.' : 'for Here.' }}

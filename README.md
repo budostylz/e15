@@ -19,9 +19,6 @@
 ## Notes for instructor
 Applied Sass and CSS Grid Layout for improved styles. Applied jQuery for improved interactivity.
 
-
-
-
 # Project 2
 + By: *Shaun Lewis*
 + Production URL: <http://e15p2.budoapps.com/>
@@ -43,7 +40,19 @@ Applied Sass and CSS Grid Layout for improved styles. Applied jQuery for improve
 
 [A Complete Guide to Grid](https://css-tricks.com/snippets/css/complete-guide-grid/)
 
+[Sass: CSS with superpowers](https://sass-lang.com/)
+
 ## Notes for instructor
+
++ Optimal Browsers: Chrome, Firefox, Edge
+
++ Drink URL is hidden field image url inputs.
+
+![Image URL Field](https://github.com/budostylz/e15/blob/master/e15p2/public/images/drinkUrl.PNG)
+
+
+
+
 
 
 

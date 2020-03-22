@@ -19,8 +19,8 @@
                     <hr />        
                 </div>
             </div>
-            <div class="grid-container3">
-                <div class="grid-item3">
+            <div class="grid-container2">
+                <div class="grid-item2">
                     <div>
                         <img src="images/bartender.PNG" height="100" width="100">   
                         <p class="form-check-label">
@@ -30,8 +30,8 @@
                     </div>
                 </div>
             </div>
-            <div class="grid-container3">
-                <div class="grid-item3">
+            <div class="grid-container2">
+                <div class="grid-item2">
                     <div>
                            <label>
                               {{ $numberOfDrinks }}  

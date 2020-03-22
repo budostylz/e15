@@ -59,7 +59,7 @@
 
 .grid-container3 {
   display: grid;
-  grid-template-columns: auto;
+  grid-template-columns: auto auto;
   padding: 10px;
 }
 .grid-item3 {

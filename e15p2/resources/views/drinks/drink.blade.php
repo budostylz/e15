@@ -94,10 +94,18 @@
                 <div class="grid-item3">
                     <div>
                         <img src="images/bartender.PNG" height="100" width="100">   
-                        <label class="form-check-label">I'm a Rockstar Server</label>
-                    
+                        <label class="form-check-label">I'm a Rockstar Server.</label>
                     </div>
+
                 </div>
+                <div class="grid-item3">
+                    <div>
+                        <img src="images/bartender2.PNG" height="100" width="100">   
+                        <label class="form-check-label">My Mixing Skills are Star Trek.</label>
+                   </div>
+                </div>
+
+
             </div>
                 <div class="grid-container4">
 

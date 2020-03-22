@@ -37,7 +37,7 @@
                               {{ $numberOfDrinks }}  
                               {{ $drinkResult }} 
                               {{Str::plural('Drink', (int)$numberOfDrinks)}} 
-                              {{ ( $drinksToGo == 'Yes' or $drinksToGo == 'No') ? 'to Go.' : 'for Here.' }}
+                              {{ (filter_var($drinksToGo, FILTER_VALIDATE_BOOLEAN)) ? 'to Go.' : 'for Here.' }}
                            </label><br/>
                            <img src="{{ $drinkUrl }}" height="200" width="200">   
                     </div>

@@ -21,6 +21,8 @@
 
 [Sass: CSS with superpowers](https://sass-lang.com/)
 
+[CSS3 Media Query to target only Internet Explorer (from IE6 to IE11+), Firefox, Chrome, Safari and/or Edge](https://www.ryadel.com/en/css3-media-query-target-only-ie-ie6-ie11-firefox-chrome-safari-edge/)
+
 ## Notes for instructor
 
 + Optimal Browsers: Chrome, Firefox, Edge
@@ -28,6 +30,5 @@
 + Drink URL is hidden field image url inputs.
 
 ![Image URL Field](https://github.com/budostylz/e15/blob/master/e15p2/public/images/drinkUrl.PNG)
-
 
 

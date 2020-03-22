@@ -2,10 +2,6 @@
 
 
 @section('confirm')
-
-    <form method="POST" action="/confirm">
-       {{ csrf_field() }}
-
             <div class="grid-container-nav">
 
                 <div class="grid-item drinkResults">
@@ -47,7 +43,6 @@
                     </div>
                 </div>
             </div>
-        </form>
 
 
 @endsection

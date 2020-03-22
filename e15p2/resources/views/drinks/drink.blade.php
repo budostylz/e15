@@ -73,10 +73,19 @@
             </div> 
             <hr>
             <div class="grid-container2">
+
+                <div class="errorDiv">
+                 @if(count($errors) > 0)
+                        <ol class="alert alert-danger error errorItems">
+                            @foreach( $errors->all() as $errorItem)
+                                <li> {{ $errorItem }} </li>
+                            @endforeach
+                        </ol>
+                    @endif
+                
+                </div>
                 <div class="grid-item2">
-                    <div>
-                        <label class="form-check-label" for="exampleCheck1">Available Servers</label>
-                    </div>
+                        <label class="form-check-label" for="exampleCheck1">Available Servers</label>             
                 </div>
                 
             </div> 
@@ -97,13 +106,7 @@
 
                     </div>
 
-                    @if(count($errors) > 0)
-                        <ol class="alert alert-danger error">
-                            @foreach( $errors->all() as $errorItem)
-                                <li> {{ $errorItem }} </li>
-                            @endforeach
-                        </ol>
-                    @endif
+                   
 
                 </div>
         </form>

@@ -121,3 +121,12 @@
 #drinkUrl, #drinkResult, #drinkResults{
   display:none;
 }
+.errorDiv{
+  margin-left: 200px;
+  margin-right: 200px;
+
+}
+.errorItems{
+  text-align:center;
+  list-style-type:none;
+}

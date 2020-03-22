@@ -29,6 +29,8 @@
 
 + Drink URL is hidden field for image url inputs.
 
++ 3 Inputs: Dropdown, TextField, Radio Button
+
 ![Image URL Field](https://github.com/budostylz/e15/blob/master/e15p2/public/images/drinkUrl.PNG)
 
 

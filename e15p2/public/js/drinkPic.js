@@ -1,21 +1,4 @@
-
-
-
-//integrate in DrinkClass
-let favoriteDrink = $('#favoriteDrink option:selected').text();
-let drinkUrl = $('#drinkUrl').val();
-//console.log(favoriteDrink, drinkUrl);
-
-if (favoriteDrink.length > 0) {
-
-    $('#drinkPic').prop('src', drinkUrl);
-    $('#favoriteDrink').show();
-    $('#drinkResults').show();
-
-}
-
 var DrinkClass = (function () {
-
 
     //set fuse
     var options = {
@@ -28,13 +11,37 @@ var DrinkClass = (function () {
         keys: ["strDrink"]
     };
 
+    function entry(obj, userInput, tag) {
+        try {
+
+            if (tag == 0) {
+                let favoriteDrink = $('#favoriteDrink option:selected').text();
+                let drinkUrl = $('#drinkUrl').val();
+                console.log(favoriteDrink, drinkUrl);
+
+                if (favoriteDrink.length > 0) {
+
+                    $('#drinkPic').prop('src', drinkUrl);
+                    $('#favoriteDrink').show();
+                    $('#drinkResults').show();
+
+                } else if (favoriteDrink == 'Select a Drink') {
+                    $('#drinkPic').hide();
+                }
+
+            } else if (tag == 1) {
+                getOptions(obj, userInput);
+            }
+
+        }
+        catch (e) {
+            console.log('entry', e);
+        }
+    }
 
     function getOptions(obj, userInput) {
         try {
 
-            //console.log(obj, userInput);
-            //console.log('obj', obj)
-            //console.log('userInput', userInput)
             var fuse = new Fuse(obj, options);
             var result = fuse.search(userInput);
             $('#favoriteDrink').empty();
@@ -45,24 +52,20 @@ var DrinkClass = (function () {
 
 
             } else {
+
                 $('#favoriteDrink').hide();
                 $('#drinkResults').hide();
-
-                $('#drinkName').text('');
+                $('#numberOfDrinks').val('');
                 $('#drinkPic').prop('src', '');
-                //$('#drinkPic').hide();
-                //$('#numberOfDrinksDiv').hide();
+
             }
 
 
             $.each(result, function (index, o) {
-
-                //console.log(index, o);
-
                 if (index == 0) {
 
                     $('#favoriteDrink').append(
-                        $('<option></option>').val('intro').html('Select a Drink')
+                        $('<option></option>').val('Select a Drink').html('Select a Drink')
                     );
 
                     $('#favoriteDrink').append(
@@ -84,15 +87,15 @@ var DrinkClass = (function () {
 
         }
         catch (e) {
-            console.log(e);
+            console.log('getOptions', e);
         }
     }
 
 
     return {
 
-        init: function (obj, userInput) {
-            getOptions(obj, userInput);
+        init: function (obj, userInput, tag) {
+            entry(obj, userInput, tag);
 
 
         }
@@ -100,10 +103,11 @@ var DrinkClass = (function () {
 
 }());
 
+DrinkClass.init(null, null, 0);
 
 $('#getDrink').keyup(function (e) {
     let userInput = $(this).val();
-    DrinkClass.init(menu.drinks, userInput);
+    DrinkClass.init(menu.drinks, userInput, 1);
 });
 
 $('#favoriteDrink').change(function (e) {
@@ -111,7 +115,6 @@ $('#favoriteDrink').change(function (e) {
     let drinkName = $(this).val();
     let drinkUrl = $('option:selected', this).attr('url');
 
-    console.log(drinkName, drinkUrl);
 
     $('#drinkUrl').val(drinkUrl);
     $('#drinkName').text(drinkName);

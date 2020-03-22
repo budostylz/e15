@@ -46,7 +46,7 @@ class DrinkController extends Controller
         $request->validate([
             'favoriteDrink' => [
                 'required',
-                Rule::notIn(['intro']),
+                Rule::notIn(['Select a Drink']),
             ],
             'drinksToGo' => 'required',
             'numberOfDrinks' => 'required|integer|between:1,99',

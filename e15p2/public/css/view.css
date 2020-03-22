@@ -85,4 +85,15 @@
   display: none;
 }
 
+/* Target IE9+ */
+@media screen and (min-width: 0\0 ) and (min-resolution: 72dpi) {
+  .grid-container-nav {
+    margin-left: 800px;
+  }
+
+  hr {
+    display: none;
+  }
+}
+
 /*# sourceMappingURL=view.css.map */

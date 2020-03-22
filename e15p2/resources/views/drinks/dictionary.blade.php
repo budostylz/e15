@@ -32,4 +32,21 @@
                  @endforeach
             </div>
     @endif
+
+        <div class="grid-container-nav">
+        <div class="grid-item drinkResults">
+            <div>
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/">Back to Order</a>
+                    </li>          
+                </ul>
+            </div>
+            <hr/>
+        </div>
+    </div>
+
+
+
+
 @endsection

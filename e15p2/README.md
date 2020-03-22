@@ -19,6 +19,8 @@
 
 [A Complete Guide to Grid](https://css-tricks.com/snippets/css/complete-guide-grid/)
 
+[Sass: CSS with superpowers](https://sass-lang.com/)
+
 ## Notes for instructor
 
 + Optimal Browsers: Chrome, Firefox, Edge

@@ -16,13 +16,13 @@ class DrinkController extends Controller
     {
 
 
-        $drinkResult = session('drinkResult');
+        $favoriteDrink = session('favoriteDrink');
         $numberOfDrinks = session('numberOfDrinks');
         $drinksToGo = session('drinksToGo');
         $drinkUrl = session('drinkUrl');
 
         return view('drinks.drink')->with([
-            'drinkResult' => $drinkResult,
+            'favoriteDrink' => $favoriteDrink,
             'numberOfDrinks' => $numberOfDrinks,
             'drinksToGo' => $drinksToGo,
             'drinkUrl' => $drinkUrl
@@ -44,7 +44,7 @@ class DrinkController extends Controller
     {
 
         $request->validate([
-            'drinkResult' => [
+            'favoriteDrink' => [
                 'required',
                 Rule::notIn(['intro']),
             ],
@@ -53,19 +53,19 @@ class DrinkController extends Controller
             
         ]);
 
-        $drinkResult = $request->input('drinkResult', null);
+        $favoriteDrink = $request->input('favoriteDrink', null);
         $numberOfDrinks = $request->input('numberOfDrinks', null);
         $drinksToGo = $request->input('drinksToGo', null);
         $drinkUrl = $request->input('drinkUrl', null);
 
-        //dump($drinkResult);
+        //dump($favoriteDrink);
         //dump($numberOfDrinks);
         //dump($drinksToGo);
         //dump($drinkUrl);
 
       
         return view('drinks.confirm')->with([
-            'drinkResult' => $drinkResult,
+            'favoriteDrink' => $favoriteDrink,
             'numberOfDrinks' => $numberOfDrinks,
             'drinksToGo' => $drinksToGo,
             'drinkUrl' => $drinkUrl

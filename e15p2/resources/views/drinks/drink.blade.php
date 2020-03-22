@@ -30,8 +30,8 @@
 
                         <br/>
                         <input type="text" class="form-control" id="getDrink" name="getDrink" value='{{ old("getDrink")}}' placeholder="Type a Drink">
-                        <select id="drinkResult" name="drinkResult" value='{{ old("drinkResult") }}'>
-                            <option {{ old("drinkResult") == "Select a Drink" ? "selected" : "" }} value='{{ old("drinkResult") }}'>{{ old("drinkResult") }}</option>
+                        <select id="favoriteDrink" name="favoriteDrink" value='{{ old("favoriteDrink") }}'>
+                            <option {{ old("favoriteDrink") == "Select a Drink" ? "selected" : "" }} value='{{ old("favoriteDrink") }}'>{{ old("favoriteDrink") }}</option>
                         </select>
                     </div>
     
@@ -84,21 +84,21 @@
                     @endif
                 
                 </div>
-                <div class="grid-item2">
+                <div class="grid-item">
                         <label class="form-check-label" for="exampleCheck1">Available Servers</label>             
                 </div>
                 
             </div> 
 
             <div class="grid-container3">
-                <div class="grid-item3">
+                <div class="grid-item">
                     <div>
                         <img src="images/bartender.PNG" height="100" width="100">   
                         <label class="form-check-label">I'm a Rockstar Server.</label>
                     </div>
 
                 </div>
-                <div class="grid-item3">
+                <div class="grid-item">
                     <div>
                         <img src="images/bartender2.PNG" height="100" width="100">   
                         <label class="form-check-label">My Mixing Skills are Star Trek.</label>
@@ -109,7 +109,7 @@
             </div>
                 <div class="grid-container4">
 
-                    <div class="grid-item4">
+                    <div class="grid-item">
                         <button type="submit" class="btn btn-primary">Order Drink</button>
 
                     </div>

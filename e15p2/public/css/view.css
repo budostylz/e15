@@ -1,48 +1,9 @@
-.grid-container-nav {
-  display: grid;
-  grid-template-columns: auto;
-  padding: 10px;
-  grid-row-gap: 15px;
-  grid-row-gap: 50px;  
-}
-
-.grid-container-dict{
-  display: grid;
-  grid-template-columns: auto auto auto auto;
-  padding: 10px;
-  grid-row-gap: 15px;
-  grid-row-gap: 50px;  
-}
-
-.grid-container-dict{
-  display: grid;
-  grid-template-columns: auto auto auto auto;
-  padding: 10px;
-  grid-row-gap: 15px;
-  grid-row-gap: 50px;  
-}
-
-.grid-item-dict{
-
-  background-color: rgba(255, 255, 255, 0.8);
-  padding: 20px;
-  font-size: 30px;
-  text-align: center;
-
-}
-
 .grid-container {
   display: grid;
   grid-template-columns: auto auto;
   padding: 10px;
   grid-row-gap: 15px;
-  grid-row-gap: 50px;  
-}
-.grid-item {
-  background-color: rgba(255, 255, 255, 0.8);
-  padding: 20px;
-  font-size: 30px;
-  text-align: center;
+  grid-row-gap: 50px;
 }
 
 .grid-container2 {
@@ -50,23 +11,11 @@
   grid-template-columns: auto;
   padding: 10px;
 }
-.grid-item2 {
-  background-color: rgba(255, 255, 255, 0.8);
-  padding: 20px;
-  font-size: 30px;
-  text-align: center;
-}
 
 .grid-container3 {
   display: grid;
   grid-template-columns: auto auto;
   padding: 10px;
-}
-.grid-item3 {
-  background-color: rgba(255, 255, 255, 0.8);
-  padding: 20px;
-  font-size: 30px;
-  text-align: center;
 }
 
 .grid-container4 {
@@ -75,19 +24,30 @@
   padding: 10px;
   text-align: center;
 }
-.grid-item4 {
-  background-color: rgba(255, 255, 255, 0.8);
-  padding: 20px;
-  font-size: 30px;
-  text-align: center;
-}
 
 .grid-container5 {
   display: grid;
   grid-template-columns: auto;
   padding: 10px;
 }
-.grid-item5 {
+
+.grid-container-nav {
+  display: grid;
+  grid-template-columns: auto;
+  padding: 10px;
+  grid-row-gap: 15px;
+  grid-row-gap: 50px;
+}
+
+.grid-container-dict {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  padding: 10px;
+  grid-row-gap: 15px;
+  grid-row-gap: 50px;
+}
+
+.grid-item {
   padding: 20px;
   font-size: 30px;
   text-align: center;
@@ -99,34 +59,30 @@
   text-align: center;
 }
 
-#placeType{
-  display:none;
+.drinkResults {
+  justify-self: center;
 }
 
-#getDrinkResult{
-  width:"50px";
+.yes-no-buttons {
+  font-size: 20px;
 }
 
-.drinkResults{
-  
-  justify-self:center;
-  
-}
-
-.yes-no-buttons{
-  font-size:20px;
-}
-
-
-#drinkUrl, #drinkResult, #drinkResults{
-  display:none;
-}
-.errorDiv{
+.errorDiv {
   margin-left: 200px;
   margin-right: 200px;
+}
 
+.errorItems {
+  text-align: center;
+  list-style-type: none;
 }
-.errorItems{
-  text-align:center;
-  list-style-type:none;
+
+#getDrinkResult {
+  width: "50px";
 }
+
+#drinkUrl, #favoriteDrink, #drinkResults {
+  display: none;
+}
+
+/*# sourceMappingURL=view.css.map */

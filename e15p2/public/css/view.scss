@@ -1,0 +1,100 @@
+$display-grid: grid;
+$one-col-grid: auto;
+$two-col-grid: auto auto;
+$three-col-grid: auto auto auto;
+$four-col-grid: auto auto auto auto;
+$padding-font-10: 10px;
+$padding-font-20: 20px;
+$padding-font-30: 30px;
+$row-gap-15: 15px;
+$row-gap-50: 50px;
+
+.grid-container {
+    display: $display-grid;
+    grid-template-columns: $two-col-grid;
+    padding: $padding-font-10;
+    grid-row-gap: $row-gap-15;
+    grid-row-gap: $row-gap-50;  
+}
+
+.grid-container2 {
+    display: $display-grid;
+    grid-template-columns: $one-col-grid;
+    padding: $padding-font-10;
+}
+
+.grid-container3 {
+    display: $display-grid;
+    grid-template-columns: $two-col-grid;
+    padding: $padding-font-10;
+}
+
+.grid-container4 {
+    display: $display-grid;
+    grid-template-columns: $one-col-grid;
+    padding: $padding-font-10;
+    text-align: center;
+}
+
+.grid-container5 {
+    display: $display-grid;
+    grid-template-columns: $one-col-grid;
+    padding: $padding-font-10;
+}
+
+
+.grid-container-nav {
+    display: $display-grid;
+    grid-template-columns: $one-col-grid;
+    padding: $padding-font-10;
+    grid-row-gap: $row-gap-15;
+    grid-row-gap: $row-gap-50;  
+  }
+  
+  .grid-container-dict{
+    display: $display-grid;
+    grid-template-columns: $four-col-grid;
+    padding: $padding-font-10;
+    grid-row-gap: $row-gap-15;
+    grid-row-gap: $row-gap-50;
+  }
+
+  .grid-item{
+    padding: $padding-font-20;
+    font-size: $padding-font-30;
+    text-align: center;
+  }
+
+  .grid-item-error {
+    padding: $padding-font-20;
+    font-size: $padding-font-20;
+    text-align: center;
+  }
+  
+ .drinkResults{
+    
+    justify-self:center;
+    
+  }
+  
+  .yes-no-buttons{
+    font-size:20px;
+  }
+
+  .errorDiv{
+    margin-left: 200px;
+    margin-right: 200px;
+  
+  }
+  .errorItems{
+    text-align:center;
+    list-style-type:none;
+  }
+
+  #getDrinkResult{
+    width:"50px";
+  }
+
+  #drinkUrl, #favoriteDrink, #drinkResults{
+    display:none;
+  }

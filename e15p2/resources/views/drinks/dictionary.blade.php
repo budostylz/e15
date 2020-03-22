@@ -24,7 +24,7 @@
 
             <div class="grid-container-dict">
                  @foreach( $drinkArr as $index => $drink )
-                       <div class="grid-item-dict">
+                       <div class="grid-item">
                             <label id="drinkName">{{ $drink['strDrink'] }} </label>
                             <br/>
                             <img src="{{ $drink['strDrinkThumb'] }}" height="200" width="200">                       

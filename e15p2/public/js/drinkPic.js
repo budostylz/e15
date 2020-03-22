@@ -2,14 +2,14 @@
 
 
 //integrate in DrinkClass
-let drinkResult = $('#drinkResult option:selected').text();
+let favoriteDrink = $('#favoriteDrink option:selected').text();
 let drinkUrl = $('#drinkUrl').val();
-//console.log(drinkResult, drinkUrl);
+//console.log(favoriteDrink, drinkUrl);
 
-if (drinkResult.length > 0) {
+if (favoriteDrink.length > 0) {
 
     $('#drinkPic').prop('src', drinkUrl);
-    $('#drinkResult').show();
+    $('#favoriteDrink').show();
     $('#drinkResults').show();
 
 }
@@ -37,15 +37,15 @@ var DrinkClass = (function () {
             //console.log('userInput', userInput)
             var fuse = new Fuse(obj, options);
             var result = fuse.search(userInput);
-            $('#drinkResult').empty();
+            $('#favoriteDrink').empty();
 
             if (result.length > 0) {
 
-                $('#drinkResult').show();
+                $('#favoriteDrink').show();
 
 
             } else {
-                $('#drinkResult').hide();
+                $('#favoriteDrink').hide();
                 $('#drinkResults').hide();
 
                 $('#drinkName').text('');
@@ -61,17 +61,17 @@ var DrinkClass = (function () {
 
                 if (index == 0) {
 
-                    $('#drinkResult').append(
+                    $('#favoriteDrink').append(
                         $('<option></option>').val('intro').html('Select a Drink')
                     );
 
-                    $('#drinkResult').append(
+                    $('#favoriteDrink').append(
                         $('<option></option>').val(o.strDrink).html(o.strDrink).attr('url', o.strDrinkThumb)
                     );
 
                 } else {
 
-                    $('#drinkResult').append(
+                    $('#favoriteDrink').append(
                         $('<option></option>').val(o.strDrink).html(o.strDrink).attr('url', o.strDrinkThumb)
                     );
 
@@ -106,7 +106,7 @@ $('#getDrink').keyup(function (e) {
     DrinkClass.init(menu.drinks, userInput);
 });
 
-$('#drinkResult').change(function (e) {
+$('#favoriteDrink').change(function (e) {
 
     let drinkName = $(this).val();
     let drinkUrl = $('option:selected', this).attr('url');

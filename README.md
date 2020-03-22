@@ -22,7 +22,7 @@ Applied Sass and CSS Grid Layout for improved styles. Applied jQuery for improve
 # Project 2
 + By: *Shaun Lewis*
 + Production URL: <http://e15p2.budoapps.com/>
-+ Project Synopsis: Form where users select a bar and order drinks.
++ Project Synopsis: Form where users select and order drinks.
 
 ## Outside resources
 
@@ -41,6 +41,8 @@ Applied Sass and CSS Grid Layout for improved styles. Applied jQuery for improve
 [A Complete Guide to Grid](https://css-tricks.com/snippets/css/complete-guide-grid/)
 
 [Sass: CSS with superpowers](https://sass-lang.com/)
+
+[CSS3 Media Query to target only Internet Explorer (from IE6 to IE11+), Firefox, Chrome, Safari and/or Edge](https://www.ryadel.com/en/css3-media-query-target-only-ie-ie6-ie11-firefox-chrome-safari-edge/)
 
 ## Notes for instructor
 

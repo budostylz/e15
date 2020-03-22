@@ -1,7 +1,7 @@
 # Project 2
 + By: *Shaun Lewis*
 + Production URL: <http://e15p2.budoapps.com/>
-+ Project Synopsis: Form where users select a bar and order drinks.
++ Project Synopsis: Form where users select and order drinks.
 
 ## Outside resources
 

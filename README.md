@@ -58,7 +58,7 @@ Applied Sass and CSS Grid Layout for improved styles. Applied jQuery for improve
 
 ## Graduate Study
 
-[Compiling Assets (Mix)](https://laravel.com/docs/6.x/mix.
+[Compiling Assets (Mix)](https://laravel.com/docs/6.x/mix)
 
 
 

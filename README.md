@@ -56,6 +56,9 @@ Applied Sass and CSS Grid Layout for improved styles. Applied jQuery for improve
 
 ![Image URL Field](https://github.com/budostylz/e15/blob/master/e15p2/public/images/drinkUrl.PNG)
 
+## Graduate Study
+
+[Compiling Assets (Mix)](https://laravel.com/docs/6.x/mix)
 
 
 

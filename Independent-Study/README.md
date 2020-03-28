@@ -1,4 +1,4 @@
-## Webpack or Laravel Mix?
+## (StandAlone) Webpack or Laravel Mix?
 
 Dynamic web applications require front-end technologies where browser speed and optimization of an application's 
 assets(css, image, font files, etc) are crucial. This research will focus on using technology to compile, bundle and map

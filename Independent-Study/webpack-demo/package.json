@@ -11,8 +11,10 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "file-loader": "^6.0.0",
     "webpack": "^4.42.1",
-    "webpack-cli": "^3.3.11"
+    "webpack-cli": "^3.3.11",
+    "xml-loader": "^1.2.1"
   },
   "dependencies": {
     "lodash": "^4.17.15"

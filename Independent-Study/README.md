@@ -14,7 +14,11 @@ front-end assets to optimize web applications. First we will review web pack and
 
 [Getting Started with Webpack](https://webpack.js.org/guides/getting-started/)
 
+[A Beginner’s Guide to Webpack 4 and Module Bundling](https://www.sitepoint.com/beginners-guide-webpack-module-bundling/)
+
 [Compiling Assets (Mix)](https://laravel.com/docs/6.x/mix)
+
+
 
 
 

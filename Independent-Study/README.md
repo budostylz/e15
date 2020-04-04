@@ -19,6 +19,12 @@ front-end assets to optimize web applications. First we will review web pack and
 [Compiling Assets (Mix)](https://laravel.com/docs/6.x/mix)
 
 
+## Webpack Demo
+
+## Laravel Mix Demo
+
+## Compare/Contrast Webpack and Laravel Mix
+
 
 
 

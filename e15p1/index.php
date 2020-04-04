@@ -120,7 +120,6 @@
 <head>
   <title>String Generator</title>
   <link rel="stylesheet" href="css/stringGenerator.css">
-  <script type="text/javascript" src="libs/jquery-3.4.1.min.js"></script>
 </head>
 
 
@@ -155,11 +154,11 @@
                         <div class="results" id="lettershift"><?php echo $viewResults[2]; ?></div>
                     </div>
                 </div>
-        </form>
+            </form>
         </div>
         <div class="item"></div>
     </div>
-
+    <script type="text/javascript" src="libs/jquery-3.4.1.min.js"></script>
     <script type="text/javascript" src="js/hideResults.js"></script>
 
 </body>

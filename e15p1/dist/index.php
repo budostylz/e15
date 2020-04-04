@@ -158,8 +158,13 @@
         </div>
         <div class="item"></div>
     </div>
-    <script type="text/javascript" src="libs/jquery-3.4.1.min.js"></script>
-    <script type="text/javascript" src="js/hideResults.js"></script>
+    <!-- Don't Need These Scripts Here Anymore
+          <script type="text/javascript" src="libs/jquery-3.4.1.min.js"></script>
+          <script type="text/javascript" src="js/hideResults.js"></script>
+
+    -->
+    <!-- main.js will be output script file bundle in /dist folder -->
+    <script src="main.js"></script>
 
 </body>
 </html>

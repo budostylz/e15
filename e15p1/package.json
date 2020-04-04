@@ -2,7 +2,7 @@
   "name": "e15p1",
   "version": "1.0.0",
   "description": "+ By: *Shaun Lewis*\r + Production URL: <http://e15p1.budoapps.com/>",
-  "main": "index.js",
+  "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

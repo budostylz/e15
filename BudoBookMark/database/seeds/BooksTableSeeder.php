@@ -29,7 +29,7 @@ class BooksTableSeeder extends Seeder
 
         */
 
-        /*
+        
         
 
         # Or, pull in the data from our books.json file to add a bunch of books
@@ -55,7 +55,7 @@ class BooksTableSeeder extends Seeder
             $count--;
         }
 
-        */
+        
 
         /*
             Faker Library

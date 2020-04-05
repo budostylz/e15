@@ -37,7 +37,7 @@ class PracticeController extends Controller
         } else {
             # Change some properties
             $book->title = 'The Really Great Gatsby';
-            $book->published_year = '2025';
+            $book->published_year = '20';
 
             # Save the changes
             $book->save();
@@ -90,7 +90,7 @@ class PracticeController extends Controller
         $book->title = 'The Martian';
         $book->slug = 'the-martian';
         $book->author = 'Anthony Weir';
-        $book->published_year = 201;
+        $book->published_year = 1;
         $book->cover_url = 'https://hes-bookmark.s3.amazonaws.com/the-martian.jpg';
         $book->info_url = 'https://en.wikipedia.org/wiki/The_Martian_(Weir_novel)';
         $book->purchase_url = 'https://www.barnesandnoble.com/w/the-martian-andy-weir/1114993828';
@@ -101,7 +101,6 @@ class PracticeController extends Controller
         $book->save();
 
         dump('Added: ' . $book->title);
-        
     }
 
     /**

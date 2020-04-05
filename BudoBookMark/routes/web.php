@@ -1,5 +1,10 @@
 <?php
 
+/**
+ * Practice
+ */
+Route::any('/practice/{n?}', 'PracticeController@index');
+
 Route::get('/example2', function () {
     dump(Arr::sort(['a', 'z', 'g']));
 });

@@ -119,12 +119,7 @@
 
 <head>
   <title>String Generator</title>
-  <!-- We Don't Need the Link Tag Anymore
-    <link rel="stylesheet" href="css/stringGenerator.css">
-
-  -->
 </head>
-
 
 <body>
 
@@ -161,12 +156,6 @@
         </div>
         <div class="item"></div>
     </div>
-    <!-- Don't Need These Scripts Here Anymore
-          <script type="text/javascript" src="libs/jquery-3.4.1.min.js"></script>
-          <script type="text/javascript" src="js/hideResults.js"></script>
-
-    -->
-    <!-- main.js will be output script file bundle in /dist folder -->
     <script src="main.js"></script>
 
 </body>

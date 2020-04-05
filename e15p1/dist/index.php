@@ -119,7 +119,10 @@
 
 <head>
   <title>String Generator</title>
-  <link rel="stylesheet" href="css/stringGenerator.css">
+  <!-- We Don't Need the Link Tag Anymore
+    <link rel="stylesheet" href="css/stringGenerator.css">
+
+  -->
 </head>
 
 

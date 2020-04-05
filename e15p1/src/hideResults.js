@@ -1,5 +1,6 @@
 
 import $ from 'jquery';
+import './stringGenerator.scss';
 
 var results = (function () {
 

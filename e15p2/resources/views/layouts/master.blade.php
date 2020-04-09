@@ -6,7 +6,12 @@
     <meta charset="utf-8">
     <title>Drink App</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"/>
-    <link rel="stylesheet" href="css/view.css" />
+    
+    <!-- Old css file
+        <link rel="stylesheet" href="css/view.css" />
+    -->
+    <!-- New Laravel Mix css file-->
+    <link rel="stylesheet" href="css/app.css" />
 
 </head>
 <body>

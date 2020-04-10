@@ -10,7 +10,7 @@
     <!-- Old css output saas file
         <link rel="stylesheet" href="css/view.css" />
     -->
-    <!-- New Laravel Mix css output sass file-->
+    <!-- New Laravel Mix css output file-->
     <link rel="stylesheet" href="css/app.css" />
 
 </head>

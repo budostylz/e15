@@ -74,7 +74,7 @@ npm install webpack webpack-cli --save-dev
 
 ![node dependencies and webpack](https://github.com/budostylz/e15/blob/master/Independent-Study/images/webpack-standalone/js/image7.PNG)
 
-### Let's turn to our `package.json` and set `private` to `true` and remove our `main` entry since we'll define that in our `webpack.config.js` in the next steps.
+### Let's turn to our `package.json` and add/set `private` attribute to `true` and remove our `main` entry since we'll define that in our `webpack.config.js` in the next steps.
 ### Setting `private` to true prevents npm from [publishing](https://stackoverflow.com/questions/7314849/what-is-purpose-of-the-property-private-in-package-json) it.
 ![package.json](https://github.com/budostylz/e15/blob/master/Independent-Study/images/webpack-standalone/js/image11.PNG)
 

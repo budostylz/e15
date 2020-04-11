@@ -210,7 +210,7 @@ module: {
 ![node dependencies and webpack](https://github.com/budostylz/e15/blob/master/Independent-Study/images/webpack-standalone/sass/image5.PNG)
 
 ### We can get ride of the original `css` asset since the `sass` will be bundle in `main.js`.
-![node dependencies and webpack](https://github.com/budostylz/e15/blob/master/Independent-Study/images/webpack-standalone/after.PNG)
+![node dependencies and webpack](https://github.com/budostylz/e15/blob/master/Independent-Study/images/webpack-standalone/after1.PNG)
 
 
 

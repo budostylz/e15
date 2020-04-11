@@ -272,7 +272,28 @@ module: {
 
 ## JavaScript Assets
 
-### Let's bundle our JavaScript assets.
+### Looking back at our `master.blade.php file` we have five libraries that we need to import in our `node_modules` directory. 
+    1. jquery-slim
+    2. popper.js
+    3. bootstrap.js
+    4. lodash.js
+    5. fuse.js
+
+![Laravel Mix](https://github.com/budostylz/e15/blob/master/Independent-Study/images/laravel-mix/image1.PNG)
+
+
+
+### Let's import these libraries with the follwing command.
+
+```ubuntu
+npm install jquery-slim popper.js bootstrap lodash fuse.js
+
+```
+
+### Verify these dependencies are within your `package.json`
+![Laravel Mix](https://github.com/budostylz/e15/blob/master/Independent-Study/images/laravel-mix/dependencies.PNG)
+
+
 
 
 

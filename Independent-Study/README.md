@@ -357,6 +357,8 @@ npm run dev
 ### Your `webpack.mix.js` file should look similar. 
 ![Laravel Mix](https://github.com/budostylz/e15/blob/master/Independent-Study/images/laravel-mix/css/webpack.mix.js.PNG)
 
+### We're pulling our input `bootstrap` asset from `node_modules` and bundling to `libStyles.css` at `public/css`.
+
 
 
 

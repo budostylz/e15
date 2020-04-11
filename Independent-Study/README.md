@@ -245,11 +245,13 @@ module: {
 
 ![Laravel Mix](https://github.com/budostylz/e15/blob/master/Independent-Study/images/laravel-mix/webpack.mix.js.PNG)
 
+### Laravel by default maps entry and output assets. We'll use this mapping for our Sass file in the next steps.
+
 
 ### The cool thing about Laravel is `package.json` comes out of the box located at the root directory. We do not have to manually create it like standalone webpack.
 ![Laravel Mix](https://github.com/budostylz/e15/blob/master/Independent-Study/images/laravel-mix/package.json.js_dir.PNG)
 
-### We will need to create out `node_modules` to install our dependencies. Run this command in your terminal.
+### We will need to create our `node_modules` to install our dependencies. Run this command in your terminal.
 
 ```ubuntu
     npm install

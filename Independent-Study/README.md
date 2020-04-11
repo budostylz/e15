@@ -63,7 +63,7 @@ npm init -y
 npm install webpack webpack-cli --save-dev
 
 ```
-![node dependencies and webpack](https://github.com/budostylz/e15/blob/master/Independent-Study/images/webpack-standalone/js/image4.PNG)
+![node dependencies and webpack](https://github.com/budostylz/e15/blob/master/Independent-Study/images/webpack-standalone/js/image5.PNG)
 
 
 

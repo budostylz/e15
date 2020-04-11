@@ -226,7 +226,7 @@ module: {
 ![node dependencies and webpack](https://github.com/budostylz/e15/blob/master/Independent-Study/images/webpack-standalone/console.PNG)
 
 ### That was a handful but we only scratch the surface of webpack capabilities. 
-### Now that we have a basic understanding of the concepts, let us turn to Laravel Mix which uses webpack under the hood.
+### Now that we have a basic understanding of webpack concepts, let us turn to `Laravel Mix` which uses webpack under the hood.
 
 # Laravel Mix Demo
 

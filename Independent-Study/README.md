@@ -324,6 +324,10 @@ npm run dev
 ### Our assets are bundled in `bundle.js` within our `public` directory.
 ![Laravel Mix](https://github.com/budostylz/e15/blob/master/Independent-Study/images/laravel-mix/js/public1.PNG)
 
+### We can view out JavaScript assets inside `bundle.js`
+![Laravel Mix](https://github.com/budostylz/e15/blob/master/Independent-Study/images/laravel-mix/js/assets.PNG)
+
+
 
 
 

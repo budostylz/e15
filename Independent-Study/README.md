@@ -171,7 +171,7 @@ npm run develop
 
 ```
 
-### You should see the following loaders within your `package.json`.
+### You should see the following loaders within your `package.json` via `devDependencies` property.
     1. css-loader
     2. node-sass
     3. sass-loader

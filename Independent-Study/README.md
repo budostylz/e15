@@ -240,6 +240,10 @@ module: {
 ### Let's look at our assets that we will need to bundle located at within Laravel's master view file name `master.blade.php`
 ![Laravel Mix](https://github.com/budostylz/e15/blob/master/Independent-Study/images/laravel-mix/image1.PNG)
 
+### Laravel comes out of box with a `webpack.mix.js` file which corresponds to `webpack.config.js` that we been working with.
+![Laravel Mix](https://github.com/budostylz/e15/blob/master/Independent-Study/images/laravel-mix/webpack.mix.js_dir.PNG)
+
+
 
 
 

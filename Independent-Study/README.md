@@ -49,7 +49,7 @@ npm -v
 
 ![node dependencies and webpack](https://github.com/budostylz/e15/blob/master/Independent-Study/images/webpack-standalone/before.PNG)
 
-### We'll create a new package.json in our project with the following command.
+### We'll create a new [package.json](https://docs.npmjs.com/files/package.json) in our project with the following command.
 
 ```ubuntu
 npm init -y
@@ -59,7 +59,7 @@ npm init -y
 ### You should see the output below.
 ![node dependencies and webpack](https://github.com/budostylz/e15/blob/master/Independent-Study/images/webpack-standalone/js/image3.PNG)
 
-### Our package.json is created in our project below.
+### Our `package.json` is created in our project below.
 ![node dependencies and webpack](https://github.com/budostylz/e15/blob/master/Independent-Study/images/webpack-standalone/js/image4.PNG)
 
 ### Next we'll install our node dependencies and our `webpack`.
@@ -179,6 +179,28 @@ npm run develop
 
 ![node dependencies and webpack](https://github.com/budostylz/e15/blob/master/Independent-Study/images/webpack-standalone/sass/image2.PNG)
 
+### We'll add a [module](https://webpack.js.org/concepts/modules/) and our loaders to our `webpack.config.js` file using the below code.
+
+```javascript
+
+module: {
+        rules: [
+            {
+                test: /\.scss$/,
+                use: [
+                    'style-loader',
+                    'css-loader',
+                    'sass-loader'
+                ]
+            }
+        ]
+    }
+
+
+```
+
+### Your `webpack.config.js` file should look like below image.
+![node dependencies and webpack](https://github.com/budostylz/e15/blob/master/Independent-Study/images/webpack-standalone/sass/image3.PNG)
 
 
 

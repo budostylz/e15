@@ -302,7 +302,7 @@ mix.scripts([
     'node_modules/jquery-slim/dist/jquery.slim.min.js',
     'node_modules/popper.js/umd/popper.min.js',
     'node_modules/lodash/lodash.min.js',
-    'public/libs/fuse.js',
+    'node_modules/fuse.js',
     'public/js/drinkModel.js',
     'public/js/drink.js'
 
@@ -310,8 +310,10 @@ mix.scripts([
 
 
 ```
-### Your `webpack.mix.js` file should look something like this.
-![Laravel Mix](https://github.com/budostylz/e15/blob/master/Independent-Study/images/laravel-mix/js/webpack.mix1.PNG)
+### Your `webpack.mix.js` file should look something like this. 
+### [mix.scripts()](https://laravel.com/docs/6.x/mix/#vanilla-js) takes a collection of input assets within an array and one output asset.
+### Our input directories are node_modules for our vendor assets and public for our custom assets. These will all bundle into `bundle.js` located at our `public` directory
+![Laravel Mix](https://github.com/budostylz/e15/blob/master/Independent-Study/images/laravel-mix/js/webpack.mix1.1.PNG)
 
 
 

@@ -4,7 +4,7 @@
 
 Dynamic web applications require front-end technologies where browser speed and optimization of an application's 
 assets(css, image, font files, etc) are crucial. This research will focus on using technology to compile, bundle and map
-front-end assets to optimize web applications. First we will review web pack and demo a simple web application to understand the concept. Next, we will demo a basic application using Laravel Mix which uses webpack under the hood to capture the concept of optimizing Laravel web applications. Finally, we'll compare the two approches (stand alone Webpack or Laravel Mix) to get a better idea of which approach to use when building Laravel applications.
+front-end assets to optimize web applications. First we will review web pack and demo a simple web application to understand the concept. Next, we will demo a basic application using Laravel Mix which uses Webpack under the hood to capture the concept of optimizing Laravel web applications. Finally, we'll compare the two approches (stand alone Webpack or Laravel Mix) to get a better idea of which approach to use when building Laravel applications.
 
 ### Resources
 
@@ -62,15 +62,15 @@ npm init -y
 ### Our `package.json` is created in our project below.
 ![node dependencies and webpack](https://github.com/budostylz/e15/blob/master/Independent-Study/images/webpack-standalone/js/image4.PNG)
 
-### Next we'll install our node dependencies and our `webpack`.
+### Next we'll install our node dependencies and our `Webpack`.
 ```ubuntu
 npm install webpack webpack-cli --save-dev
 
 ```
 ![node dependencies and webpack](https://github.com/budostylz/e15/blob/master/Independent-Study/images/webpack-standalone/js/image5.PNG)
 
-### Our node modules with our `webpack` packages are installed. 
-### You can dive within the the `node_modules` directory to confirm your `webpack` packages or view the `package.json `dev-dependencies.
+### Our node modules with our `Webpack` packages are installed. 
+### You can dive within the the `node_modules` directory to confirm your `Webpack` packages or view the `package.json `dev-dependencies.
 
 ![node dependencies and webpack](https://github.com/budostylz/e15/blob/master/Independent-Study/images/webpack-standalone/js/image6.PNG)
 
@@ -93,7 +93,7 @@ npm install webpack webpack-cli --save-dev
 ### Next we'll create our `src` and `dist` folders.
 ![node dependencies and webpack](https://github.com/budostylz/e15/blob/master/Independent-Study/images/webpack-standalone/js/image8.PNG)
 
-### The `src` folder will serve as our entry point for webpack to locate our assets. 
+### The `src` folder will serve as our entry point for Webpack to locate our assets. 
 ### The `dist` folder will serve as our output build for our assets. 
 ### Webpack calls this neat concept the [dependency graph](https://webpack.js.org/).
 ![node dependencies and webpack](https://github.com/budostylz/e15/blob/master/Independent-Study/images/webpack-standalone/dependency-graph1.PNG)
@@ -225,14 +225,14 @@ module: {
 
 ![node dependencies and webpack](https://github.com/budostylz/e15/blob/master/Independent-Study/images/webpack-standalone/console.PNG)
 
-### That was a handful but we only scratch the surface of webpack capabilities. 
-### Now that we have a basic understanding of webpack concepts, let's turn to [Laravel Mix](https://laravel.com/docs/6.x/mix) which uses webpack under the hood.
+### That was a handful but we only scratch the surface of Webpack capabilities. 
+### Now that we have a basic understanding of Webpack concepts, let's turn to [Laravel Mix](https://laravel.com/docs/6.x/mix) which uses Webpack under the hood.
 
 # Laravel Mix Demo
 
 ## Configuration
-### As the same with webpack, you will need to install and verify node.js is present on your computer.
-### Check the above webpack [configuration section](https://github.com/budostylz/e15/tree/master/Independent-Study#Configuration) for this step.
+### As the same with Webpack, you will need to install and verify node.js is present on your computer.
+### Check the above Webpack [configuration section](https://github.com/budostylz/e15/tree/master/Independent-Study#Configuration) for this step.
 
 ### We will apply `Laravel Mix` to our p2 project.
 ![Laravel Mix](https://github.com/budostylz/e15/blob/master/Independent-Study/images/laravel-mix/image0.PNG)
@@ -250,7 +250,7 @@ module: {
 
 
 
-### The cool thing about Laravel is `package.json` comes out of the box located at the root directory. We do not have to manually create it like standalone webpack. 
+### The cool thing about Laravel is `package.json` comes out of the box located at the root directory. We do not have to manually create it like `Webpack` stand alone. 
 ### The `private` and `scripts` property are already configured which saves us time developing this application.
 ![Laravel Mix](https://github.com/budostylz/e15/blob/master/Independent-Study/images/laravel-mix/package.json.js_dir.PNG)
 
@@ -401,6 +401,13 @@ npm run prod
 
 
 # Compare/Contrast Webpack and Laravel Mix
+### There is more configuration and setup using `Webpack` stand alone compare to `Laravel Mix`. `Webpack` can be incorporated to numerous web frameworks. `Laravel Mix` are only for Laravel applications. Which is better to use is base on developer preference. Personally I feel I have more control of my builds using `Webpack` stand alone in comparison to `Laravel Mix`.
+
+# Outro
+### We reviewed both `Webpack` and `Laravel Mix` asset build frameworks. We have build a simple web application using `Webpack` and understood basic concepts. We have visited `Laravel Mix` which uses `Webpack` under the hood to build our assets as well. Finally we compare/contract the two build frameworks. Review the above [resources](https://github.com/budostylz/e15/tree/master/Independent-Study#resources) to discover more of `Webpack` and `Laravel Mix` capabilities.
+
+
+
 
 
 

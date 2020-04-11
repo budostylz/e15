@@ -115,11 +115,13 @@ npm install webpack webpack-cli --save-dev
 ![node dependencies and webpack](https://github.com/budostylz/e15/blob/master/Independent-Study/images/webpack-standalone/js/image14.PNG)
 
 
-## webpack.config,js
+## webpack.config.js
 
 ### We're going to create our `webpack.config.js` file which will map our assets and builds.
+### Create a `webpack.config.js` file at the root directory
+![node dependencies and webpack](https://github.com/budostylz/e15/blob/master/Independent-Study/images/webpack-standalone/js/image14.1.PNG)
 
-### Create 
+
 
 
 

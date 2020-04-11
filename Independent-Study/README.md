@@ -163,6 +163,14 @@ npm run develop
 ### Now we can reference our `main.js` file to replace our previous JavaScript assets.
 ![node dependencies and webpack](https://github.com/budostylz/e15/blob/master/Independent-Study/images/webpack-standalone/mainjs.PNG)
 
+## Sass Assets
+### We will install our [loaders](https://webpack.js.org/loaders/) within our `node_modules` to map our Sass.
+
+```ubuntu
+ npm install --save-dev style-loader css-loader sass-loader node-sass
+
+```
+
 
 
 # Laravel Mix Demo

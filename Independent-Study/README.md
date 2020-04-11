@@ -332,6 +332,15 @@ npm run dev
 ### Currently our `Saas` asset is wihin our `css` folder within our `public` directory.
 ![Laravel Mix](https://github.com/budostylz/e15/blob/master/Independent-Study/images/laravel-mix/css/image1.PNG)
 
+### Based on or `webpack.mix.js` file, our `sass` mapings define the following: 
+    1. Input file location: resources/sass/app.scss
+    2. Output directory: public/css
+
+![Laravel Mix](https://github.com/budostylz/e15/blob/master/Independent-Study/images/laravel-mix/css/sass.PNG)
+
+
+
+
 
 
 

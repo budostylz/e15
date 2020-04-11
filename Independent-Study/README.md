@@ -349,7 +349,7 @@ npm run dev
 ### Write the following code to your `webpack.min.js` file.
 
 ```javascript
-    mix.styles([
+mix.styles([
     'node_modules/bootstrap/dist/css/bootstrap.min.css'
 
 ], 'public/css/libStyles.css')
@@ -390,6 +390,10 @@ npm run prod
 
 ### Opening the app.css file will see our `css` output from our `sass` asset.
 ![Laravel Mix](https://github.com/budostylz/e15/blob/master/Independent-Study/images/laravel-mix/css/sass2.PNG)
+
+### Let's finally clean up our `master.blade.php` file.
+![Laravel Mix](https://github.com/budostylz/e15/blob/master/Independent-Study/images/laravel-mix/css/cleanup.PNG)
+
 
 
 

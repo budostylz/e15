@@ -34,17 +34,19 @@ front-end assets to optimize web applications. First we will review web pack and
 ### Currently this is p1 project structure.
 ![project structure](https://github.com/budostylz/e15/blob/master/Independent-Study/images/webpack-standalone/js/image1.1.PNG)
 
-### Looking at out index.php file we see the following assets:
-    1. stringGenerator.css
-    2. jquery-3.4.1.min.js
-    3. hideResults.js
+### Looking at out index.php file we see the following css and script assets:
+
 
 ![before](https://github.com/budostylz/e15/blob/master/Independent-Study/images/webpack-standalone/before.PNG)
 
-### We'll create a new package.json with the following command.
+### We'll create a new package.json in our project with the following command.
 
 ### You should see the output below.
 ![package.json](https://github.com/budostylz/e15/blob/master/Independent-Study/images/webpack-standalone/js/image3.PNG)
+
+### Our package.json is created in our project below.
+![package.json](https://github.com/budostylz/e15/blob/master/Independent-Study/images/webpack-standalone/js/image4.PNG)
+
 
 
 ## Laravel Mix Demo

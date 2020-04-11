@@ -41,7 +41,7 @@ npm -v
 If you don't see either the node or npm version, download node js here [node](https://nodejs.org/en/). You will be
 direct to the node site.
 
-[node site](https://github.com/budostylz/e15/blob/master/Independent-Study/images/webpack-standalone/js/image0.PNG)
+![node site](https://github.com/budostylz/e15/blob/master/Independent-Study/images/webpack-standalone/js/image0.PNG)
 
 
 ## Laravel Mix Demo

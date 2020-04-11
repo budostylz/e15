@@ -392,7 +392,7 @@ npm run prod
 ![Laravel Mix](https://github.com/budostylz/e15/blob/master/Independent-Study/images/laravel-mix/css/sass2.PNG)
 
 ### Let's finally clean up our `master.blade.php` file.
-![Laravel Mix](https://github.com/budostylz/e15/blob/master/Independent-Study/images/laravel-mix/css/cleanup.PNG)
+![Laravel Mix](https://github.com/budostylz/e15/blob/master/Independent-Study/images/laravel-mix/cleanup.PNG)
 
 
 

@@ -406,7 +406,7 @@ npm run prod
 ### There is more configuration and setup using `Webpack` stand alone compare to `Laravel Mix`. `Webpack` can be incorporated to numerous web frameworks. `Laravel Mix` are only for Laravel applications. Which is better to use is base on developer preference. Personally I feel I have more control of my builds using `Webpack` stand alone in comparison to `Laravel Mix`.
 
 # Outro
-### We reviewed both `Webpack` and `Laravel Mix` asset build frameworks. We have build a simple web application using `Webpack` and understood basic concepts. We have visited `Laravel Mix` which uses `Webpack` under the hood to build our assets as well. Finally we compare/contract the two build frameworks. Review the above [resources](https://github.com/budostylz/e15/tree/master/Independent-Study#resources) to discover more of `Webpack` and `Laravel Mix` capabilities.
+### We reviewed both `Webpack` and `Laravel Mix` asset build frameworks. We have build a simple web application using `Webpack` and understood basic concepts. We have visited `Laravel Mix` which uses `Webpack` under the hood to build our assets as well within a Laravel web application. Finally we compare/contrast the two build frameworks. Review the above [resources](https://github.com/budostylz/e15/tree/master/Independent-Study#resources) to discover more of `Webpack` and `Laravel Mix` capabilities.
 
 
 

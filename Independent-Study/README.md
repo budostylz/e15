@@ -26,6 +26,12 @@ front-end assets to optimize web applications. First we will review web pack and
 
 ### The first step is downloading node.js. You can type the following commands in your terminal to see if it's on your system.
 
+```ubuntu
+node -v
+npm -v
+
+```
+
 ![node check](https://github.com/budostylz/e15/blob/master/Independent-Study/images/webpack-standalone/checknode.PNG)
 
 ### If you don't see either the node or npm version above, download node js [here](https://nodejs.org/en/). You will direct to the node site.
@@ -41,11 +47,18 @@ front-end assets to optimize web applications. First we will review web pack and
 
 ### We'll create a new package.json in our project with the following command.
 
+```ubuntu
+npm init -y
+
+```
+
 ### You should see the output below.
 ![package.json](https://github.com/budostylz/e15/blob/master/Independent-Study/images/webpack-standalone/js/image3.PNG)
 
 ### Our package.json is created in our project below.
 ![package.json](https://github.com/budostylz/e15/blob/master/Independent-Study/images/webpack-standalone/js/image4.PNG)
+
+### Next we'll install our node dependencies.
 
 
 

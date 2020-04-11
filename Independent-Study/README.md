@@ -378,6 +378,7 @@ npm run dev
 npm run prod
 
 ```
+### You should see similar output in your terminal below.
 ![Laravel Mix](https://github.com/budostylz/e15/blob/master/Independent-Study/images/laravel-mix/prod.PNG)
 
 

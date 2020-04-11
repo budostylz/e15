@@ -243,6 +243,11 @@ module: {
 ### Laravel comes out of box with a `webpack.mix.js` file located at the root directory which corresponds to `webpack.config.js` that we been working with.
 ![Laravel Mix](https://github.com/budostylz/e15/blob/master/Independent-Study/images/laravel-mix/webpack.mix.js_dir.PNG)
 
+### The cool thing about Laravel is `package.json` comes out of the box located at the root directory. We do not have to manually create it like standalone webpack.
+![Laravel Mix](https://github.com/budostylz/e15/blob/master/Independent-Study/images/laravel-mix/package.json.js_dir.PNG)
+
+
+
 
 
 

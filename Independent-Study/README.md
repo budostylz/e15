@@ -81,6 +81,12 @@ npm install webpack webpack-cli --save-dev
 ### Webpack calls this neat concept the [dependency graph](https://webpack.js.org/).
 ![node dependencies and webpack](https://github.com/budostylz/e15/blob/master/Independent-Study/images/webpack-standalone/dependency-graph1.PNG)
 
+### We'll move `hideResults.js` to our `src` folder. 
+### Remove `jquery-3.4.1.min.js`, since we'll be referencing jQuery from the `node_modules` in the following steps.
+### We can get rid of the js folder since we will not be using it.
+![node dependencies and webpack](https://github.com/budostylz/e15/blob/master/Independent-Study/images/webpack-standalone/js/image9.PNG)
+
+
 
 
 

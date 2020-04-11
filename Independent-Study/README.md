@@ -25,7 +25,7 @@ front-end assets to optimize web applications. First we will review web pack and
 
 ![p1](https://github.com/budostylz/e15/blob/master/Independent-Study/images/webpack-standalone/js/image00PNG.PNG)
 
-### The first step is downloading node.js. You can type the following commands in your shell to see if it's on your system.
+### The first step is downloading node.js. You can type the following commands in your terminal to see if it's on your system.
 
 ```ubuntu
 node -v

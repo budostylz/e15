@@ -72,7 +72,7 @@ npm install webpack webpack-cli --save-dev
 
 ![node dependencies and webpack](https://github.com/budostylz/e15/blob/master/Independent-Study/images/webpack-standalone/js/image6.PNG)
 
-![node dependencies and webpack](https://github.com/budostylz/e15/blob/master/Independent-Study/images/webpack-standalone/js/image7.1.PNG)
+![node dependencies and webpack](https://github.com/budostylz/e15/blob/master/Independent-Study/images/webpack-standalone/js/image7.PNG)
 
 ### Let us do some clean up and changes to our project directory structure.
 ### Next we'll create our `src` and `dist` folders.

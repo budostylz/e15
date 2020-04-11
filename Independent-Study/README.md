@@ -38,7 +38,7 @@ npm -v
 ```
 ![node check](https://github.com/budostylz/e15/blob/master/Independent-Study/images/webpack-standalone/checknode.PNG)
 
-### If you don't see either the node or npm version above, download node js here [node](https://nodejs.org/en/). You will be direct to the node site.
+### If you don't see either the node or npm version above, download node js [here](https://nodejs.org/en/). You will be direct to the node site.
 
 ![node site](https://github.com/budostylz/e15/blob/master/Independent-Study/images/webpack-standalone/js/image0.PNG)
 

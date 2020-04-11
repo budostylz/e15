@@ -1,6 +1,6 @@
 # Intro
 
-## `Webpack` stand alone or `Laravel Mix`?
+## `Webpack` Stand Alone or `Laravel Mix`?
 
 *By: Shaun Lewis*
 

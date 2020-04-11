@@ -341,6 +341,21 @@ npm run dev
 ### Let's copy the contents of `view.scss` to `app.scss`
 ![Laravel Mix](https://github.com/budostylz/e15/blob/master/Independent-Study/images/laravel-mix/css/image1.PNG)
 
+### Let's define a css style for our `bootstrap.min.css` file within `webpack.mix.js`
+![Laravel Mix](https://github.com/budostylz/e15/blob/master/Independent-Study/images/laravel-mix/css/bootstrap.PNG)
+
+### Write the following code to your `webpack.min.js` file.
+
+```javascript
+    mix.styles([
+    'node_modules/bootstrap/dist/css/bootstrap.min.css'
+
+], 'public/css/libStyles.css')
+
+
+```
+### Your `webpack.mix.js` file should look similar. 
+![Laravel Mix](https://github.com/budostylz/e15/blob/master/Independent-Study/images/laravel-mix/css/webpack.mix.js.PNG)
 
 
 

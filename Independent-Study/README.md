@@ -374,8 +374,12 @@ npm run dev
 ![Laravel Mix](https://github.com/budostylz/e15/blob/master/Independent-Study/images/laravel-mix/css/dev.PNG)
 
 
-### Both of our `sass` and `css` bundles are in our `css` directory.
+### Both our `sass` and `css` bundles are in our `css` directory as define within `webpack.mix.js`.
 ![Laravel Mix](https://github.com/budostylz/e15/blob/master/Independent-Study/images/laravel-mix/css/css.PNG)
+
+### Opening the app.css file will see our `css` output from our `sass` asset.
+![Laravel Mix](https://github.com/budostylz/e15/blob/master/Independent-Study/images/laravel-mix/css/css.PNG)
+
 
 
 

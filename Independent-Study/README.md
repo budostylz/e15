@@ -226,7 +226,7 @@ module: {
 ![node dependencies and webpack](https://github.com/budostylz/e15/blob/master/Independent-Study/images/webpack-standalone/console.PNG)
 
 ### That was a handful but we only scratch the surface of webpack capabilities. 
-### Now that we have a basic understanding of webpack concepts, let's turn to `Laravel Mix` which uses webpack under the hood.
+### Now that we have a basic understanding of webpack concepts, let's turn to [Laravel Mix](https://laravel.com/docs/6.x/mix) which uses webpack under the hood.
 
 # Laravel Mix Demo
 
@@ -272,13 +272,14 @@ module: {
 
 ## JavaScript Assets
 
-### Looking back at our `master.blade.php file` we have five libraries that we need to import in our `node_modules` directory. 
+### Looking back at our `master.blade.php file` we have five vendor libraries that we need to import in our `node_modules` directory. 
     1. jquery-slim
     2. popper.js
     3. bootstrap.js
     4. lodash.js
     5. fuse.js
 
+### `drinkModal.js` and `drink.js` are our custom scripts.
 ![Laravel Mix](https://github.com/budostylz/e15/blob/master/Independent-Study/images/laravel-mix/image1.PNG)
 
 
@@ -293,6 +294,22 @@ npm install jquery-slim popper.js bootstrap lodash fuse.js
 ### Verify these dependencies are within your `package.json`
 ![Laravel Mix](https://github.com/budostylz/e15/blob/master/Independent-Study/images/laravel-mix/dependencies.PNG)
 
+### Next we'll define all our JavaScript assets in `webpack.mix.js` with the below code.
+
+```javascript
+
+mix.scripts([
+    'node_modules/jquery-slim/dist/jquery.slim.min.js',
+    'node_modules/popper.js/umd/popper.min.js',
+    'node_modules/lodash/lodash.min.js',
+    'public/libs/fuse.js',
+    'public/js/drinkModel.js',
+    'public/js/drink.js'
+
+], 'public/js/bundle.js');
+
+
+```
 
 
 

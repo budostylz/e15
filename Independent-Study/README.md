@@ -21,7 +21,9 @@ front-end assets to optimize web applications. First we will review web pack and
 [npm-package.json](https://docs.npmjs.com/files/package.json)
 
 
-## Webpack Demo
+# Webpack Demo
+
+## Configuration
 
 ### Lets start with our Previous p1 project below.
 ![p1](https://github.com/budostylz/e15/blob/master/Independent-Study/images/webpack-standalone/js/image00PNG.PNG)
@@ -89,6 +91,8 @@ npm install webpack webpack-cli --save-dev
 ### Webpack calls this neat concept the [dependency graph](https://webpack.js.org/).
 ![node dependencies and webpack](https://github.com/budostylz/e15/blob/master/Independent-Study/images/webpack-standalone/dependency-graph1.PNG)
 
+## JavaScript Assets
+
 ### We'll move `hideResults.js` to our `src` folder. 
 ### Remove `jquery-3.4.1.min.js`, since we'll be referencing jQuery from the `node_modules` in the following steps.
 ### We can get rid of the js folder since we'll no longer need it.
@@ -115,9 +119,9 @@ npm install webpack webpack-cli --save-dev
 
 
 
-## Laravel Mix Demo
+# Laravel Mix Demo
 
-## Compare/Contrast Webpack and Laravel Mix
+# Compare/Contrast Webpack and Laravel Mix
 
 
 

@@ -342,7 +342,7 @@ npm run dev
 ![Laravel Mix](https://github.com/budostylz/e15/blob/master/Independent-Study/images/laravel-mix/css/image1.PNG)
 
 ### Let's define a css style for our `bootstrap.min.css` file within `webpack.mix.js`.
-### We could just leave the `bootstrap.min.css` file asset from the cdn as is but lets demostrate how to compile css files.
+### We could just leave the `bootstrap.min.css` file asset from the cdn as is but lets demostrate how to compile css files using `Laravel Mix`.
 ![Laravel Mix](https://github.com/budostylz/e15/blob/master/Independent-Study/images/laravel-mix/css/bootstrap.PNG)
 
 ### Write the following code to your `webpack.min.js` file.

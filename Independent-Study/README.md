@@ -44,6 +44,13 @@ npm -v
 ### Currently this is p1 project structure.
 ![project structure](https://github.com/budostylz/e15/blob/master/Independent-Study/images/webpack-standalone/js/image1.1.PNG)
 
+### Looking at out index.php file we see the following assets:
+    1. stringGenerator.css
+    2. jquery-3.4.1.min.js
+    3. hideResults.js
+
+![before](https://github.com/budostylz/e15/blob/master/Independent-Study/images/webpack-standalone/before.PNG)
+
 ## Laravel Mix Demo
 
 ## Compare/Contrast Webpack and Laravel Mix

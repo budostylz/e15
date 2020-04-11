@@ -146,9 +146,16 @@ module.exports = {
 
 ### Next type in the following command in your terminal
 
+
+
 ```ubuntu
 npm run develop
 ```
+
+### Look for the following output within your terminal.
+![node dependencies and webpack](https://github.com/budostylz/e15/blob/master/Independent-Study/images/webpack-standalone/devbuild.PNG)
+
+
 
 # Laravel Mix Demo
 

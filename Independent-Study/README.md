@@ -77,8 +77,8 @@ npm install webpack webpack-cli --save-dev
 ![node dependencies and webpack](https://github.com/budostylz/e15/blob/master/Independent-Study/images/webpack-standalone/js/image8.PNG)
 
 ### The `src` folder will serve as our entry point for webpack to locate our assets. 
-### The `dist` folder will serve as our output build of our assets. 
-### Webpack calls this neat concept the dependency graph.
+### The `dist` folder will serve as our output build for our assets. 
+### Webpack calls this neat concept the [dependency graph](https://webpack.js.org/).
 ![node dependencies and webpack](https://github.com/budostylz/e15/blob/master/Independent-Study/images/webpack-standalone/dependency-graph1.PNG)
 
 

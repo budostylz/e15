@@ -327,6 +327,12 @@ npm run dev
 ### We can view out JavaScript assets inside `bundle.js`
 ![Laravel Mix](https://github.com/budostylz/e15/blob/master/Independent-Study/images/laravel-mix/js/assets.PNG)
 
+## Saas Assets
+
+### Currently our `Saas` asset is wihin our `css` folder within our `public` directory.
+![Laravel Mix](https://github.com/budostylz/e15/blob/master/Independent-Study/images/laravel-mix/css/image1.PNG)
+
+
 
 
 

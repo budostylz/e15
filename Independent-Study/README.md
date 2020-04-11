@@ -76,10 +76,13 @@ npm install webpack webpack-cli --save-dev
 
 ![node dependencies and webpack](https://github.com/budostylz/e15/blob/master/Independent-Study/images/webpack-standalone/js/image7.PNG)
 
-### Let's turn to our `package.json`, add/set `private` attribute to `true`, finally removing our `main` attribute since we'll define that in our `webpack.config.js` in the next steps.
+### Let's turn to our `package.json`, add/set `private` property to `true`, finally removing our `main` property since we'll define that in our `webpack.config.js` in the next steps.
 ### Setting `private` to true prevents npm from [publishing](https://stackoverflow.com/questions/7314849/what-is-purpose-of-the-property-private-in-package-json) it.
-### The `main` attribute defines our entry point for our assets build.
+### The `main` property defines our entry point for our assets build.
 ![package.json](https://github.com/budostylz/e15/blob/master/Independent-Study/images/webpack-standalone/js/image11.PNG)
+
+### We're going to add a scripts property to define our life cycle build scripts.
+### The develop and build scripts are the ones that we will use in the next steps.
 
 ![package.json](https://github.com/budostylz/e15/blob/master/Independent-Study/images/webpack-standalone/scripts.PNG)
 

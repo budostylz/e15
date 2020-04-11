@@ -6,7 +6,7 @@ Dynamic web applications require front-end technologies where browser speed and 
 assets(css, image, font files, etc) are crucial. This research will focus on using technology to compile, bundle and map
 front-end assets to optimize web applications. First we will review web pack and demo a simple web application to understand the concept. Next, we will demo a basic application using Laravel Mix which uses webpack under the hood to capture the concept of optimizing Laravel web applications. Finally, we'll compare the two approches (stand alone Webpack or Laravel Mix) to get a better idea of which approach to use when building Laravel applications.
 
-### Resource
+### Resources
 
 [Webpack](https://webpack.js.org/)
 
@@ -21,11 +21,11 @@ front-end assets to optimize web applications. First we will review web pack and
 
 ## Webpack Demo
 
-### Lets start with our Previous p1 project.
+### Lets start with our Previous p1 project below.
 
 ![p1](https://github.com/budostylz/e15/blob/master/Independent-Study/images/webpack-standalone/js/image00PNG.PNG)
 
-### The first step downloading node.js. You can check to see if it's on your system.
+### The first step is downloading node.js. You can check to see if it's on your system.
 
 ```ubuntu
 node -v
@@ -36,6 +36,12 @@ node -v
 npm -v
 
 ```
+![node check](https://github.com/budostylz/e15/blob/master/Independent-Study/images/webpack-standalone/checknode.PNG)
+
+If you don't see either the node or npm version, download node js here [node](https://nodejs.org/en/). You will be
+direct to the node site.
+
+[node site](https://github.com/budostylz/e15/blob/master/Independent-Study/images/webpack-standalone/js/image0.PNG)
 
 
 ## Laravel Mix Demo

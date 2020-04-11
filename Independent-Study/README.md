@@ -116,7 +116,7 @@ npm install webpack webpack-cli --save-dev
 ```
 ![node dependencies and webpack](https://github.com/budostylz/e15/blob/master/Independent-Study/images/webpack-standalone/js/image12.PNG)
 
-![node dependencies and webpack](https://github.com/budostylz/e15/blob/master/Independent-Study/images/webpack-standalone/js/image130.PNG)
+![node dependencies and webpack](https://github.com/budostylz/e15/blob/master/Independent-Study/images/webpack-standalone/js/image13.PNG)
 
 ### We'll import jQuery into our `hideResults.js` file.
 ![node dependencies and webpack](https://github.com/budostylz/e15/blob/master/Independent-Study/images/webpack-standalone/js/image14.PNG)

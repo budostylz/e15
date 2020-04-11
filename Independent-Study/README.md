@@ -310,6 +310,9 @@ mix.scripts([
 
 
 ```
+### Your `webpack.mix.js` file should look something like this.
+![Laravel Mix](https://github.com/budostylz/e15/blob/master/Independent-Study/images/laravel-mix/js/webpack.mix1.PNG)
+
 
 
 

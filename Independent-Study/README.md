@@ -124,18 +124,20 @@ npm install webpack webpack-cli --save-dev
 ### Within `webpack.config.js` we'll write the following code.
 
 ```javascript
-const path = require('path')
+const path = require('path')//node module for working with your application's file paths
 
 module.exports = {
-    entry: './src/hideResults.js',
+    entry: './src/hideResults.js',//entry point for our asset builds
     output: {
-        filename: 'main.js',
-        path: path.resolve(__dirname, 'dist')
+        filename: 'main.js',//output file for our assets build
+        path: path.resolve(__dirname, 'dist')//defining our output directory for our output file build
     }
 }
 
 
 ```
+
+
 
 
 

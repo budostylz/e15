@@ -160,7 +160,7 @@ npm run develop
 ### `Asset` represents your output asset file located in the `dist` directory.
 ### `Size`  represents the size of the asset file.
 ### `Chunks` and `Chunk Names` represents our complete assets. Right now our chunk is called `main` because we define one output file `main` and one entry file `hideResults` within `web.config.js`.
-### You can define more assets as entry points within `web.config.js`. This is called [Code Splitting](https://webpack.js.org/guides/code-splitting/).
+### You can define more assets as entry points within `web.config.js`. This is called [code splitting](https://webpack.js.org/guides/code-splitting/).
 
 ### Now we can reference our `main.js` file to replace our previous JavaScript assets.
 ![node dependencies and webpack](https://github.com/budostylz/e15/blob/master/Independent-Study/images/webpack-standalone/mainjs.PNG)

@@ -25,6 +25,19 @@ front-end assets to optimize web applications. First we will review web pack and
 
 ![p1](https://github.com/budostylz/e15/blob/master/Independent-Study/images/webpack-standalone/js/image00PNG.PNG)
 
+The first step downloading node.js. You can check to see if it's on your system.
+
+```ubuntu
+node -v
+
+```
+
+```ubuntu
+npm -v
+
+```
+
+
 ## Laravel Mix Demo
 
 ## Compare/Contrast Webpack and Laravel Mix

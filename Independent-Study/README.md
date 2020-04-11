@@ -360,7 +360,6 @@ npm run dev
 
 ### We're pulling our input `bootstrap.min.css` asset from `node_modules` and bundling to `libStyles.css` at `public/css`.
 
-## Compilation
 
 ### Let's run the following command in our terminal.
 

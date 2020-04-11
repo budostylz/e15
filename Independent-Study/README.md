@@ -341,7 +341,8 @@ npm run dev
 ### Let's copy the contents of `view.scss` to `app.scss`
 ![Laravel Mix](https://github.com/budostylz/e15/blob/master/Independent-Study/images/laravel-mix/css/image1.PNG)
 
-### Let's define a css style for our `bootstrap.min.css` file within `webpack.mix.js`
+### Let's define a css style for our `bootstrap.min.css` file within `webpack.mix.js`.
+### We could just leave the `bootstrap.min.css` file asset from the cdn as is but lets demostrate how to compile css files.
 ![Laravel Mix](https://github.com/budostylz/e15/blob/master/Independent-Study/images/laravel-mix/css/bootstrap.PNG)
 
 ### Write the following code to your `webpack.min.js` file.
@@ -357,7 +358,20 @@ npm run dev
 ### Your `webpack.mix.js` file should look similar. 
 ![Laravel Mix](https://github.com/budostylz/e15/blob/master/Independent-Study/images/laravel-mix/css/webpack.mix.js.PNG)
 
-### We're pulling our input `bootstrap` asset from `node_modules` and bundling to `libStyles.css` at `public/css`.
+### We're pulling our input `bootstrap.min.css` asset from `node_modules` and bundling to `libStyles.css` at `public/css`.
+
+## Compilation
+
+### Let's run the following command in our terminal.
+
+```ubuntu
+
+npm run dev
+
+```
+
+### You should see similar output below.
+![Laravel Mix](https://github.com/budostylz/e15/blob/master/Independent-Study/images/laravel-mix/css/dev.PNG)
 
 
 

@@ -18,6 +18,8 @@ front-end assets to optimize web applications. First we will review web pack and
 
 [Compiling Assets (Mix)](https://laravel.com/docs/6.x/mix)
 
+[package.json configs](https://docs.npmjs.com/files/package.json)
+
 
 ## Webpack Demo
 
@@ -89,6 +91,8 @@ npm install webpack webpack-cli --save-dev
 ## We'll remove the JavaScript assets from our `index.php`.
 ![node dependencies and webpack](https://github.com/budostylz/e15/blob/master/Independent-Study/images/webpack-standalone/js/image10.PNG)
 
+### Let's turn to our `package.json` and set `private` to `true` and remove our `main` entry.
+### 
 
 
 ## Laravel Mix Demo

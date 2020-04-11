@@ -338,6 +338,9 @@ npm run dev
 
 ![Laravel Mix](https://github.com/budostylz/e15/blob/master/Independent-Study/images/laravel-mix/css/sass.PNG)
 
+### Let's copy the contents of `view.scss` to `app.scss`
+![Laravel Mix](https://github.com/budostylz/e15/blob/master/Independent-Study/images/laravel-mix/css/image1.PNG)
+
 
 
 

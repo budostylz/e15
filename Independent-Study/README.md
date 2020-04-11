@@ -18,7 +18,7 @@ front-end assets to optimize web applications. First we will review web pack and
 
 [Compiling Assets (Mix)](https://laravel.com/docs/6.x/mix)
 
-[package.json configs](https://docs.npmjs.com/files/package.json)
+[npm-package.json](https://docs.npmjs.com/files/package.json)
 
 
 ## Webpack Demo

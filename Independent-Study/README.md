@@ -40,7 +40,7 @@ npm -v
 ### Currently this is p1 project structure.
 ![project structure](https://github.com/budostylz/e15/blob/master/Independent-Study/images/webpack-standalone/js/image1.1.PNG)
 
-### Looking at out index.php file we see the following css and script assets:
+### Looking at out `index.php` file we see the following css and script assets:
 
 
 ![before](https://github.com/budostylz/e15/blob/master/Independent-Study/images/webpack-standalone/before.PNG)
@@ -83,10 +83,11 @@ npm install webpack webpack-cli --save-dev
 
 ### We'll move `hideResults.js` to our `src` folder. 
 ### Remove `jquery-3.4.1.min.js`, since we'll be referencing jQuery from the `node_modules` in the following steps.
-### We can get rid of the js folder since we will not be using it.
+### We can get rid of the js folder since we'll no longer need it.
 ![node dependencies and webpack](https://github.com/budostylz/e15/blob/master/Independent-Study/images/webpack-standalone/js/image9.PNG)
 
-
+## We'll remove the JavaScript source files from our `index.php`.
+![node dependencies and webpack](https://github.com/budostylz/e15/blob/master/Independent-Study/images/webpack-standalone/js/image10.PNG)
 
 
 

@@ -91,9 +91,19 @@ npm install webpack webpack-cli --save-dev
 ## We'll remove the JavaScript assets from our `index.php`.
 ![node dependencies and webpack](https://github.com/budostylz/e15/blob/master/Independent-Study/images/webpack-standalone/js/image10.PNG)
 
+## Lets install jquery to our node_modules.
+
+```ubuntu
+  npm install jquery
+
+```
+![node dependencies and webpack](https://github.com/budostylz/e15/blob/master/Independent-Study/images/webpack-standalone/js/image12.PNG)
+
+
+
 ### Let's turn to our `package.json` and set `private` to `true` and remove our `main` entry since we'll define that in our `webpack.config.js` in the next steps.
 ### Setting `private` to true prevents npm from [publishing](https://stackoverflow.com/questions/7314849/what-is-purpose-of-the-property-private-in-package-json) it.
-![package,json](https://github.com/budostylz/e15/blob/master/Independent-Study/images/webpack-standalone/js/image11.PNG)
+![package.json](https://github.com/budostylz/e15/blob/master/Independent-Study/images/webpack-standalone/js/image11.PNG)
 
 
 

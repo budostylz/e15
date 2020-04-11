@@ -313,7 +313,7 @@ mix.scripts([
 ### Your `webpack.mix.js` file should look something like this. 
 ### [mix.scripts()](https://laravel.com/docs/6.x/mix/#vanilla-js) takes a collection of input assets within an array and one output asset.
 ### Our input directories are node_modules for our vendor assets and public for our custom assets. These will all bundle into `bundle.js` located at our `public` directory
-![Laravel Mix](https://github.com/budostylz/e15/blob/master/Independent-Study/images/laravel-mix/js/webpack.mix1.1.PNG)
+![Laravel Mix](https://github.com/budostylz/e15/blob/master/Independent-Study/images/laravel-mix/js/webpack.mix1.2.PNG)
 
 
 

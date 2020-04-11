@@ -199,7 +199,7 @@ module: {
 
 ```
 
-### Your `webpack.config.js` file should look like below image.
+### Your `webpack.config.js` file should look like this.
 ![node dependencies and webpack](https://github.com/budostylz/e15/blob/master/Independent-Study/images/webpack-standalone/sass/image3.PNG)
 
 

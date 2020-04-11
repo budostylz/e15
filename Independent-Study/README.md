@@ -23,7 +23,8 @@ front-end assets to optimize web applications. First we will review web pack and
 
 ### Lets start with our Previous p1 project below.
 
-![p1](https://github.com/budostylz/e15/blob/master/Independent-Study/images/webpack-standalone/js/image00PNG.PNG)
+<img align="left" width="100" height="100" src="https://github.com/budostylz/e15/blob/master/Independent-Study/images/webpack-standalone/js/image00PNG.PNG">
+
 
 ### The first step is downloading node.js. You can type the following commands in your terminal to see if it's on your system.
 

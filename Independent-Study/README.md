@@ -315,6 +315,16 @@ mix.scripts([
 ### Our input directories are node_modules for our vendor assets and public for our custom assets. These will all bundle into `bundle.js` located at our `public` directory
 ![Laravel Mix](https://github.com/budostylz/e15/blob/master/Independent-Study/images/laravel-mix/js/webpack.mix1.2.PNG)
 
+### Let's bundle our JavaScript assets by running the following command in your terminal.
+
+```javascript
+npm run dev
+```
+
+### Our assets are bundled in `bundle.js` within our `public` directory.
+![Laravel Mix](https://github.com/budostylz/e15/blob/master/Independent-Study/images/laravel-mix/js/public1.PNG)
+
+
 
 
 

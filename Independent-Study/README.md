@@ -81,8 +81,8 @@ npm install webpack webpack-cli --save-dev
 ### The `main` property defines our entry point for our assets build.
 ![package.json](https://github.com/budostylz/e15/blob/master/Independent-Study/images/webpack-standalone/js/image11.PNG)
 
-### We're going to add a scripts property to define our life cycle build scripts.
-### The develop and build scripts are the ones that we will use in the next steps.
+### We're going to add a scripts property to define our [life cycle](https://docs.npmjs.com/files/package.json#scripts) build scripts.
+### The `develop` and `build` scripts are the ones that we will use in the next steps.
 
 ![package.json](https://github.com/budostylz/e15/blob/master/Independent-Study/images/webpack-standalone/scripts.PNG)
 

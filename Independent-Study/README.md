@@ -394,17 +394,14 @@ npm run prod
 ### Let's finally clean up our `master.blade.php` file.
 ![Laravel Mix](https://github.com/budostylz/e15/blob/master/Independent-Study/images/laravel-mix/cleanup.PNG)
 
+### Finally we can view and analyze our assets in browser's console
+![Laravel Mix](https://github.com/budostylz/e15/blob/master/Independent-Study/images/laravel-mix/consolecss.PNG)
 
-
-
-
-
-
-
-
+![Laravel Mix](https://github.com/budostylz/e15/blob/master/Independent-Study/images/laravel-mix/consolejs.PNG)
 
 
 # Compare/Contrast Webpack and Laravel Mix
+
 
 
 

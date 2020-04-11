@@ -144,6 +144,12 @@ module.exports = {
 
 ```
 
+### Next type in the following command in your terminal
+
+```ubuntu
+npm run develop
+```
+
 # Laravel Mix Demo
 
 # Compare/Contrast Webpack and Laravel Mix

@@ -89,7 +89,7 @@ npm install webpack webpack-cli --save-dev
 
 
 
-### Let us do some clean up and changes to our project directory structure.
+### Let's do some clean up and changes to our project directory structure.
 ### Next we'll create our `src` and `dist` folders.
 ![node dependencies and webpack](https://github.com/budostylz/e15/blob/master/Independent-Study/images/webpack-standalone/js/image8.PNG)
 
@@ -226,16 +226,20 @@ module: {
 ![node dependencies and webpack](https://github.com/budostylz/e15/blob/master/Independent-Study/images/webpack-standalone/console.PNG)
 
 ### That was a handful but we only scratch the surface of webpack capabilities. 
-### Now that we have a basic understanding of webpack concepts, let us turn to `Laravel Mix` which uses webpack under the hood.
+### Now that we have a basic understanding of webpack concepts, let's turn to `Laravel Mix` which uses webpack under the hood.
 
 # Laravel Mix Demo
 
 ## Configuration
-### As the same as webpack, you will need to install and verify node.js is present on your computer.
+### As the same with webpack, you will need to install and verify node.js is present on your computer.
 ### Check the above webpack [configuration section](https://github.com/budostylz/e15/tree/master/Independent-Study#Configuration) for this step.
 
 ### We will apply `Laravel Mix` to our p2 project.
 ![Laravel Mix](https://github.com/budostylz/e15/blob/master/Independent-Study/images/laravel-mix/image0.PNG)
+
+### Let's look at our assets that we will need to bundle located at within Laravel's master view file name `master.blade.php`
+![Laravel Mix](https://github.com/budostylz/e15/blob/master/Independent-Study/images/laravel-mix/image1.PNG)
+
 
 
 

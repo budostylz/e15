@@ -373,6 +373,14 @@ npm run dev
 ### You should see similar output below.
 ![Laravel Mix](https://github.com/budostylz/e15/blob/master/Independent-Study/images/laravel-mix/css/dev.PNG)
 
+### Let's run a production build to compress our assets even more. Run the below command.
+```ubuntu
+npm run prod
+
+```
+![Laravel Mix](https://github.com/budostylz/e15/blob/master/Independent-Study/images/laravel-mix/prod.PNG)
+
+
 
 ### Both our `sass` and `css` bundles are in our `css` directory as define within `webpack.mix.js`.
 ### Our `libStyles.css` file contains our `bootstrap.min.css`. This scales if neeed to bundle aditional `css` assets.
@@ -381,7 +389,6 @@ npm run dev
 
 ### Opening the app.css file will see our `css` output from our `sass` asset.
 ![Laravel Mix](https://github.com/budostylz/e15/blob/master/Independent-Study/images/laravel-mix/css/sass2.PNG)
-
 
 
 

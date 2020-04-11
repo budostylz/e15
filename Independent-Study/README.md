@@ -86,7 +86,7 @@ npm install webpack webpack-cli --save-dev
 ### We can get rid of the js folder since we'll no longer need it.
 ![node dependencies and webpack](https://github.com/budostylz/e15/blob/master/Independent-Study/images/webpack-standalone/js/image9.PNG)
 
-## We'll remove the JavaScript source files from our `index.php`.
+## We'll remove the JavaScript assets from our `index.php`.
 ![node dependencies and webpack](https://github.com/budostylz/e15/blob/master/Independent-Study/images/webpack-standalone/js/image10.PNG)
 
 

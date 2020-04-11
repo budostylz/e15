@@ -81,6 +81,10 @@ npm install webpack webpack-cli --save-dev
 ### The `main` attribute defines our entry point for our assets build.
 ![package.json](https://github.com/budostylz/e15/blob/master/Independent-Study/images/webpack-standalone/js/image11.PNG)
 
+![package.json](https://github.com/budostylz/e15/blob/master/Independent-Study/images/webpack-standalone/scripts.PNG)
+
+
+
 
 ### Let us do some clean up and changes to our project directory structure.
 ### Next we'll create our `src` and `dist` folders.
@@ -136,12 +140,6 @@ module.exports = {
 
 
 ```
-
-
-
-
-
-
 
 # Laravel Mix Demo
 

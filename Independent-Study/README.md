@@ -378,7 +378,7 @@ npm run dev
 ![Laravel Mix](https://github.com/budostylz/e15/blob/master/Independent-Study/images/laravel-mix/css/css.PNG)
 
 ### Opening the app.css file will see our `css` output from our `sass` asset.
-![Laravel Mix](https://github.com/budostylz/e15/blob/master/Independent-Study/images/laravel-mix/css/css.PNG)
+![Laravel Mix](https://github.com/budostylz/e15/blob/master/Independent-Study/images/laravel-mix/css/sass2.PNG)
 
 
 

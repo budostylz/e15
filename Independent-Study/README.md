@@ -230,6 +230,13 @@ module: {
 
 # Laravel Mix Demo
 
+## Configuration
+### As the same as webpack, you will need to install and verify node.js is present on your computer.
+### Check the above webpack [configuration section](https://github.com/budostylz/e15/tree/master/Independent-Study#Configuration) for this step.
+
+### We will apply `Laravel Mix` to our p2 project.
+![Laravel Mix](https://github.com/budostylz/e15/blob/master/Independent-Study/images/laravel-mix/image0.PNG)
+
 
 
 # Compare/Contrast Webpack and Laravel Mix

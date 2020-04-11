@@ -202,6 +202,10 @@ module: {
 ### Your `webpack.config.js` file should look like this.
 ![node dependencies and webpack](https://github.com/budostylz/e15/blob/master/Independent-Study/images/webpack-standalone/sass/image3.PNG)
 
+### Next we will move our original `stringGenerator.scss` file to our `src` directory.
+## We can get rid of the `css` directory since that `sass` asset will output to `dist` directory.
+![node dependencies and webpack](https://github.com/budostylz/e15/blob/master/Independent-Study/images/webpack-standalone/sass/image4.PNG)
+
 
 
 

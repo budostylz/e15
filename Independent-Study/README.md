@@ -21,7 +21,7 @@ front-end assets to optimize web applications. First we will review web pack and
 
 ## Webpack Demo
 
-#### Lets start with our Previous p1 project.
+### Lets start with our Previous p1 project.
 
 ![p1](https://github.com/budostylz/e15/blob/master/Independent-Study/images/webpack-standalone/js/image00PNG.PNG)
 

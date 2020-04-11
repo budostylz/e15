@@ -250,8 +250,14 @@ module: {
 
 
 
-### The cool thing about Laravel is `package.json` comes out of the box located at the root directory. We do not have to manually create it like standalone webpack.
+### The cool thing about Laravel is `package.json` comes out of the box located at the root directory. We do not have to manually create it like standalone webpack. 
+### The `private` and `scripts` property are already configured which saves us time developing this application.
 ![Laravel Mix](https://github.com/budostylz/e15/blob/master/Independent-Study/images/laravel-mix/package.json.js_dir.PNG)
+
+![Laravel Mix](https://github.com/budostylz/e15/blob/master/Independent-Study/images/laravel-mix/package.json.PNG)
+
+
+
 
 ### We will need to create our `node_modules` to install our dependencies. Run this command in your terminal.
 
@@ -260,9 +266,13 @@ module: {
 
 ```
 
+### Verify the node_modules directory is created 
+
 ![Laravel Mix](https://github.com/budostylz/e15/blob/master/Independent-Study/images/laravel-mix/node_modules_dir.PNG)
 
+## JavaScript Assets
 
+### Let's bundle our JavaScript assets.
 
 
 

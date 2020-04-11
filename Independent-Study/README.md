@@ -111,7 +111,7 @@ npm install webpack webpack-cli --save-dev
 
 ![node dependencies and webpack](https://github.com/budostylz/e15/blob/master/Independent-Study/images/webpack-standalone/js/image13.PNG)
 
-### We'll import jQuery into our `hideResults.js` file
+### We'll import jQuery into our `hideResults.js` file.
 ![node dependencies and webpack](https://github.com/budostylz/e15/blob/master/Independent-Study/images/webpack-standalone/js/image14.PNG)
 
 
@@ -121,7 +121,21 @@ npm install webpack webpack-cli --save-dev
 ### Create a `webpack.config.js` file at the root directory
 ![node dependencies and webpack](https://github.com/budostylz/e15/blob/master/Independent-Study/images/webpack-standalone/js/image14.1.PNG)
 
+### Within `webpack.config.js` we'll write the following code.
 
+```javascript
+const path = require('path')
+
+module.exports = {
+    entry: './src/hideResults.js',
+    output: {
+        filename: 'main.js',
+        path: path.resolve(__dirname, 'dist')
+    }
+}
+
+
+```
 
 
 

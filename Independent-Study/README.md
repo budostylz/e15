@@ -36,18 +36,18 @@ npm -v
 
 ```
 
-![node check](https://github.com/budostylz/e15/blob/master/Independent-Study/images/webpack-standalone/checknode.PNG)
+![node dependencies and webpack](https://github.com/budostylz/e15/blob/master/Independent-Study/images/webpack-standalone/checknode.PNG)
 
 ### If you don't see either the node or npm version above, download node js [here](https://nodejs.org/en/). You will direct to the node site.
-![node site](https://github.com/budostylz/e15/blob/master/Independent-Study/images/webpack-standalone/js/image0.PNG)
+![node dependencies and webpack](https://github.com/budostylz/e15/blob/master/Independent-Study/images/webpack-standalone/js/image0.PNG)
 
 ### Currently this is p1 project structure.
-![project structure](https://github.com/budostylz/e15/blob/master/Independent-Study/images/webpack-standalone/js/image1.1.PNG)
+![node dependencies and webpack](https://github.com/budostylz/e15/blob/master/Independent-Study/images/webpack-standalone/js/image1.1.PNG)
 
 ### Looking at out `index.php` file we see the following css and script assets:
 
 
-![before](https://github.com/budostylz/e15/blob/master/Independent-Study/images/webpack-standalone/before.PNG)
+![node dependencies and webpack](https://github.com/budostylz/e15/blob/master/Independent-Study/images/webpack-standalone/before.PNG)
 
 ### We'll create a new package.json in our project with the following command.
 
@@ -57,10 +57,10 @@ npm init -y
 ```
 
 ### You should see the output below.
-![package.json](https://github.com/budostylz/e15/blob/master/Independent-Study/images/webpack-standalone/js/image3.PNG)
+![node dependencies and webpack](https://github.com/budostylz/e15/blob/master/Independent-Study/images/webpack-standalone/js/image3.PNG)
 
 ### Our package.json is created in our project below.
-![package.json](https://github.com/budostylz/e15/blob/master/Independent-Study/images/webpack-standalone/js/image4.PNG)
+![node dependencies and webpack](https://github.com/budostylz/e15/blob/master/Independent-Study/images/webpack-standalone/js/image4.PNG)
 
 ### Next we'll install our node dependencies and our `webpack`.
 ```ubuntu
@@ -79,12 +79,12 @@ npm install webpack webpack-cli --save-dev
 ### Let's turn to our `package.json`, add/set `private` property to `true`, finally removing our `main` property since we'll define that in our `webpack.config.js` in the next steps.
 ### Setting `private` to true prevents npm from [publishing](https://stackoverflow.com/questions/7314849/what-is-purpose-of-the-property-private-in-package-json) it.
 ### The `main` property defines our entry point for our assets build.
-![package.json](https://github.com/budostylz/e15/blob/master/Independent-Study/images/webpack-standalone/js/image11.PNG)
+![node dependencies and webpack](https://github.com/budostylz/e15/blob/master/Independent-Study/images/webpack-standalone/js/image11.PNG)
 
 ### We're going to add a scripts property to define our [life cycle](https://docs.npmjs.com/files/package.json#scripts) build scripts.
 ### The `develop` and `build` scripts are the ones that we will use in the next steps.
 
-![package.json](https://github.com/budostylz/e15/blob/master/Independent-Study/images/webpack-standalone/scripts.PNG)
+![node dependencies and webpack](https://github.com/budostylz/e15/blob/master/Independent-Study/images/webpack-standalone/scripts.PNG)
 
 
 
@@ -170,6 +170,17 @@ npm run develop
  npm install --save-dev style-loader css-loader sass-loader node-sass
 
 ```
+
+### You should see the following loaders within your `package.json`.
+    1. css-loader
+    2. node-sass
+    3. sass-loader
+    4. style-loader
+
+![node dependencies and webpack](https://github.com/budostylz/e15/blob/master/Independent-Study/images/webpack-standalone/sass/image2.PNG)
+
+
+
 
 
 

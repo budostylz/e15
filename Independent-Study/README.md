@@ -371,8 +371,11 @@ npm run dev
 ```
 
 ### You should see similar output below.
-![Laravel Mix](https://github.com/budostylz/e15/blob/master/Independent-Study/images/laravel-mix/css/dev.PNG)
+![Laravel Mix](https://github.com/budostylz/e15/blob/master/Independent-Study/images/laravel-mix/css/css.PNG)
 
+
+### Both of our `sass` and `css` bundles are in our `css` directory.
+![Laravel Mix](https://github.com/budostylz/e15/blob/master/Independent-Study/images/laravel-mix/css/dev.PNG)
 
 
 

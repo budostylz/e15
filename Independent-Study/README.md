@@ -342,7 +342,8 @@ npm run dev
 ![Laravel Mix](https://github.com/budostylz/e15/blob/master/Independent-Study/images/laravel-mix/css/image2.PNG)
 
 ### Let's define a css style for our `bootstrap.min.css` file within `webpack.mix.js`.
-### We could just leave the `bootstrap.min.css` file asset from the cdn as is but lets demostrate how to compile css files using `Laravel Mix`.
+### We could just leave the `bootstrap.min.css` file asset from the cdn as is but there might be cases where you need to bundle multiple `css` files.
+### Let's demostrate how to do this using `Laravel Mix`.
 ![Laravel Mix](https://github.com/budostylz/e15/blob/master/Independent-Study/images/laravel-mix/css/bootstrap.PNG)
 
 ### Write the following code to your `webpack.min.js` file.
@@ -374,6 +375,8 @@ npm run dev
 
 
 ### Both our `sass` and `css` bundles are in our `css` directory as define within `webpack.mix.js`.
+### Our `libStyles.css` file contains our `bootstrap.min.css`. This scales if neeed to bundle aditional `css` assets.
+
 ![Laravel Mix](https://github.com/budostylz/e15/blob/master/Independent-Study/images/laravel-mix/css/css.PNG)
 
 ### Opening the app.css file will see our `css` output from our `sass` asset.

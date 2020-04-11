@@ -213,6 +213,18 @@ module: {
 ![node dependencies and webpack](https://github.com/budostylz/e15/blob/master/Independent-Study/images/webpack-standalone/after1.PNG)
 
 
+### Type in the following command within your terminal for a production build.
+
+```ubuntu
+ npm run build
+
+```
+
+### Our `main.js` asset is 91.8 kilobytes. Let's verify this in the browser's console.
+![node dependencies and webpack](https://github.com/budostylz/e15/blob/master/Independent-Study/images/webpack-standalone/prodbuild.PNG)
+
+![node dependencies and webpack](https://github.com/budostylz/e15/blob/master/Independent-Study/images/webpack-standalone/console.PNG)
+
 
 
 

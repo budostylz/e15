@@ -91,13 +91,16 @@ npm install webpack webpack-cli --save-dev
 ## We'll remove the JavaScript assets from our `index.php`.
 ![node dependencies and webpack](https://github.com/budostylz/e15/blob/master/Independent-Study/images/webpack-standalone/js/image10.PNG)
 
-## Lets install jquery to our node_modules.
+## Lets install jquery to our node_modules and confirm jQuery dependency within our `package.json`.
 
 ```ubuntu
   npm install jquery
 
 ```
 ![node dependencies and webpack](https://github.com/budostylz/e15/blob/master/Independent-Study/images/webpack-standalone/js/image12.PNG)
+
+![node dependencies and webpack](https://github.com/budostylz/e15/blob/master/Independent-Study/images/webpack-standalone/js/image13.PNG)
+
 
 
 
@@ -107,7 +110,9 @@ npm install webpack webpack-cli --save-dev
 
 
 
+## Laravel Mix Demo
 
+## Compare/Contrast Webpack and Laravel Mix
 
 
 

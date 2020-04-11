@@ -50,6 +50,16 @@ npm -v
 
 ![before](https://github.com/budostylz/e15/blob/master/Independent-Study/images/webpack-standalone/before.PNG)
 
+### We'll create a new package.json with the following command.
+
+```ubuntu
+npm init -y
+
+```
+### You should see the output below.
+![package.json](https://github.com/budostylz/e15/blob/master/Independent-Study/images/webpack-standalone/js/image3.PNG)
+
+
 ## Laravel Mix Demo
 
 ## Compare/Contrast Webpack and Laravel Mix

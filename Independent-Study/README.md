@@ -107,9 +107,7 @@ npm install webpack webpack-cli --save-dev
 
 
 
-## Laravel Mix Demo
 
-## Compare/Contrast Webpack and Laravel Mix
 
 
 

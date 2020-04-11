@@ -108,7 +108,7 @@ npm install webpack webpack-cli --save-dev
 ### We'll remove the JavaScript assets from our `index.php`.
 ![node dependencies and webpack](https://github.com/budostylz/e15/blob/master/Independent-Study/images/webpack-standalone/js/image10.PNG)
 
-### Lets install jquery to our node_modules and confirm jQuery dependency within our `package.json`.
+### Lets install jquery to our `node_modules` and confirm jQuery dependency within our `package.json`.
 
 ```ubuntu
   npm install jquery
@@ -245,6 +245,16 @@ module: {
 
 ### The cool thing about Laravel is `package.json` comes out of the box located at the root directory. We do not have to manually create it like standalone webpack.
 ![Laravel Mix](https://github.com/budostylz/e15/blob/master/Independent-Study/images/laravel-mix/package.json.js_dir.PNG)
+
+### We will need to create out `node_modules` to install our dependencies. Run this command in your terminal.
+
+```ubuntu
+    npm install
+
+```
+
+![Laravel Mix](https://github.com/budostylz/e15/blob/master/Independent-Study/images/laravel-mix/node_modules_dir.PNG)
+
 
 
 

@@ -65,7 +65,8 @@ npm install webpack webpack-cli --save-dev
 ```
 ![node dependencies and webpack](https://github.com/budostylz/e15/blob/master/Independent-Study/images/webpack-standalone/js/image5.PNG)
 
-### Our node modules with our webpack packages are installed. You can dive within the the node_modules directory to confirm your webpack packages or view the package.json dev-dependencies.
+### Our node modules with our webpack packages are installed. 
+### You can dive within the the node_modules directory to confirm your webpack packages or view the package.json dev-dependencies.
 
 ![node dependencies and webpack](https://github.com/budostylz/e15/blob/master/Independent-Study/images/webpack-standalone/js/image6.PNG)
 

@@ -5,7 +5,7 @@
 *By: Shaun Lewis*
 
 Dynamic web applications require front-end technologies where browser speed and optimization of an application's 
-assets(css, image, font files, etc) are crucial. This research will focus on using technology to compile, bundle and map
+assets(css, image, font files, etc) are crucial. This demo will focus on using technology to compile, bundle and map
 front-end assets to optimize web applications. First we will review web pack and demo a simple web application to understand the concept. Next, we will demo a basic application using Laravel Mix which uses Webpack under the hood to capture the concept of optimizing Laravel web applications. Finally, we'll compare the two approches (stand alone Webpack or Laravel Mix) to get a better idea of which approach to use when building Laravel applications.
 
 ### Resources

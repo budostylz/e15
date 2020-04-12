@@ -14,14 +14,22 @@ class PracticeController extends Controller
     public function practice7()
     {
         # First get a book to delete
-        $book = Book::where('author', '=', 'F. Scott Fitzgerald')->first();
+        $books = Book::where('author', 'LIKE', '%Rowling%')->get();
 
-        if (!$book) {
+        foreach ($books as $book) {
+            dump($book->author, $book->title);
+
+            $book->delete();
+            dump('Deletion complete; check the database to see if it worked...');
+
+        }
+
+        /*if (!$book) {
             dump('Did not delete- Book not found.');
         } else {
             $book->delete();
             dump('Deletion complete; check the database to see if it worked...');
-        }
+        }*/
     }
     
     /**
@@ -30,10 +38,21 @@ class PracticeController extends Controller
     public function practice6()
     {
         # First get a book to update
-        $book = Book::where('author', '=', 'F. Scott Fitzgerald')->first();
+        $books = Book::where('author', '=', 'J.K. Rowling')->get();
 
-        if (!$book) {
-            dump("Book not found, can not update.");
+        foreach ($books as $book) {
+            dump($book->author, $book->title);
+
+                # Change some properties
+                $book->author = 'JK Rowling';
+    
+                # Save the changes
+                $book->save();
+        }
+
+        /*
+        if (!$books) {
+            dump("Books are not found, can not update.");
         } else {
             # Change some properties
             $book->title = 'The Really Great Gatsby';
@@ -44,6 +63,7 @@ class PracticeController extends Controller
 
             dump('Update complete; check the database to confirm the update worked.');
         }
+        */
     }
 
     /**
@@ -62,19 +82,28 @@ class PracticeController extends Controller
      */
     public function practice4()
     {
-        //$book = new Book();
-        //$books = Book::where('title', 'LIKE', '%Harry Potter%')->get();
-        $books = Book::where('title', 'LIKE', '%Harry Potter%')->orWhere('published_year', '>=', 1998)->get();
 
+        
+        
+        
+        $book = new Book();
+        $books = Book::where('title', 'LIKE', '%Harry Potter%')->get();
+
+       
         if ($books->isEmpty()) {
             dump('No matches found');
         } else {
             dump($books->toArray());
 
             foreach ($books as $book) {
-                dump($book->title);
+                dump($book->published_year, $book->title);
             }
         }
+
+        
+
+        
+        
     }
 
     /**

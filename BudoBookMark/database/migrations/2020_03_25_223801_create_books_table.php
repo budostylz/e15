@@ -25,7 +25,7 @@ class CreateBooksTable extends Migration
             $table->string('slug');
             $table->string('title');
             $table->string('author');
-            $table->tinyInteger('published_year');
+            $table->smallInteger('published_year');
             $table->string('cover_url')->nullable(); # Here we use a column modifier to specify this column can be left empty (null)
             $table->string('info_url');
             $table->string('purchase_url');

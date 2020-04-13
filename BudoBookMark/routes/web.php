@@ -30,16 +30,24 @@ Route::get('/example', function () {
 Route::get('/', 'PageController@welcome');
 Route::get('/support', 'PageController@support');
 
-
-# Books
+# Create a Book
 Route::get('/books/create', 'BookController@create');
 Route::post('/books', 'BookController@store');
 
+
+#Update a book
+Route::get('/books/{id}/edit', 'BookController@edit');
+Route::put('/books/{id}', 'BookController@update');
+
+
+#Show all Books
 Route::get('/books', 'BookController@index');
+
+#Show a Book
 Route::get('/books/{slug?}', 'BookController@show');
 
+#Misc
 Route::get('/search', 'BookController@search');
-
 Route::get('/list', 'BookController@list');
 
 # This was an example route to show multiple parameters;

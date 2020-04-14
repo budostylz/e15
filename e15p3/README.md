@@ -10,6 +10,8 @@
 
 [How to Install Redis on Windows 10](https://www.youtube.com/watch?v=188Fy-oCw4w)
 
+[Laravel Redis](https://laravel.com/docs/7.x/redis)
+
 ### AWS
 [Official repository of the AWS SDK for PHP (@awsforphp) ](https://github.com/aws/aws-sdk-php)
 

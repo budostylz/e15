@@ -10,6 +10,8 @@
 
 [How to Install Redis on Windows 10](https://www.youtube.com/watch?v=188Fy-oCw4w)
 
+[Windows installation redis and PHP redis extension](http://www.programmersought.com/article/7348128128/)
+
 [Laravel Redis](https://laravel.com/docs/7.x/redis)
 
 ### AWS

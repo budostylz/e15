@@ -1,7 +1,7 @@
 # Project 3
 + By: *Shaun Lewis*
 + Production URL: <http://e15p3.budoapps.com/>
-+ Project Synopsis: Online Drink Website
++ Project Synopsis: Online Drink Ordering Website
 
 ## Outside resources
 

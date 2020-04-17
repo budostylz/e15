@@ -15,9 +15,9 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     
-    /*$app = LRedis::connection();
+    $appapp = LRedis::connection();
     $app->set("key5", "v5");
-    print_r($app->get("key5"));*/
+    print_r($app->get("key5"));
 
 });
 

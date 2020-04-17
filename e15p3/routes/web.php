@@ -14,5 +14,14 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    
+    $app = LRedis::connection();
+    $app->set("key5", "v5");
+    print_r($app->get("key5"));
+
 });
+
+//Route::get('/redis', 'RedisController@index');
+
+
+

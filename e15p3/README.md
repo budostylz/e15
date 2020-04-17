@@ -14,6 +14,8 @@
 
 [Laravel Redis](https://laravel.com/docs/7.x/redis)
 
+[Predis in Laravel - Redis Series Episode 1](https://www.youtube.com/watch?v=S_jA39Uayak&list=PLXM5y5j_b0mMdVF5p_2ug_b5tWqah_tfJ)
+
 ### AWS
 [Official repository of the AWS SDK for PHP (@awsforphp) ](https://github.com/aws/aws-sdk-php)
 

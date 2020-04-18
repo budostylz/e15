@@ -34,7 +34,7 @@
 ```php
 'Redis' => Illuminate\Support\Facades\Redis::class to 'LRedis' => Illuminate\Support\Facades\Redis::class
 ```
-11. Modify alias in database.php
+11. Modify options-->prefix alias in database.php
 
 
 

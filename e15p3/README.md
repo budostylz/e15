@@ -30,7 +30,7 @@
 ## Laravel Install
 8. Download [vetruvet/laravel-phpredis](https://packagist.org/packages/vetruvet/laravel-phpredis)
 9. Verify composer.json and vendor folder
-10.Change 
+10. Change 
 ```php
 'Redis' => Illuminate\Support\Facades\Redis::class to 'LRedis' => Illuminate\Support\Facades\Redis::class
 ```

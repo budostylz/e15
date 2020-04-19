@@ -82,3 +82,6 @@ Route::get('/debug', function() {
     
     dump($debug);
 });
+
+Auth::routes();
+

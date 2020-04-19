@@ -5,76 +5,85 @@
 @endsection
 
 @section('content')
-<p>
-    Welcome to Bookmark&mdash; an online book journal that let’s you track and share a history of books you’ve read.
-</p>
 
-<form method='GET' action='/search'>
+@if(!Auth::user())
+    <p>
+        Welcome to Bookmark&mdash; an online book journal that let’s you track and share a history of books you’ve read.
 
-    <h2>Search for a book to add to your list</h2>
+        <a href='/register'>Register now to get started...</a>
+    </p>
+@else
+    <p>
+    Welcome back, {{ $userName }}
+    </p>
 
-    <fieldset>
-        <label for='searchTerms'>
-            Search terms:
-            <input type='text' name='searchTerms' value='{{ old('searchTerms', $searchTerms) }}'>
-        </label>
-    </fieldset>
+    <form method='GET' action='/search'>
 
-    <fieldset>
-        <label>
-            Search type:
-        </label>
+        <strong>Search for a book to add to your list:</strong>
 
-        <input 
-            type='radio' 
-            name='searchType' 
-            id='title' 
-            value='title'
-            {{ (old('searchType') == 'title' or $searchType == 'title') ? 'checked' : '' }}
-        >
-        <label for='title'> Title</label>
-        
-        <input 
-            type='radio' 
-            name='searchType' 
-            id='author' 
-            value='author'
-            {{ (old('searchType') == 'author' or $searchType == 'author') ? 'checked' : '' }}
-        >
-        <label for='author'> Author</label>
-        
-    </fieldset>
+        <fieldset>
+            <label for='searchTerms'>
+                Search terms:
+                <input type='text' name='searchTerms' value='{{ old('searchTerms', $searchTerms) }}'>
+            </label>
+        </fieldset>
 
-    <input type='submit' class='btn btn-primary' value='Search'>
+        <fieldset>
+            <label>
+                Search type:
+            </label>
 
-    @if(count($errors) > 0)
-    <ul class='alert alert-danger error'>
-        @foreach ($errors->all() as $error)
-            <li>{{ $error }}</li>
-        @endforeach
-    </ul>
-    @endif
+            <input 
+                type='radio' 
+                name='searchType' 
+                id='title' 
+                value='title'
+                {{ (old('searchType') == 'title' or $searchType == 'title') ? 'checked' : '' }}
+            >
+            <label for='title'> Title</label>
+            
+            <input 
+                type='radio' 
+                name='searchType' 
+                id='author' 
+                value='author'
+                {{ (old('searchType') == 'author' or $searchType == 'author') ? 'checked' : '' }}
+            >
+            <label for='author'> Author</label>
+            
+        </fieldset>
 
-</form>
+        <input type='submit' class='btn btn-primary' value='Search'>
 
-@if(!is_null($searchResults))
-    @if(count($searchResults) == 0)
-        <div class='results alert alert-warning'>
-            No results found.
-            <a href='/books/create'>Want to add this book to our library?</a>
-        </div>
-    @else
-        <div class='results alert alert-primary'>
+        @if(count($errors) > 0)
+        <ul class='alert alert-danger error'>
+            @foreach ($errors->all() as $error)
+                <li>{{ $error }}</li>
+            @endforeach
+        </ul>
+        @endif
 
-           {{ count($searchResults) }} 
-           {{ Str::plural('Result', count($searchResults)) }}:
+    </form>
 
-            <ul>
-                @foreach($searchResults as $slug => $book)
+    @if(!is_null($searchResults))
+        @if(count($searchResults) == 0)
+            <div class='results alert alert-warning'>
+                No results found.
+                <a href='/books/create'>Want to add this book to our library?</a>
+            </div>
+        @else
+            <div class='results alert alert-primary'>
+
+            {{ count($searchResults) }} 
+            {{ Str::plural('Result', count($searchResults)) }}:
+
+                <ul>
+                    @foreach($searchResults as $slug => $book)
                     <li><a href='/books/{{ $slug }}'> {{ $book['title'] }}</a></li>
-                @endforeach
-            </ul>
-        </div>
+                    @endforeach
+                </ul>
+            </div>
+        @endif
     @endif
 @endif
 

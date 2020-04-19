@@ -30,21 +30,31 @@ Route::get('/example', function () {
 Route::get('/', 'PageController@welcome');
 Route::get('/support', 'PageController@support');
 
-# Create a Book
-Route::get('/books/create', 'BookController@create');
-Route::post('/books', 'BookController@store');
+/**
+ * Books
+ */
+Route::group(['middleware' => 'auth'], function () {
+    # Create a book
+    Route::get('/books/create', 'BookController@create');
+    Route::post('/books', 'BookController@store');
 
+    # Update a book
+    Route::get('/books/{slug}/edit', 'BookController@edit');
+    Route::put('/books/{slug}', 'BookController@update');
 
-#Update a book
-Route::get('/books/{id}/edit', 'BookController@edit');
-Route::put('/books/{id}', 'BookController@update');
+    # Show all books
+    Route::get('/books', 'BookController@index');
 
+    # Show a book
+    Route::get('/books/{slug?}', 'BookController@show');
 
-#Show all Books
-Route::get('/books', 'BookController@index');
+    # DELETE
+    # Show the page to confirm deletion of a book
+    Route::get('/books/{slug}/delete', 'BookController@delete');
 
-#Show a Book
-Route::get('/books/{slug?}', 'BookController@show');
+    # Process the deletion of a book
+    Route::delete('/books/{slug}', 'BookController@destroy');
+});
 
 #Misc
 Route::get('/search', 'BookController@search');

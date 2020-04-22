@@ -15,10 +15,10 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     
-    $app = LRedis::connection();
+    /*$app = LRedis::connection();
     $app->set("key102", "value102");
     dump('Redis Test');
     dump($app->get("key102"));
-    dump($app);
+    dump($app);*/
     //return view('welcome');
 });

@@ -13,6 +13,8 @@
 
 [How to Install Redis on Windows 10](https://www.youtube.com/watch?v=188Fy-oCw4w&t=633s)
 
+[Fullscreen Video Background](https://www.w3schools.com/howto/howto_css_fullscreen_video.asp)
+
 # This Section Will Be Removed in Final Build
 ## Redis install
 1. Install Redis on Machine

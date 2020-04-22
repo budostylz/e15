@@ -20,5 +20,5 @@ Route::get('/', function () {
     dump('Redis Test');
     dump($app->get("key102"));
     dump($app);*/
-    //return view('welcome');
+    return view('welcome');
 });

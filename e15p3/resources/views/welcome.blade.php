@@ -56,7 +56,7 @@
 <body>
 
 <video autoplay muted loop id="myVideo">
-  <source src="vids/drink2.mp4" type="video/mp4">
+  <source src="vids/drink2.m2ts" type="video/mp4">
   Your browser does not support HTML5 video.
 </video>
 

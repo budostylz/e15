@@ -56,7 +56,7 @@
 <body>
 
 <video autoplay muted loop id="myVideo">
-  <source src="vids/drink2.m2ts" type="video/mp4">
+  <source src="vids/drink2.2.mp4" type="video/mp4">
   Your browser does not support HTML5 video.
 </video>
 
@@ -66,13 +66,13 @@
 <div class="container">
   <div class="row">
     <div class="col">
-        <div id="myBtn">Sign In</div>
+        <div id="myBtn" style="text-align:center">Sign In</div>
     </div>
     <div class="col-5">
     <h1>Welcome to Bar App</h1>
     </div>
     <div class="col">
-        <div id="myBtn">Register</div>
+        <div id="myBtn" style="text-align:center">Register</div>
     </div>
   </div>
 

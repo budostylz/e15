@@ -15,6 +15,8 @@
 
 [Fullscreen Video Background](https://www.w3schools.com/howto/howto_css_fullscreen_video.asp)
 
+[How to: fullscreen background autoplay video on mobile in 2018](https://medium.com/just-goe-frontend-adventures/how-to-fullscreen-background-autoplay-video-on-mobile-in-2018-208dfee26bc1)
+
 # This Section Will Be Removed in Final Build
 ## Redis install
 1. Install Redis on Machine

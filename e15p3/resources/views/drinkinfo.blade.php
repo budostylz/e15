@@ -14,28 +14,36 @@
         <div class="row">
             <div class="col-xl">
 
-                    <nav class="navbar navbar-expand-xl navbar-dark bg-dark">
-                            <a class="navbar-brand" href="#">Navbar</a>
-                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                                <span class="navbar-toggler-icon"></span>
-                            </button>
-                            <div class="collapse navbar-collapse" id="navbarNav">
-                                <ul class="navbar-nav">
+                <nav class="navbar navbar-expand-xl navbar-dark bg-dark">
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/barlocator">Home</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/bartenderreview">Review Order(Bar Tender)</a>
+                                </li>
+
+                                 <li class="nav-item">
+                                    <a class="nav-link" href="/checkoutdrinks">Review Order(Customer)</a>
+                                 </li>
+
                                 <li class="nav-item active">
-                                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                                    <a class="nav-link" href="/signin">Login</a>
                                 </li>
+
+
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">Features</a>
+                                    <a class="nav-link" href="/">Logout</a>
                                 </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Pricing</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-                                </li>
-                                </ul>
-                            </div>
-                    </nav>
+
+
+
+
+                            </ul>
+                        </div>
+                </nav>
             </div>
         
         </div>
@@ -59,31 +67,31 @@
                 <div class="col-sm">
                     <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">Check to Order
                     <p class="text-left">Drink1<br/> $3.00</p>
-                    <p class="text-left"><a href="#">Drink Details</a></p>
+                    <p class="text-left"><a href="/drinkdetails">Drink Details</a></p>
                     <img src="https://www.thecocktaildb.com/images/media/drink/yyrwty1468877498.jpg" alt="" style="width:200px;height:200px;">
                 </div>
                 <div class="col-sm">
                     <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">Check to Order
                     <p class="text-left">Drink2<br/> $3.00</p>
-                    <p class="text-left"><a href="#">Drink Details</a></p>
+                    <p class="text-left"><a href="/drinkdetails">Drink Details</a></p>
                     <img src="https://www.thecocktaildb.com/images/media/drink/yyrwty1468877498.jpg" alt="" style="width:200px;height:200px;">
                 </div>
                 <div class="col-sm">
                     <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">Check to Order
                     <p class="text-left">Drink3<br/> $3.00</p>
-                    <p class="text-left"><a href="#">Drink Details</a></p>
+                    <p class="text-left"><a href="/drinkdetails">Drink Details</a></p>
                     <img src="https://www.thecocktaildb.com/images/media/drink/yyrwty1468877498.jpg" alt="" style="width:200px;height:200px;">
                 </div>
                 <div class="col-sm">
                     <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">Check to Order
                     <p class="text-left">Drink4<br/> $3.00</p>
-                    <p class="text-left"><a href="#">Drink Details</a></p>
+                    <p class="text-left"><a href="/drinkdetails">Drink Details</a></p>
                     <img src="https://www.thecocktaildb.com/images/media/drink/yyrwty1468877498.jpg" alt="" style="width:200px;height:200px;">
                 </div>
                 <div class="col-sm">
                     <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">Check to Order
                     <p class="text-left">Drink5<br/> $3.00</p>
-                    <p class="text-left"><a href="#">Drink Details</a></p>
+                    <p class="text-left"><a href="/drinkdetails">Drink Details</a></p>
                     <img src="https://www.thecocktaildb.com/images/media/drink/yyrwty1468877498.jpg" alt="" style="width:200px;height:200px;">
                 </div>
 
@@ -94,31 +102,31 @@
                 <div class="col-sm">
                     <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">Check to Order
                     <p class="text-left">Drink6<br/> $3.00</p>
-                    <p class="text-left"><a href="#">Drink Details</a></p>
+                    <p class="text-left"><a href="/drinkdetails">Drink Details</a></p>
                     <img src="https://www.thecocktaildb.com/images/media/drink/yyrwty1468877498.jpg" alt="" style="width:200px;height:200px;">
                 </div>
                 <div class="col-sm">
                     <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">Check to Order
                     <p class="text-left">Drink7<br/> $3.00</p>
-                    <p class="text-left"><a href="#">Drink Details</a></p>
+                    <p class="text-left"><a href="/drinkdetails">Drink Details</a></p>
                     <img src="https://www.thecocktaildb.com/images/media/drink/yyrwty1468877498.jpg" alt="" style="width:200px;height:200px;">
                 </div>
                 <div class="col-sm">
                     <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">Check to Order
                     <p class="text-left">Drink8<br/> $3.00</p>
-                    <p class="text-left"><a href="#">Drink Details</a></p>
+                    <p class="text-left"><a href="/drinkdetails">Drink Details</a></p>
                     <img src="https://www.thecocktaildb.com/images/media/drink/yyrwty1468877498.jpg" alt="" style="width:200px;height:200px;">
                 </div>
                 <div class="col-sm">
                     <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">Check to Order
                     <p class="text-left">Drink9<br/> $3.00</p>
-                    <p class="text-left"><a href="#">Drink Details</a></p>
+                    <p class="text-left"><a href="/drinkdetails">Drink Details</a></p>
                     <img src="https://www.thecocktaildb.com/images/media/drink/yyrwty1468877498.jpg" alt="" style="width:200px;height:200px;">
                 </div>
                 <div class="col-sm">
                     <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">Check to Order
                     <p class="text-left">Drink10<br/> $3.00</p>
-                    <p class="text-left"><a href="#">Drink Details</a></p>
+                    <p class="text-left"><a href="/drinkdetails">Drink Details</a></p>
                     <img src="https://www.thecocktaildb.com/images/media/drink/yyrwty1468877498.jpg" alt="" style="width:200px;height:200px;">
                 </div>
 

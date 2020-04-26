@@ -15,7 +15,7 @@
     font-size: 17px;
     }
 
-    #myVideo {
+    #drinkVid {
     position: fixed;
     right: 0;
     bottom: 0;
@@ -24,40 +24,34 @@
     }
 
     .content {
-    position: fixed;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.5);
-    color: #f1f1f1;
-    width: 100%;
-    padding: 20px;
+      position: fixed;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.5);
+      color: #f1f1f1;
+      width: 100%;
+      padding: 20px;
     }
 
     #myBtn {
-    width: 200px;
-    font-size: 18px;
-    padding: 10px;
-    border: none;
-    background: #000;
-    color: #fff;
-    cursor: pointer;
+      width: 200px;
+      font-size: 18px;
+      text-align:center;
+      padding: 10px;
+      border: none;
+      background: #000;
+      color: #fff;
     }
 
-    #myBtn:hover {
-    background: #ddd;
-    color: black;
-    }
-
-
-
+ 
 
 
     </style>
 </head>
 <body>
 
-<video autoplay loop muted playsinline id="myVideo">
-  <source src="vids/drink2.2.mp4" type="video/mp4">
-  Your browser does not support HTML5 video
+<video autoplay loop muted playsinline id="drinkVid">
+  <source src="vids/drink.mp4" type="video/mp4">
+  Your browser does not support HTML5 video.
 </video>
 
 <div class="content">
@@ -66,13 +60,13 @@
 <div class="container">
   <div class="row">
     <div class="col">
-        <div id="myBtn" style="text-align:center">Sign In</div>
+        <a href="/signin"><div id="myBtn">Sign In</div></a>
     </div>
     <div class="col-5">
     <h1>Welcome to Bar App</h1>
     </div>
     <div class="col">
-        <div id="myBtn" style="text-align:center">Register</div>
+        <a href="/register"><div id="myBtn">Register</div></a>
     </div>
   </div>
 

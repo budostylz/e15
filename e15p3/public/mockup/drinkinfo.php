@@ -40,122 +40,116 @@
         
         </div>
 
-        <div class="row">
-            <div class="col-sm pt-2"></div>
-            <div class="col-sm pt-2"></div>
-            <div class="col-sm pt-2"></div>
-        </div>
 
     
 
             <div class="row">
-                <div class="col-sm text-center">
-                    <label for="exampleInputEmail1"><h5>Find in a Bar</h5></label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"> 
-                    
+                <div class="col-sm text-center"></div>
+                <div class="col-sm pt-2 text-center">
+                    <h5>Bar Louie Drinks</h5>
                 </div>
-
-                <div class="col-sm pt-2" style="position:relative;top:23px;right:20px">
-                    <button type="submit" class="btn btn-primary bg-dark">Get Bar Info</button>
-
-
-                </div>
-                <div class="col-sm">
-                
-                </div>
+                <div class="col-sm"></div>
             </div>
-
-            <div class="row">
-                <div class="col-sm">
-                    <br/>
-                    <img src="images/bar1.PNG" alt="" style="width:300px;height:300px;">
-                    <p><h4>Bar Louie</h4></p>
-                    <p class="text-justify">Ambitioni dedisse scripsisse iudicaretur. Cras mattis iudicium purus sit amet fermentum. Donec sed odio operae, eu vulputate felis rhoncus. Praeterea iter est quasdam res quas ex communi. At nos hinc posthac, sitientis piros Afros. Petierunt uti sibi concilium totius Galliae in diem certam indicere. Cras mattis iudicium purus sit amet fermentum.</p>
-
-
-                </div>
-                <div class="col-sm">
-                    <p>Available Drinks</p>
-
-                    <div class="row">
-                        <div class="col-xs pl-2">
-                            <img src="https://www.thecocktaildb.com/images/media/drink/yyrwty1468877498.jpg" alt="" style="width:200px;height:200px;">
-                            <img src="https://www.thecocktaildb.com/images/media/drink/rtpxqw1468877562.jpg" alt="" style="width:200px;height:200px;">
-                            <img src="https://www.thecocktaildb.com/images/media/drink/rrtssw1472668972.jpg" alt="" style="width:200px;height:200px;">
-
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-xs pl-2 pt-5">
-                            <img src="https://www.thecocktaildb.com/images/media/drink/yyrwty1468877498.jpg" alt="" style="width:200px;height:200px;">
-                            <img src="https://www.thecocktaildb.com/images/media/drink/rtpxqw1468877562.jpg" alt="" style="width:200px;height:200px;">
-                            <img src="https://www.thecocktaildb.com/images/media/drink/rrtssw1472668972.jpg" alt="" style="width:200px;height:200px;">
-
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-xs pl-2 pt-5">
-                            <img src="https://www.thecocktaildb.com/images/media/drink/yyrwty1468877498.jpg" alt="" style="width:200px;height:200px;">
-                            <img src="https://www.thecocktaildb.com/images/media/drink/rtpxqw1468877562.jpg" alt="" style="width:200px;height:200px;">
-                            <img src="https://www.thecocktaildb.com/images/media/drink/rrtssw1472668972.jpg" alt="" style="width:200px;height:200px;">
-
-                        </div>
-                    </div>
-
-
-
-
-
-                </div>
-                <div class="col-sm">
-
-                <div class="row">
-                            <p>Available Drinks</p>
-                        <div class="col-xs pl-2">
-                            <img src="https://www.thecocktaildb.com/images/media/drink/ywxwqs1461867097.jpg" alt="" style="width:200px;height:200px;">
-                            <img src="https://www.thecocktaildb.com/images/media/drink/vqyxqx1472669095.jpg" alt="" style="width:200px;height:200px;">
-                            <img src="https://www.thecocktaildb.com/images/media/drink/xxsxqy1472668106.jpg" alt="" style="width:200px;height:200px;">
-
-                        </div>
-                </div>
-                <div class="row">
-                        <div class="col-xs pl-2 pt-5">
-                            <img src="https://www.thecocktaildb.com/images/media/drink/yyrwty1468877498.jpg" alt="" style="width:200px;height:200px;">
-                            <img src="https://www.thecocktaildb.com/images/media/drink/rtpxqw1468877562.jpg" alt="" style="width:200px;height:200px;">
-                            <img src="https://www.thecocktaildb.com/images/media/drink/rrtssw1472668972.jpg" alt="" style="width:200px;height:200px;">
-
-                        </div>
-                </div>
-                    <div class="row">
-                        <div class="col-xs pl-2 pt-5">
-                            <img src="https://www.thecocktaildb.com/images/media/drink/yyrwty1468877498.jpg" alt="" style="width:200px;height:200px;">
-                            <img src="https://www.thecocktaildb.com/images/media/drink/rtpxqw1468877562.jpg" alt="" style="width:200px;height:200px;">
-                            <img src="https://www.thecocktaildb.com/images/media/drink/rrtssw1472668972.jpg" alt="" style="width:200px;height:200px;">
-
-                        </div>
-                    </div>
-
-                
-                </div>
-            </div>
-
-
-
-        
-
-            
 
            
 
 
 
+            <div class="row pt-5">
+                <div class="col-sm">
+                    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">Check to Order
+                    <p class="text-left">Drink1<br/> $3.00</p>
+                    <p class="text-left"><a href="#">Drink Details</a></p>
+                    <img src="https://www.thecocktaildb.com/images/media/drink/yyrwty1468877498.jpg" alt="" style="width:200px;height:200px;">
+                </div>
+                <div class="col-sm">
+                    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">Check to Order
+                    <p class="text-left">Drink2<br/> $3.00</p>
+                    <p class="text-left"><a href="#">Drink Details</a></p>
+                    <img src="https://www.thecocktaildb.com/images/media/drink/yyrwty1468877498.jpg" alt="" style="width:200px;height:200px;">
+                </div>
+                <div class="col-sm">
+                    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">Check to Order
+                    <p class="text-left">Drink3<br/> $3.00</p>
+                    <p class="text-left"><a href="#">Drink Details</a></p>
+                    <img src="https://www.thecocktaildb.com/images/media/drink/yyrwty1468877498.jpg" alt="" style="width:200px;height:200px;">
+                </div>
+                <div class="col-sm">
+                    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">Check to Order
+                    <p class="text-left">Drink4<br/> $3.00</p>
+                    <p class="text-left"><a href="#">Drink Details</a></p>
+                    <img src="https://www.thecocktaildb.com/images/media/drink/yyrwty1468877498.jpg" alt="" style="width:200px;height:200px;">
+                </div>
+                <div class="col-sm">
+                    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">Check to Order
+                    <p class="text-left">Drink5<br/> $3.00</p>
+                    <p class="text-left"><a href="#">Drink Details</a></p>
+                    <img src="https://www.thecocktaildb.com/images/media/drink/yyrwty1468877498.jpg" alt="" style="width:200px;height:200px;">
+                </div>
+
+              
+            </div>
+
+            <div class="row pt-5">
+                <div class="col-sm">
+                    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">Check to Order
+                    <p class="text-left">Drink6<br/> $3.00</p>
+                    <p class="text-left"><a href="#">Drink Details</a></p>
+                    <img src="https://www.thecocktaildb.com/images/media/drink/yyrwty1468877498.jpg" alt="" style="width:200px;height:200px;">
+                </div>
+                <div class="col-sm">
+                    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">Check to Order
+                    <p class="text-left">Drink7<br/> $3.00</p>
+                    <p class="text-left"><a href="#">Drink Details</a></p>
+                    <img src="https://www.thecocktaildb.com/images/media/drink/yyrwty1468877498.jpg" alt="" style="width:200px;height:200px;">
+                </div>
+                <div class="col-sm">
+                    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">Check to Order
+                    <p class="text-left">Drink8<br/> $3.00</p>
+                    <p class="text-left"><a href="#">Drink Details</a></p>
+                    <img src="https://www.thecocktaildb.com/images/media/drink/yyrwty1468877498.jpg" alt="" style="width:200px;height:200px;">
+                </div>
+                <div class="col-sm">
+                    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">Check to Order
+                    <p class="text-left">Drink9<br/> $3.00</p>
+                    <p class="text-left"><a href="#">Drink Details</a></p>
+                    <img src="https://www.thecocktaildb.com/images/media/drink/yyrwty1468877498.jpg" alt="" style="width:200px;height:200px;">
+                </div>
+                <div class="col-sm">
+                    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">Check to Order
+                    <p class="text-left">Drink10<br/> $3.00</p>
+                    <p class="text-left"><a href="#">Drink Details</a></p>
+                    <img src="https://www.thecocktaildb.com/images/media/drink/yyrwty1468877498.jpg" alt="" style="width:200px;height:200px;">
+                </div>
+
+            
+            </div>
+
+            <div class="row pt-5">
+                <div class="col-sm"></div>
+                <div class="col-sm"></div>
+                <div class="col-sm ml-5">
+
+                    <button type="submit" class="btn btn-primary bg-dark">Order Drinks</button>
+
+                
+                </div>
+                <div class="col-sm"></div>
+                <div class="col-sm"></div>
+
+            
+            </div>
+
+
+
 
             
 
 
-    </div>
 
-    
+
+        </div>
+
 
 </form>
 

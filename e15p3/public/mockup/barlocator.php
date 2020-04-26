@@ -61,7 +61,7 @@
 
                 </div>
                 <div class="col-sm pt-5">
-                <button type="submit" class="btn btn-primary bg-dark">Get Bar Info</button>
+                    <button type="submit" class="btn btn-primary bg-dark">Get Bar Info</button>
 
 
                 
@@ -114,6 +114,8 @@
             <div class="row">
                 <div class="col-sm"></div>
                 <div class="col-sm text-center pt-5">
+                    <button type="submit" class="btn btn-primary bg-dark">Get Drinks</button>
+
                 </div>
                 <div class="col-sm"></div>
             </div>

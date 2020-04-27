@@ -2,6 +2,7 @@
 
 use Illuminate\Database\Seeder;
 use App\Book;
+use App\Author;
 
 class BooksTableSeeder extends Seeder
 {
@@ -38,18 +39,31 @@ class BooksTableSeeder extends Seeder
         
         $count = count($books);
         foreach ($books as $slug => $bookData) {
-            $book = new Book();
 
+            # First, figure out the id of the author we want to associate with this book
+
+            # Extract just the last name from the book data...
+            # F. Scott Fitzgerald => ['F.', 'Scott', 'Fitzgerald'] => 'Fitzgerald'
+            $name = explode(' ', $bookData['author']);
+            $lastName = array_pop($name);
+
+            # Find that author in the authors table
+            $author_id = Author::where('last_name', '=', $lastName)->pluck('id')->first();
+
+
+
+            $book = new Book();
             $book->created_at = Carbon\Carbon::now()->subDays($count)->toDateTimeString();
             $book->updated_at = Carbon\Carbon::now()->subDays($count)->toDateTimeString();
             $book->slug = $slug;
             $book->title = $bookData['title'];
-            $book->author = $bookData['author'];
+            # $book->author = $bookData['author'];
             $book->published_year = $bookData['published_year'];
             $book->cover_url = $bookData['cover_url'];
             $book->info_url = $bookData['info_url'];
             $book->purchase_url = $bookData['purchase_url'];
             $book->description = $bookData['description'];
+            $book->author_id = $author_id;
 
             $book->save();
             $count--;

@@ -54,11 +54,19 @@ Route::group(['middleware' => 'auth'], function () {
 
     # Process the deletion of a book
     Route::delete('/books/{slug}', 'BookController@destroy');
+
+    #Misc
+    Route::get('/search', 'BookController@search');
+
+    #List
+    Route::get('/list', 'ListController@show');
+    Route::get('/list/{slug?}/add', 'ListController@add');
+    Route::post('/list/{slug?}/add', 'ListController@save');
+
+
 });
 
-#Misc
-Route::get('/search', 'BookController@search');
-Route::get('/list', 'BookController@list');
+
 
 # This was an example route to show multiple parameters;
 # Not a feature we're actually building, so I'm commenting out

@@ -26,6 +26,14 @@
         @include('includes.error-field', ['fieldName' => 'title'])
 
         <label for='author_id'>* Author</label>
+        <select name='author_id'>
+            <option value=''>Choose one...</option>
+            @foreach($authors as $author)
+                <option value='{{ $author->id }}' {{ (old('author_id') == $author->id) ? 'selected' : '' }}>
+                    {{ $author->first_name.' '.$author->last_name }}
+                </option>
+            @endforeach
+        </select>
         @include('includes.error-field', ['fieldName' => 'author_id'])
 
         <label for='published_year'>* Published Year (YYYY)</label>

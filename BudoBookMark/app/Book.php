@@ -13,6 +13,13 @@ class Book extends Model
         return $this->belongsTo('App\Author');
     }
 
+    public function users()
+    {
+        return $this->belongsToMany('App\User')
+            ->withTimestamps() # Must be added to have Eloquent update the created_at/updated_at columns in a pivot table
+            ->withPivot('notes'); # Must also specify any other fields that should be included when fetching this relationship
+    }
+
     public static function findBySlug($slug)
     {
         return self::where('slug', '=', $slug)->first();

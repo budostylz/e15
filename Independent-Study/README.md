@@ -6,7 +6,7 @@
 
 Dynamic web applications require front-end technologies where browser speed and optimization of an application's 
 assets(css, image, font files, etc) are crucial. This demo will focus on using technology to compile, bundle and map
-front-end assets to optimize web applications. First we will review web pack and demo a simple web application to understand the concept. Next, we will demo a basic application using Laravel Mix which uses Webpack under the hood to capture the concept of optimizing Laravel web applications. Finally, we'll compare the two approches (stand alone Webpack or Laravel Mix) to get a better idea of which approach to use when building Laravel applications.
+front-end assets to optimize web applications. First we will review web pack and demo a simple web application to understand the concept. Next, we will demo a basic application using Laravel Mix which uses Webpack under the hood, capturing the concept of optimizing Laravel web applications. Finally, we'll compare the two approaches (stand alone Webpack or Laravel Mix) to get a better idea of which approach to implement to build Laravel applications.
 
 ### Resources
 
@@ -40,13 +40,13 @@ npm -v
 
 ![node dependencies and webpack](https://github.com/budostylz/e15/blob/master/Independent-Study/images/webpack-standalone/checknode.PNG)
 
-### If you don't see either the node or npm version above, download node js [here](https://nodejs.org/en/). You will direct to the node site.
+### If you don't see either node or npm version above, download node js [here](https://nodejs.org/en/). You will direct to the node site.
 ![node dependencies and webpack](https://github.com/budostylz/e15/blob/master/Independent-Study/images/webpack-standalone/js/image0.PNG)
 
 ### Currently this is p1 project structure.
 ![node dependencies and webpack](https://github.com/budostylz/e15/blob/master/Independent-Study/images/webpack-standalone/js/image1.1.PNG)
 
-### Looking at out `index.php` file we see the following css and script assets:
+### Looking at the `index.php` file we see the following css and script assets:
 
 
 ![node dependencies and webpack](https://github.com/budostylz/e15/blob/master/Independent-Study/images/webpack-standalone/before.PNG)
@@ -64,27 +64,29 @@ npm init -y
 ### Our `package.json` is created in our project below.
 ![node dependencies and webpack](https://github.com/budostylz/e15/blob/master/Independent-Study/images/webpack-standalone/js/image4.PNG)
 
-### Next we'll install our node dependencies and our `Webpack`.
+### Next we'll install node dependencies and `Webpack`.
 ```ubuntu
 npm install webpack webpack-cli --save-dev
 
 ```
 ![node dependencies and webpack](https://github.com/budostylz/e15/blob/master/Independent-Study/images/webpack-standalone/js/image5.PNG)
 
-### Our node modules with our `Webpack` packages are installed. 
-### You can dive within the the `node_modules` directory to confirm your `Webpack` packages or view the `package.json `dev-dependencies.
+### The node modules with `Webpack` packages are installed. 
+### You can go to the `node_modules` directory to confirm your `Webpack` packages or view the `package.json `dev-dependencies.
 
 ![node dependencies and webpack](https://github.com/budostylz/e15/blob/master/Independent-Study/images/webpack-standalone/js/image6.PNG)
 
 ![node dependencies and webpack](https://github.com/budostylz/e15/blob/master/Independent-Study/images/webpack-standalone/js/image7.PNG)
 
-### Let's turn to our `package.json`, add/set `private` property to `true`, finally removing our `main` property since we'll define that in our `webpack.config.js` in the next steps.
+### Let's go to `package.json`, add/set `private` property to `true`, finally removing our `main` property since we'll define that in our `webpack.config.js` in the next steps.
+
 ### Setting `private` to true prevents npm from [publishing](https://stackoverflow.com/questions/7314849/what-is-purpose-of-the-property-private-in-package-json) it.
+
 ### The `main` property defines our entry point for our assets build.
 ![node dependencies and webpack](https://github.com/budostylz/e15/blob/master/Independent-Study/images/webpack-standalone/js/image11.PNG)
 
 ### We're going to add a scripts property to define our [life cycle](https://docs.npmjs.com/files/package.json#scripts) build scripts.
-### The `develop` and `build` scripts are the ones that we will use in the next steps.
+### The `develop` and `build` scripts are the ones we will use in the next steps.
 
 ![node dependencies and webpack](https://github.com/budostylz/e15/blob/master/Independent-Study/images/webpack-standalone/scripts.PNG)
 
@@ -102,7 +104,7 @@ npm install webpack webpack-cli --save-dev
 
 ## JavaScript Assets
 
-### We'll move `hideResults.js` to our `src` folder. 
+### We'll move `hideResults.js` to the `src` folder. 
 ### Remove `jquery-3.4.1.min.js`, since we'll be referencing jQuery from the `node_modules` in the following steps.
 ### We can get rid of the js folder since we'll no longer need it.
 ![node dependencies and webpack](https://github.com/budostylz/e15/blob/master/Independent-Study/images/webpack-standalone/js/image9.PNG)
@@ -126,7 +128,7 @@ npm install webpack webpack-cli --save-dev
 
 ## webpack.config.js
 
-### We're going to create our `webpack.config.js` file which will map our assets and builds.
+### We're going to create our `webpack.config.js` file which map our assets and builds.
 ### Create a `webpack.config.js` file at the root directory
 ![node dependencies and webpack](https://github.com/budostylz/e15/blob/master/Independent-Study/images/webpack-standalone/js/image14.1.PNG)
 
@@ -146,7 +148,7 @@ module.exports = {
 
 ```
 
-### Next type in the following command in your terminal
+### Next type in the following command in your terminal.
 
 
 
@@ -162,7 +164,7 @@ npm run develop
 ### `Chunks` and `Chunk Names` represents our complete assets. Right now our chunk is called `main` because we define one output file `main` and one entry file `hideResults` within `web.config.js`.
 ### You can define more assets as entry points within `web.config.js`. This is called [code splitting](https://webpack.js.org/guides/code-splitting/).
 
-### Now we can reference our `main.js` file to replace our previous JavaScript assets.
+### Now we reference our `main.js` file to replace our previous JavaScript assets.
 ![node dependencies and webpack](https://github.com/budostylz/e15/blob/master/Independent-Study/images/webpack-standalone/mainjs.PNG)
 
 ## Sass Assets
@@ -204,14 +206,14 @@ module: {
 ### Your `webpack.config.js` file should look like this.
 ![node dependencies and webpack](https://github.com/budostylz/e15/blob/master/Independent-Study/images/webpack-standalone/sass/image3.PNG)
 
-### Next we will move our original `stringGenerator.scss` file to our `src` directory.
-## We can get rid of the `css` directory since that `sass` asset will output to `dist` directory.
+### Next we move our original `stringGenerator.scss` file to our `src` directory.
+## We can get rid of the `css` directory since the `sass` asset will output to `dist` directory.
 ![node dependencies and webpack](https://github.com/budostylz/e15/blob/master/Independent-Study/images/webpack-standalone/sass/image4.PNG)
 
 ### Within `hideResults.js` we will import our `sass` file.
 ![node dependencies and webpack](https://github.com/budostylz/e15/blob/master/Independent-Study/images/webpack-standalone/sass/image5.PNG)
 
-### We can get ride of the original `css` asset since the `sass` will be bundle in `main.js`.
+### We can get ride of the original `css` asset since the `sass` will bundle in `main.js`.
 ![node dependencies and webpack](https://github.com/budostylz/e15/blob/master/Independent-Study/images/webpack-standalone/after1.PNG)
 
 
@@ -228,21 +230,21 @@ module: {
 ![node dependencies and webpack](https://github.com/budostylz/e15/blob/master/Independent-Study/images/webpack-standalone/console.PNG)
 
 ### That was a handful but we only scratch the surface of Webpack capabilities. 
-### Now that we have a basic understanding of Webpack concepts, let's turn to [Laravel Mix](https://laravel.com/docs/6.x/mix) which uses Webpack under the hood.
+### Since we have a basic understanding of Webpack concepts, let's turn to [Laravel Mix](https://laravel.com/docs/6.x/mix) which uses Webpack under the hood.
 
 # Laravel Mix Demo
 
 ## Configuration
-### As the same with Webpack, you will need to install and verify node.js is present on your computer.
+### Similar with Webpack, install and verify if node.js is present on your computer.
 ### Check the above Webpack [configuration section](https://github.com/budostylz/e15/tree/master/Independent-Study#Configuration) for this step.
 
 ### We will apply `Laravel Mix` to our p2 project.
 ![Laravel Mix](https://github.com/budostylz/e15/blob/master/Independent-Study/images/laravel-mix/image0.PNG)
 
-### Let's look at our assets that we will need to bundle located at within Laravel's master view file name `master.blade.php`
+### Let's look at our assets we need to bundle inside `master.blade.php`.
 ![Laravel Mix](https://github.com/budostylz/e15/blob/master/Independent-Study/images/laravel-mix/image1.PNG)
 
-### Laravel comes out of box with a `webpack.mix.js` file located at the root directory which corresponds to `webpack.config.js` that we been working with.
+### Laravel comes out of box with a `webpack.mix.js` file located at the root directory. This file corresponds to `webpack.config.js`.
 ![Laravel Mix](https://github.com/budostylz/e15/blob/master/Independent-Study/images/laravel-mix/webpack.mix.js_dir.PNG)
 
 ### Laravel by default maps entry and output assets. We'll use this mapping for our Sass file in the next steps.
@@ -253,7 +255,8 @@ module: {
 
 
 ### The cool thing about Laravel is `package.json` comes out of the box located at the root directory. We do not have to manually create it like `Webpack` stand alone. 
-### The `private` and `scripts` property are already configured which saves us time developing this application.
+
+### The `private` and `scripts` property are already configured which saves time developing this application.
 ![Laravel Mix](https://github.com/budostylz/e15/blob/master/Independent-Study/images/laravel-mix/package.json.js_dir.PNG)
 
 ![Laravel Mix](https://github.com/budostylz/e15/blob/master/Independent-Study/images/laravel-mix/package.json.PNG)
@@ -261,7 +264,7 @@ module: {
 
 
 
-### We will need to create our `node_modules` to install our dependencies. Run this command in your terminal.
+### We will need to create `node_modules` to install our dependencies. Run this command in your terminal.
 
 ```ubuntu
     npm install
@@ -274,7 +277,7 @@ module: {
 
 ## JavaScript Assets
 
-### Looking back at our `master.blade.php file` we have five vendor libraries that we need to import in our `node_modules` directory. 
+### Looking back at `master.blade.php` we have five vendor libraries we need to import to our `node_modules` directory. 
     1. jquery-slim
     2. popper.js
     3. bootstrap.js
@@ -314,7 +317,8 @@ mix.scripts([
 ```
 ### Your `webpack.mix.js` file should look something like this. 
 ### [mix.scripts()](https://laravel.com/docs/6.x/mix/#vanilla-js) takes a collection of input assets within an array and one output asset.
-### Our input directories are node_modules for our vendor assets and public for our custom assets. These will all bundle into `bundle.js` located at our `public` directory
+
+### Our input directories are node_modules for our vendor assets, public for our custom assets. These will all bundle into `bundle.js` located at our `public` directory
 ![Laravel Mix](https://github.com/budostylz/e15/blob/master/Independent-Study/images/laravel-mix/js/webpack.mix1.2.PNG)
 
 ### Let's bundle our JavaScript assets by running the following command in your terminal.
@@ -331,10 +335,10 @@ npm run dev
 
 ## Saas Assets
 
-### Currently our `Saas` asset is wihin our `css` folder within our `public` directory.
+### Currently our `Saas` asset is both within our `css` and `public` directory.
 ![Laravel Mix](https://github.com/budostylz/e15/blob/master/Independent-Study/images/laravel-mix/css/image1.PNG)
 
-### Based on or `webpack.mix.js` file, our `sass` mapings define the following: 
+### Based on the `webpack.mix.js` file, `sass` mappings define the following: 
     1. Input file location: resources/sass/app.scss
     2. Output directory: public/css
 
@@ -344,11 +348,12 @@ npm run dev
 ![Laravel Mix](https://github.com/budostylz/e15/blob/master/Independent-Study/images/laravel-mix/css/image2.PNG)
 
 ### Let's define a css style for our `bootstrap.min.css` file within `webpack.mix.js`.
-### We could just leave the `bootstrap.min.css` file asset from the cdn as is but there might be cases where you need to bundle multiple `css` files.
+
+### We could just leave the `bootstrap.min.css` file asset from the cdn as is. However, there might be cases where you need to bundle multiple `css` files.
 ### Let's demostrate how to do this using `Laravel Mix`.
 ![Laravel Mix](https://github.com/budostylz/e15/blob/master/Independent-Study/images/laravel-mix/css/bootstrap.PNG)
 
-### Write the following code to your `webpack.min.js` file.
+### Write the following code to `webpack.min.js` file.
 
 ```javascript
 mix.styles([
@@ -358,7 +363,7 @@ mix.styles([
 
 
 ```
-### Your `webpack.mix.js` file should look similar. 
+### Your `webpack.mix.js` file should look similar to this. 
 ![Laravel Mix](https://github.com/budostylz/e15/blob/master/Independent-Study/images/laravel-mix/css/webpack.mix.js.PNG)
 
 ### We're pulling our input `bootstrap.min.css` asset from `node_modules` and bundling to `libStyles.css` at `public/css`.
@@ -386,17 +391,17 @@ npm run prod
 
 
 ### Both our `sass` and `css` bundles are in our `css` directory as define within `webpack.mix.js`.
-### Our `libStyles.css` file contains our `bootstrap.min.css`. This scales if neeed to bundle aditional `css` assets.
+### Our `libStyles.css` file contains our `bootstrap.min.css`. This scales if additional `css` assets need bundling.
 
 ![Laravel Mix](https://github.com/budostylz/e15/blob/master/Independent-Study/images/laravel-mix/css/css.PNG)
 
-### Opening the app.css file will see our `css` output from our `sass` asset.
+### The app.css file have `css` output from the `sass` asset.
 ![Laravel Mix](https://github.com/budostylz/e15/blob/master/Independent-Study/images/laravel-mix/css/sass2.PNG)
 
-### Let's finally clean up our `master.blade.php` file.
+### Let's clean up our `master.blade.php` file.
 ![Laravel Mix](https://github.com/budostylz/e15/blob/master/Independent-Study/images/laravel-mix/cleanup.PNG)
 
-### Finally we can view and analyze our assets in browser's console
+### We can view and analyze our assets in browser's console.
 ![Laravel Mix](https://github.com/budostylz/e15/blob/master/Independent-Study/images/laravel-mix/consolecss.PNG)
 
 ![Laravel Mix](https://github.com/budostylz/e15/blob/master/Independent-Study/images/laravel-mix/consolejs.PNG)

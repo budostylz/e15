@@ -98,42 +98,34 @@
         <table class="table table-hover table-dark">
             <thead>
                 <tr>
-                <th scope="col"></th>
-                <th scope="col">Name</th>
-                <th scope="col" class="text-left">Select Bartender</th>
+                    <th scope="col">Select Bartender</th>
+                    <th scope="col">Bartender</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
-                    <th scope="row">
-                        <img src="images/bartender1.PNG" alt="" style="width:150px;height:150px;">
-                    </th>
-                    <td>Shaun</td>
                     <td>
-                        <div class="input-group">
-                                <div class="input-group-text">
-                                    <input type="checkbox">
-                                </div>
-                        </div>
-
+                        <label class="radio-inline"><input type="radio" name="optradio"></label>          
+                    </td>
+                    <td>
+                      <div><img src="images/bartender1.PNG" alt="" style="width:150px;height:150px;"></div>
+                      <div>Shaun</div>
                     </td>
                 </tr>
+
                 <tr>
-                <th scope="row">
-                    <img src="images/bartender2.PNG" alt="" style="width:150px;height:150px;">
-                </th>
-                    <td>Fernando</td>
-                    <td>
+                  <td>
+                        <label class="radio-inline"><input type="radio" name="optradio"></label>          
+                  </td>
+                  <td>
+                      <div><img src="images/bartender2.PNG" alt="" style="width:150px;height:150px;"></div>
+                      <div>Fernando</div>
+                  </td>
 
-                        <div class="input-group">
-                                <div class="input-group-text">
-                                    <input type="checkbox">
-                                </div>
-                        </div>
 
-                    
-                    </td>
                 </tr>
+
+
                 
             </tbody>
             </table>

@@ -18,6 +18,8 @@
 
 [How to: fullscreen background autoplay video on mobile in 2018](https://medium.com/just-goe-frontend-adventures/how-to-fullscreen-background-autoplay-video-on-mobile-in-2018-208dfee26bc1)
 
+[Bootstrap Form Inputs](https://www.w3schools.com/bootstrap/bootstrap_forms_inputs.asp)
+
 # This Section Will Be Removed in Final Build
 ## Redis install
 1. Install Redis on Machine

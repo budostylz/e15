@@ -1,0 +1,32 @@
+{
+    "bar-louie": {
+        "title": "Bar Louie",
+        "description": "Bar Louie is an eclectic urban bar with warm surroundings, filled with nightlife photography, hand-laid tile artwork and other local architectural touches. Made famous for our handcrafted signature martinis, we also feature an exceptional selection of uniquely presented American food traditionally and regionally inspired, including small plates, burgers and sandwiches. While beer and wine connoisseurs will be impressed with our extensive selection of imports, microbrews and over 20 wines by the glass, cocktail drinkers will revel in signature martinis, mojitos and margaritas made from the highest quality ingredients, fresh fruit and hand squeezed juices.We are dedicated to always remaining a local bar that delivers unforgettable experiences to every guest. Whether gathering with friends or unwinding with a cocktail, Bar Louie guests have come to expect the remarkable service and reliable experiences from us that keep them coming back over and over again.",
+        "image_path": "images/bar/bar1.PNG",
+        "bar_url": "https://www.totalhappyhour.com/happy-hour-for-bar-louie-in-miami-fl-33127"
+    },
+    "mulligans-irish-pub": {
+        "title": "Mulligan’s Irish Pub",
+        "description": "Open to all! This family-friendly upscale Irish Pub & Sports Bar boasts an old-world feel with high ceilings, Irish murals, elegant paintings and an Irish Manor country setting. Mulligans offers 11 flat-screen TVs so you can watch your favorite game, a full bar including Guinness on tap, comfortable booths and a 1,200 square foot outdoor veranda overlooking the golf course (smoking permitted).",
+        "image_path": "images/bar/bar2.PNG",
+        "bar_url": "https://www.wentworthgolfclub.org/mulligans-irish-pub/"
+    },
+    "astra-miami": {
+        "title": "Astra Miami",
+        "description": "ASTRA is the ideal location to impress as you watch spectacular sunsets, sip on the finest wines and spirits and make new friends. Lounge on overstuffed sofas as you enjoy music nightly from a host of international DJs and live bands and take in the 360 degree sweeping views of Wynwood, Miami.",
+        "image_path": "images/bar/bar3.PNG",
+        "bar_url": "https://astramiami.com"
+    },
+    "the-oden": {
+        "title": "The Oden",
+        "description": "The Oden by Kanpai Sake School is a new Japanese restaurant and sake bar at Five on the Bund, run by Taiwanese restaurant group Kanpai, who also operate Kanpai Classic at Five and Three on the Bund.",
+        "image_path": "images/bar/bar4.PNG",
+        "bar_url": "https://rachelgouk.com/the-oden-premium-sakes-and-japanese-oden"
+    },
+    "mr-wrights-gold-digger-saloon": {
+        "title": "Mr. Wright's Gold Digger Saloon",
+        "description": "In the old west, Mr. Wright had a cabin on the path to the area's most dangerous Goldmine that offered healthy elixirs during the day and moonshine by night. That place was called Miami, Arizona. Now Mr. Wright comes to you here in Miami's famed Wynwood Arts District, entitled Mr. Wright's Gold Digger Saloon. Our bar has a full kitchen that offers delicious tapas that go well with our specialty cocktails. Our laid back lounge setting is full of good cheer and relaxed vibes. Come brush off the dust, and hang with us here in Miami, Florida!",
+        "image_path": "images/bar/bar5.PNG",
+        "bar_url": "https://gold-digger-saloon.business.site/"
+    }
+}

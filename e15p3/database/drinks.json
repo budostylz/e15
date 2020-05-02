@@ -1,0 +1,103 @@
+{
+    "mojito": {
+        "drink": "Mojito",
+        "drink_image": "https:\/\/www.thecocktaildb.com\/images\/media\/drink\/rxtqps1478251029.jpg",
+        "ingredient": "Light rum, Lime, Sugar, Mint, and Soda water"
+    },
+    "old-fashioned": {
+        "drink": "Old Fashioned",
+        "drink_image": "https:\/\/www.thecocktaildb.com\/images\/media\/drink\/vrwquq1478252802.jpg",
+        "ingredient": "Bourbon, Angostura bitters, Sugar and Water"
+    },
+    "long-island-tea": {
+        "drink": "Long Island Tea",
+        "drink_image": "https:\/\/www.thecocktaildb.com\/images\/media\/drink\/ywxwqs1439906072.jpg",
+        "ingredient": "Vodka, Light rum, Gin, Tequila, and Lemon, and Coca-Cola"
+    },
+    "negroni": {
+        "drink": "Negroni",
+        "drink_image": "https:\/\/www.thecocktaildb.com\/images\/media\/drink\/qgdu971561574065.jpg",
+        "ingredient": "Gin, Campari, and Sweet Vermouth"
+    },
+    "whiskey-sour": {
+        "drink": "Whiskey Sour",
+        "drink_image": "https:\/\/www.thecocktaildb.com\/images\/media\/drink\/zxd8v41576797287.jpg",
+        "ingredient": "Blended whiskey, Lemon, Powdered sugar, Cherry, and Lemon"
+    },
+    "dry-martini": {
+        "drink": "Dry Martini",
+        "drink_image": "https:\/\/www.thecocktaildb.com\/images\/media\/drink\/9uqt9p1576519019.jpg",
+        "ingredient": "Gin, Dry Vermouth, and Olive"
+    },
+    "daiquiri": {
+        "drink": "Daiquiri",
+        "drink_image": "https:\/\/www.thecocktaildb.com\/images\/media\/drink\/usuuur1439906797.jpg",
+        "ingredient": "Light rum, Lime, and Powdered sugar"
+    },
+    "margarita": {
+        "drink": "Margarita",
+        "drink_image": "https:\/\/www.thecocktaildb.com\/images\/media\/drink\/wpxpvu1439905379.jpg",
+        "ingredient": "Tequila, Triple sec, Lime juice, and Salt"
+    },
+    "manhattan": {
+        "drink": "Manhattan",
+        "drink_image": "https:\/\/www.thecocktaildb.com\/images\/media\/drink\/ec2jtz1504350429.jpg",
+        "ingredient": "Sweet Vermouth, Bourbon, Angostura bitters, Ice, Maraschino cherry, and Orange peel ",
+    },
+    "moscow-mule": {
+        "drink": "Moscow Mule",
+        "drink_image": "https:\/\/www.thecocktaildb.com\/images\/media\/drink\/3pylqc1504370988.jpg",
+        "ingredient": "Vodka, Lime juice and Ginger ale"
+    },
+    "after-dinner-cocktail": {
+        "drink": "After Dinner Cocktail",
+        "drink_image": "https:\/\/www.thecocktaildb.com\/images\/media\/drink\/vtytxq1483387578.jpg",
+        "ingredient": "Apricot brandy, Triple sec and Lime"
+    },
+    "after-supper-cocktail": {
+        "drink": "After Supper Cocktail",
+        "drink_image": "https:\/\/www.thecocktaildb.com\/images\/media\/drink\/quyxwu1483387610.jpg",
+        "ingredient": "Triple sec, Apricot brandy and Lemon juice"
+    },
+    "alabama-slammer": {
+        "idDrink": "11012",
+        "drink": "Alabama Slammer",
+        "drink_image": "https:\/\/www.thecocktaildb.com\/images\/media\/drink\/qtwxwr1483387647.jpg",
+        "ingredient": "Southern Comfort, Amaretto, Sloe gin and Lemon juice"
+    },
+    "alaska-cocktail": {
+        "drink": "Alaska Cocktail",
+        "drink_image": "https:\/\/www.thecocktaildb.com\/images\/media\/drink\/wsyryt1483387720.jpg",
+        "ingredient": "Orange bitters, Gin, Yellow Chartreuse and Lemon peel"
+    },
+    "alexander": {
+        "drink": "Alexander",
+        "drink_image": "https:\/\/www.thecocktaildb.com\/images\/media\/drink\/urystu1478253039.jpg",
+        "ingredient": "Gin, Creme de Cacao, Light cream and Nutmeg"
+    },
+    "brandy-alexander": {
+        "drink": "Brandy Alexander",
+        "drink_image": "https:\/\/www.thecocktaildb.com\/images\/media\/drink\/tvqxvr1483387746.jpg",
+        "ingredient": "Brandy, Creme de Cacao, Light cream, Nutmeg"
+    },
+    "alfie-cocktail": {
+        "drink": "Alfie Cocktail",
+        "drink_image": "https:\/\/www.thecocktaildb.com\/images\/media\/drink\/ypxsqy1483387829.jpg",
+        "ingredient": "Triple sec and Pineapple juice"
+    },
+    "algonquin": {
+        "drink": "Algonquin",
+        "drink_image": "https:\/\/www.thecocktaildb.com\/images\/media\/drink\/uwryxx1483387873.jpg",
+        "ingredient": "Blended whiskey, Dry Vermouth and Pineapple juice"
+    },
+    "allegheny": {
+        "drink": "Allegheny",
+        "drink_image": "https:\/\/www.thecocktaildb.com\/images\/media\/drink\/uwvyts1483387934.jpg",
+        "ingredient": "Dry Vermouth, Bourbon, Blackberry brandy, Lemon juice and Lemon peel"
+    },
+    "allies-cocktail": {
+        "drink": "Allies Cocktail",
+        "drink_image": "https:\/\/www.thecocktaildb.com\/images\/media\/drink\/qvprvp1483388104.jpg",
+        "ingredient": "Dry Vermouth, Gin and Kummel"
+    }
+}

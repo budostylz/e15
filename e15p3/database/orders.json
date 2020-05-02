@@ -1,0 +1,40 @@
+{
+    "bar-louie-order1": {
+        "bar_id": 1,
+        "customer_id": 1,
+        "bartender_id": 1,
+        "order": {
+            "drink1": {
+                "drink_id": 1,
+                "price": 3.33
+            },
+            "drink2": {
+                "drink_id": 2,
+                "price": 3.33
+            },
+            "drink3": {
+                "drink_id": 3,
+                "price": 3.33
+            }
+        }
+    },
+    "bar-louie-order2": {
+        "bar_id": 1,
+        "customer_id": 2,
+        "bartender_id": 2,
+        "order": {
+            "drink1": {
+                "drink_id": 1,
+                "price": 3.33
+            },
+            "drink2": {
+                "drink_id": 2,
+                "price": 3.33
+            },
+            "drink3": {
+                "drink_id": 3,
+                "price": 3.33
+            }
+        }
+    }
+}

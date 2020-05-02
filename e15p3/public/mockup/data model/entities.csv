@@ -8,6 +8,8 @@ bar,,,,,one-to-many,,,,,orders
 customer,,,,,one-to-many,,,,,orders
 bartender,,,,,one-to-many,,,,,orders
 bar,,,,,many-to-many,,,,,drinks
+countries,,,,,one-to-many,,,,,customer
+Provinces,,,,,one-to-many,,,,,customer
 ,,,,,,,,,,
 entities,,,,,,,,,,
 user,,,,,,,,,,
@@ -16,3 +18,5 @@ bartender,,,,,,,,,,
 bar ,,,,,,,,,,
 drinks,,,,,,,,,,
 orders,,,,,,,,,,
+countries,,,,,,,,,,
+provinces,,,,,,,,,,

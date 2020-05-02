@@ -1,0 +1,10 @@
+{
+    "bar_drink1": {
+        "bar_id": 1,
+        "drink_id": 2
+    },
+    "bar_drink2": {
+        "bar_id": 2,
+        "drink_id": 2
+    }
+}

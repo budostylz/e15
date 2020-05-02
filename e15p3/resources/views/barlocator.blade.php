@@ -3,6 +3,9 @@
 <head>
 
     <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <script src="https://maps.googleapis.com/maps/api/js?json=Bar&types=establishment&key=AIzaSyAC9uJbDkVAVXfKALyaigk71zOA8Sd6g7o&libraries=places"></script>
+    <script src="libs/jquery-3.4.1.min.js"></script>
+    <script src="js/placeSearch.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
 </head>
@@ -63,12 +66,10 @@
                 </div>
 
                 <div class="col-sm pt-2 text-center">
-                    <label for="exampleInputEmail1"><h5>Find in a Bar</h5></label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"> 
-
-
+                    <input id="autocomplete" placeholder="Enter a Place or Address" type="text" class=" form-control pac-target-input" autocomplete="off">
+                    <!-- form-control -->
                 </div>
-                <div class="col-sm pt-5">
+                <div class="col-sm pt-2">
                     <button type="submit" class="btn btn-primary bg-dark">Get Bar Info</button>
 
 
@@ -122,7 +123,7 @@
             <div class="row">
                 <div class="col-sm"></div>
                 <div class="col-sm text-center pt-5">
-                    <button type="submit" class="btn btn-primary bg-dark">Get Drinks</button>
+                    <a href="/drinkinfo"><div type="submit" class="btn btn-primary bg-dark">Get Drinks</div></a>
 
                 </div>
                 <div class="col-sm"></div>
@@ -141,6 +142,27 @@
 
 </form>
 
+
+
+<div id="locationField"><input id="autocomplete" placeholder="Enter a Place or Address" type="text" /></div>
+    <div id="map"></div>
+    <div id="pano"></div>
+    <div class="container-fluid">
+        <div class="row" style="overflow: scroll; width: 1200px; height: 500px;">
+            <table class="table table-responsive">
+                <tr>
+                    <td><div id="streetView" style="text-align:right"></div></td>
+                </tr>
+                <tr>
+                    <td><div id="streetView" style="text-align:right"></div></td>
+                </tr>
+                <tr>
+                    <td><div id="placeInfo" ></div></td>
+                    <td><div id="reviews" ></div></td>
+                </tr>
+            </table>
+        </div>
+    </div>
 
 
 </body>

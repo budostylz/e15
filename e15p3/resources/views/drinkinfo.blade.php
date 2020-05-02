@@ -140,7 +140,7 @@
                 <div class="col-sm"></div>
                 <div class="col-sm ml-5">
 
-                    <button type="submit" class="btn btn-primary bg-dark">Order Drinks</button>
+                    <a href="/checkoutdrinks"><div type="submit" class="btn btn-primary bg-dark">Order Drinks</div></a>
 
                 
                 </div>

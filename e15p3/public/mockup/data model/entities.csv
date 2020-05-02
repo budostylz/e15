@@ -1,0 +1,18 @@
+﻿entity,,,,,relationship,,,,,entity
+customer,,,,,one-to-one,,,,,user
+bartender,,,,,one-to-one,,,,,user
+bar ,,,,,one-to-many,,,,,drinks
+bartender,,,,,one-to-many,,,,,customer
+customer,,,,,one-to-many,,,,,drinks
+bar,,,,,one-to-many,,,,,orders
+customer,,,,,one-to-many,,,,,orders
+bartender,,,,,one-to-many,,,,,orders
+bar,,,,,many-to-many,,,,,drinks
+,,,,,,,,,,
+entities,,,,,,,,,,
+user,,,,,,,,,,
+customer,,,,,,,,,,
+bartender,,,,,,,,,,
+bar ,,,,,,,,,,
+drinks,,,,,,,,,,
+orders,,,,,,,,,,

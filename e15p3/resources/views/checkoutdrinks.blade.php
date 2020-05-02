@@ -25,11 +25,11 @@
                                     <a class="nav-link" href="/bartenderreview">Review Order(Bar Tender)</a>
                                 </li>
 
-                                 <li class="nav-item active">
+                                 <li class="nav-item">
                                     <a class="nav-link" href="/checkoutdrinks">Review Order(Customer)</a>
                                  </li>
 
-                                <li class="nav-item active">
+                                <li class="nav-item">
                                     <a class="nav-link" href="/signin">Login</a>
                                 </li>
 

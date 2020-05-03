@@ -17,8 +17,6 @@ class CreateBartendersTable extends Migration
             $table->bigIncrements('id');
             $table->timestamps();
 
-
-            $table->bigInteger('user_id')->unsigned();
         });
     }
 

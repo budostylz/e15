@@ -16,6 +16,7 @@ class CreateBarsTable extends Migration
         Schema::create('bars', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->timestamps();
+            $table->string('slug');
             $table->string('title');
             $table->mediumText('description');
             $table->string('image_path');

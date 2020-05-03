@@ -1,0 +1,30 @@
+{
+    "@shaun": {
+        "last_name": "Lewis",
+        "first_name": "Shaun",
+        "middle_initial": "",
+        "email": "lewis.shaun1@outlook.com",
+        "entity_type": "Bartender"
+    },
+    "@fernando": {
+        "last_name": "Hernandez",
+        "first_name": "Fernando",
+        "middle_initial": "",
+        "email": "fernando1@gmail.com",
+        "entity_type": "Bartender"
+    },
+    "@jill": {
+        "last_name": "Harvard",
+        "first_name": "Jill",
+        "middle_initial": "",
+        "email": "jill@harvard.edu",
+        "entity_type": "Customer"
+    },
+    "@jamal": {
+        "last_name": "Harvard",
+        "first_name": "Jamal",
+        "middle_initial": "",
+        "email": "jamal@harvard.edu",
+        "entity_type": "Customer"
+    }
+}

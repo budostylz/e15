@@ -1,9 +1,9 @@
 {
     "bar-louie-order1": {
         "bar_id": 1,
-        "customer_id": 1,
+        "customer_id": 3,
         "bartender_id": 1,
-        "order": {
+        "customer_order": {
             "drink1": {
                 "drink_id": 1,
                 "price": 3.33
@@ -19,10 +19,10 @@
         }
     },
     "bar-louie-order2": {
-        "bar_id": 1,
-        "customer_id": 2,
+        "bar_id": 2,
+        "customer_id": 4,
         "bartender_id": 2,
-        "order": {
+        "customer_order": {
             "drink1": {
                 "drink_id": 1,
                 "price": 3.33

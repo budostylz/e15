@@ -72,43 +72,25 @@
                 </div>
             </div>
 
-            <div class="row">
-                <div class="col-sm">
-                    <label for="exampleInputEmail1">Country</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                </div>
-                <div class="col-sm">
-                    <label for="exampleInputEmail1">State/Province</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                </div>
-                <div class="col-sm">
-                
-                </div>
-            </div>
+      
 
 
 
-            <div class="row">
-                <div class="col-sm">
-                    <label for="exampleInputEmail1">Street</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"> 
-                </div>           
+        
 
-                <div class="col-sm">
-                    <label for="exampleInputEmail1">Zip Code</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                </div>
-                <div class="col-sm">
-                
-                </div>
-            </div>
-
-            <div class="row">
+            <div class="row pt-5">
                 <div class="col-sm">
                     <label for="exampleInputEmail1">Email</label>
                     <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
                 </div>
                 <div class="col-sm">
+
+                <label for="exampleInputEmail1">Are you a Bartender or Customer Ordering Drinks?</label>
+                    <select class="custom-select">
+                                    <option selected disabled value="">Choose...</option>
+                                    <option>Customer</option>
+                                    <option>Bartender</option>
+                    </select> 
 
  
                 </div>
@@ -124,12 +106,7 @@
                 <div class="col-sm"></div>
                 <div class="col-sm">
 
-                    <label for="exampleInputEmail1">Are you a Bartender or Customer Ordering Drinks?</label>
-                    <select class="custom-select">
-                                    <option selected disabled value="">Choose...</option>
-                                    <option>Customer</option>
-                                    <option>Bartender</option>
-                    </select> 
+                    
 
                 </div>
                 <div class="col-sm"></div>

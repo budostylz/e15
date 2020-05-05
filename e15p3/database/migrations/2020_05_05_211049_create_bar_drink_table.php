@@ -20,6 +20,10 @@ class CreateBarDrinkTable extends Migration
             $table->bigInteger('bar_id')->unsigned();
             $table->bigInteger('drink_id')->unsigned();
 
+            $table->foreign('bar_id')->references('id')->on('bars');
+            $table->foreign('drink_id')->references('id')->on('drinks');
+
+
         });
     }
 

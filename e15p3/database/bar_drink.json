@@ -5,8 +5,200 @@
             "drink_id": 2
         },
         {
+            "bar_id": 1,
+            "drink_id": 4
+        },
+        {
+            "bar_id": 1,
+            "drink_id": 6
+        },
+        {
+            "bar_id": 1,
+            "drink_id": 8
+        },
+        {
+            "bar_id": 1,
+            "drink_id": 10
+        },
+        {
+            "bar_id": 1,
+            "drink_id": 12
+        },
+        {
+            "bar_id": 1,
+            "drink_id": 14
+        },
+        {
+            "bar_id": 1,
+            "drink_id": 16
+        },
+        {
+            "bar_id": 1,
+            "drink_id": 18
+        },
+        {
+            "bar_id": 1,
+            "drink_id": 20
+        },
+        {
+            "bar_id": 2,
+            "drink_id": 20
+        },
+        {
+            "bar_id": 2,
+            "drink_id": 1
+        },
+        {
             "bar_id": 2,
             "drink_id": 2
+        },
+        {
+            "bar_id": 2,
+            "drink_id": 3
+        },
+        {
+            "bar_id": 2,
+            "drink_id": 4
+        },
+        {
+            "bar_id": 2,
+            "drink_id": 5
+        },
+        {
+            "bar_id": 2,
+            "drink_id": 6
+        },
+        {
+            "bar_id": 2,
+            "drink_id": 7
+        },
+        {
+            "bar_id": 2,
+            "drink_id": 8
+        },
+        {
+            "bar_id": 2,
+            "drink_id": 9
+        },
+        {
+            "bar_id": 3,
+            "drink_id": 11
+        },
+        {
+            "bar_id": 3,
+            "drink_id": 1
+        },
+        {
+            "bar_id": 3,
+            "drink_id": 2
+        },
+        {
+            "bar_id": 3,
+            "drink_id": 3
+        },
+        {
+            "bar_id": 3,
+            "drink_id": 4
+        },
+        {
+            "bar_id": 3,
+            "drink_id": 5
+        },
+        {
+            "bar_id": 3,
+            "drink_id": 6
+        },
+        {
+            "bar_id": 3,
+            "drink_id": 7
+        },
+        {
+            "bar_id": 3,
+            "drink_id": 8
+        },
+        {
+            "bar_id": 3,
+            "drink_id": 9
+        },
+        {
+            "bar_id": 4,
+            "drink_id": 10
+        },
+        {
+            "bar_id": 4,
+            "drink_id": 11
+        },
+        {
+            "bar_id": 4,
+            "drink_id": 12
+        },
+        {
+            "bar_id": 4,
+            "drink_id": 13
+        },
+        {
+            "bar_id": 4,
+            "drink_id": 14
+        },
+        {
+            "bar_id": 4,
+            "drink_id": 15
+        },
+        {
+            "bar_id": 4,
+            "drink_id": 16
+        },
+        {
+            "bar_id": 4,
+            "drink_id": 17
+        },
+        {
+            "bar_id": 4,
+            "drink_id": 18
+        },
+        {
+            "bar_id": 4,
+            "drink_id": 19
+        },
+        {
+            "bar_id": 5,
+            "drink_id": 10
+        },
+        {
+            "bar_id": 5,
+            "drink_id": 9
+        },
+        {
+            "bar_id": 5,
+            "drink_id": 8
+        },
+        {
+            "bar_id": 5,
+            "drink_id": 7
+        },
+        {
+            "bar_id": 5,
+            "drink_id": 6
+        },
+        {
+            "bar_id": 5,
+            "drink_id": 5
+        },
+        {
+            "bar_id": 5,
+            "drink_id": 4
+        },
+        {
+            "bar_id": 5,
+            "drink_id": 3
+        },
+        {
+            "bar_id": 5,
+            "drink_id": 2
+        },
+        {
+            "bar_id": 5,
+            "drink_id": 1
         }
     ]
 }

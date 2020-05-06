@@ -141,3 +141,6 @@ Route::get('/signin', function () {
 
 
 
+
+Auth::routes();
+

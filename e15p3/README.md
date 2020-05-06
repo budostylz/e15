@@ -20,6 +20,8 @@
 
 [Bootstrap Form Inputs](https://www.w3schools.com/bootstrap/bootstrap_forms_inputs.asp)
 
+#### Use error pattern as described in lecture.
+
 # This Section Will Be Removed in Final Build
 ## Redis install
 1. Install Redis on Machine

@@ -22,13 +22,21 @@
                                     <a class="nav-link" href="/barlocator">Home</a>
                                 </li>
 
-                                <li class="nav-item">
-                                    <a class="nav-link" href="/bartenderreview">Review Order(Bar Tender)</a>
-                                </li>
 
                                  <li class="nav-item">
-                                    <a class="nav-link" href="/checkoutdrinks">Review Order(Customer)</a>
+
+                                    @if(Auth::user())
+                                        @if(Auth::user()->entity_type == 'Bartender')
+                                            <a class="nav-link" href="/bartenderreview">Review Customer Order</a>
+
+                                        @else
+                                            <a class="nav-link" href="/checkoutdrinks">Review Your Order</a>
+                                        @endif
+                                    @endif
+
                                  </li>
+
+
 
                                 <li class="nav-item">
                                     @if(!Auth::user())
@@ -36,7 +44,7 @@
                                     @else
                                         <form method='POST' id='logout' action='/logout'>
                                             {{ csrf_field() }}
-                                            <a class="nav-link" href='#' onClick='document.getElementById("logout").submit();'>Logout</a>
+                                            <a class="nav-link" href='#' onClick='document.getElementById("logout").submit();'>Logout {{ Auth::user()->first_name }}</a>
                                         </form>
                                     @endif
                                 </li>
@@ -48,9 +56,14 @@
         
         </div>
 
-        <div class="row">
+        <div class="row pt-3">
             <div class="col-sm"></div>
-            <div class="col-sm">
+            <div class="col-sm text-center">
+                <h2>
+                    @if(Auth::user())
+                        Welcome Back {{ Auth::user()->first_name }}                                
+                    @endif            
+                </h2>            
             </div>
             <div class="col-sm"></div>
         </div>
@@ -59,7 +72,6 @@
 
             <div class="row">
                 <div class="col-sm">
-                    
                 </div>
 
                 <div class="col-sm pt-2 text-center">

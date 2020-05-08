@@ -9,7 +9,8 @@ class Drink extends Model
     public function bars()
     {
         return $this-> belongsToMany('App\Bar')
-            ->withTimestamps();
+            ->withTimestamps()
+            ->withPivot('price');
     }
 
     public function customer()

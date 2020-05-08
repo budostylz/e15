@@ -21,9 +21,10 @@ class BarDrinkTableSeeder extends Seeder
         
             $barID = $barDrinks['bar_drinks'][$i]['bar_id'];
             $drinkID = $barDrinks['bar_drinks'][$i]['drink_id'];
+            $price = $barDrinks['bar_drinks'][$i]['price'];
             $bar = Bar::where('id', '=', $barID)->first();
             $drink = Drink::where('id', '=', $drinkID)->first();
-            $drink->bars()->save($bar);
+            $drink->bars()->save($bar, ['price' => $price]);
     
     
        }

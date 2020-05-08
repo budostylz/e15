@@ -22,6 +22,7 @@ class CreateBarDrinkTable extends Migration
 
             $table->foreign('bar_id')->references('id')->on('bars');
             $table->foreign('drink_id')->references('id')->on('drinks');
+            $table->decimal('price', 4, 2);
 
 
         });

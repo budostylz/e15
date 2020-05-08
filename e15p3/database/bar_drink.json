@@ -2,203 +2,253 @@
     "bar_drinks": [
         {
             "bar_id": 1,
-            "drink_id": 2
+            "drink_id": 2,
+            "price": 2.00
         },
         {
             "bar_id": 1,
-            "drink_id": 4
+            "drink_id": 4,
+            "price": 2.00
         },
         {
             "bar_id": 1,
-            "drink_id": 6
+            "drink_id": 6,
+            "price": 3.00
         },
         {
             "bar_id": 1,
-            "drink_id": 8
+            "drink_id": 8,
+            "price": 4.00
         },
         {
             "bar_id": 1,
-            "drink_id": 10
+            "drink_id": 10,
+            "price": 5.00
         },
         {
             "bar_id": 1,
-            "drink_id": 12
+            "drink_id": 12,
+            "price": 6.00
         },
         {
             "bar_id": 1,
-            "drink_id": 14
+            "drink_id": 14,
+            "price": 5.00
         },
         {
             "bar_id": 1,
-            "drink_id": 16
+            "drink_id": 16,
+            "price": 8.00
         },
         {
             "bar_id": 1,
-            "drink_id": 18
+            "drink_id": 18,
+            "price": 9.00
         },
         {
             "bar_id": 1,
-            "drink_id": 20
+            "drink_id": 20,
+            "price": 10.00
         },
         {
             "bar_id": 2,
-            "drink_id": 20
+            "drink_id": 20,
+            "price": 10.00
         },
         {
             "bar_id": 2,
-            "drink_id": 1
+            "drink_id": 1,
+            "price": 5.00
         },
         {
             "bar_id": 2,
-            "drink_id": 2
+            "drink_id": 2,
+            "price": 4.00
         },
         {
             "bar_id": 2,
-            "drink_id": 3
+            "drink_id": 3,
+            "price": 6.00
         },
         {
             "bar_id": 2,
-            "drink_id": 4
+            "drink_id": 4,
+            "price": 8.00
         },
         {
             "bar_id": 2,
-            "drink_id": 5
+            "drink_id": 5,
+            "price": 10.00
         },
         {
             "bar_id": 2,
-            "drink_id": 6
+            "drink_id": 6,
+            "price": 6.00
         },
         {
             "bar_id": 2,
-            "drink_id": 7
+            "drink_id": 7,
+            "price": 7.00
         },
         {
             "bar_id": 2,
-            "drink_id": 8
+            "drink_id": 8,
+            "price": 8.00
         },
         {
             "bar_id": 2,
-            "drink_id": 9
+            "drink_id": 9,
+            "price": 9.00
         },
         {
             "bar_id": 3,
-            "drink_id": 11
+            "drink_id": 11,
+            "price": 6.00
         },
         {
             "bar_id": 3,
-            "drink_id": 1
+            "drink_id": 1,
+            "price": 5.00
         },
         {
             "bar_id": 3,
-            "drink_id": 2
+            "drink_id": 2,
+            "price": 4.00
         },
         {
             "bar_id": 3,
-            "drink_id": 3
+            "drink_id": 3,
+            "price": 8.00
         },
         {
             "bar_id": 3,
-            "drink_id": 4
+            "drink_id": 4,
+            "price": 8.00
         },
         {
             "bar_id": 3,
-            "drink_id": 5
+            "drink_id": 5,
+            "price": 5.00
         },
         {
             "bar_id": 3,
-            "drink_id": 6
+            "drink_id": 6,
+            "price": 6.00
         },
         {
             "bar_id": 3,
-            "drink_id": 7
+            "drink_id": 7,
+            "price": 7.00
         },
         {
             "bar_id": 3,
-            "drink_id": 8
+            "drink_id": 8,
+            "price": 8.00
         },
         {
             "bar_id": 3,
-            "drink_id": 9
+            "drink_id": 9,
+            "price": 9.00
         },
         {
             "bar_id": 4,
-            "drink_id": 10
+            "drink_id": 10,
+            "price": 10.00
         },
         {
             "bar_id": 4,
-            "drink_id": 11
+            "drink_id": 11,
+            "price": 7.00
         },
         {
             "bar_id": 4,
-            "drink_id": 12
+            "drink_id": 12,
+            "price": 6.00
         },
         {
             "bar_id": 4,
-            "drink_id": 13
+            "drink_id": 13,
+            "price": 7.00
         },
         {
             "bar_id": 4,
-            "drink_id": 14
+            "drink_id": 14,
+            "price": 8.00
         },
         {
             "bar_id": 4,
-            "drink_id": 15
+            "drink_id": 15,
+            "price": 8.00
         },
         {
             "bar_id": 4,
-            "drink_id": 16
+            "drink_id": 16,
+            "price": 8.00
         },
         {
             "bar_id": 4,
-            "drink_id": 17
+            "drink_id": 17,
+            "price": 3.00
         },
         {
             "bar_id": 4,
-            "drink_id": 18
+            "drink_id": 18,
+            "price": 4.00
         },
         {
             "bar_id": 4,
-            "drink_id": 19
+            "drink_id": 19,
+            "price": 9.00
         },
         {
             "bar_id": 5,
-            "drink_id": 10
+            "drink_id": 10,
+            "price": 10.00
         },
         {
             "bar_id": 5,
-            "drink_id": 9
+            "drink_id": 9,
+            "price": 9.00
         },
         {
             "bar_id": 5,
-            "drink_id": 8
+            "drink_id": 8,
+            "price": 8.00
         },
         {
             "bar_id": 5,
-            "drink_id": 7
+            "drink_id": 7,
+            "price": 7.00
         },
         {
             "bar_id": 5,
-            "drink_id": 6
+            "drink_id": 6,
+            "price": 6.00
         },
         {
             "bar_id": 5,
-            "drink_id": 5
+            "drink_id": 5,
+            "price": 5.00
         },
         {
             "bar_id": 5,
-            "drink_id": 4
+            "drink_id": 4,
+            "price": 4.00
         },
         {
             "bar_id": 5,
-            "drink_id": 3
+            "drink_id": 3,
+            "price": 6.00
         },
         {
             "bar_id": 5,
-            "drink_id": 2
+            "drink_id": 2,
+            "price": 4.00
         },
         {
             "bar_id": 5,
-            "drink_id": 1
+            "drink_id": 1,
+            "price": 10.00
         }
     ]
 }

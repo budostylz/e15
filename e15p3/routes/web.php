@@ -91,41 +91,38 @@ Route::get('/debug', function () {
     dump($debug);
 });
 
-Route::get('/barlocator', function () {
-    return view('barlocator');
+
+//time is ticking, so I'll justy handle this in the controllers for now
+/*Route::group(['middleware' => 'App\Http\Middleware\CustomerMiddleware'], function()
+{
+    Route::match('get', '/barlocator', 'BarLocatorController@index');
+    Route::match('get', '/checkoutdrinks', 'CheckoutDrinksController@index');
+
 });
 
-Route::get('/bartenderreview', function () {
-    return view('bartenderreview');
-});
+Route::group(['middleware' => 'App\Http\Middleware\BartenderMiddleware'], function()
+{
+    Route::match('get', '/bartenderreview', 'BartenderReviewController@index');
+    Route::match('get', '/processcustomerorder', 'ProcessCustomerOrderController@index');
 
-Route::get('/checkoutdrinks', function () {
-    return view('checkoutdrinks');
-});
-
-Route::get('/customerconfirmation', function () {
-    return view('customerconfirmation');
-});
-
-Route::get('/drinkdetails', function () {
-    return view('drinkdetails');
-});
-
-Route::get('/drinkinfo', function () {
-    return view('drinkinfo');
-});
+});*/
 
 
-Route::get('/', function () {
-    return view('home');
-});
+Route::group(['middleware' => 'auth'], function(){
 
+    Route::get('/barlocator', 'BarLocatorController@index');
+    Route::get('/bartenderreview', 'BartenderReviewController@index');
+    Route::get('/checkoutdrinks', 'CheckoutDrinksController@index');
+    Route::get('/customerconfirmation', 'CustomerConfirmationController@index');
+    Route::get('/drinkdetails', 'DrinkDetailsController@index');
+    Route::get('/drinkinfo', 'DrinkInfoController@index');
+    Route::get('/processcustomerorder', 'ProcessCustomerOrderController@index');
 
-Route::get('/processcustomerorder', function () {
-    return view('processcustomerorder');
 });
 
 
+
+Route::get('/', 'HomeController@index');
 
 Auth::routes();
 

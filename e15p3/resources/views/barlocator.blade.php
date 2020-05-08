@@ -10,7 +10,7 @@
 
 <body>
 
-<form>
+
     <div class="container-fluid">
         <div class="row">
             <div class="col-xl">
@@ -30,17 +30,16 @@
                                     <a class="nav-link" href="/checkoutdrinks">Review Order(Customer)</a>
                                  </li>
 
-                                <li class="nav-item active">
-                                    <a class="nav-link" href="/signin">Login</a>
-                                </li>
-
-
                                 <li class="nav-item">
-                                    <a class="nav-link" href="/">Logout</a>
+                                    @if(!Auth::user())
+                                            <a class="nav-link" href="/login">Login</a>
+                                    @else
+                                        <form method='POST' id='logout' action='/logout'>
+                                            {{ csrf_field() }}
+                                            <a class="nav-link" href='#' onClick='document.getElementById("logout").submit();'>Logout</a>
+                                        </form>
+                                    @endif
                                 </li>
-
-
-
 
                             </ul>
                         </div>
@@ -56,7 +55,7 @@
             <div class="col-sm"></div>
         </div>
 
-    
+    <form>
 
             <div class="row">
                 <div class="col-sm">
@@ -140,7 +139,7 @@
             </div>
 
 
-
+    </form>
 
 
             
@@ -150,7 +149,6 @@
 
     
 
-</form>
 
 
 

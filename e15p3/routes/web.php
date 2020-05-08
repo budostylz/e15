@@ -125,21 +125,6 @@ Route::get('/processcustomerorder', function () {
     return view('processcustomerorder');
 });
 
-Route::get('/register', function () {
-    return view('register');
-});
-
-Route::get('/signin', function () {
-    return view('signin');
-});
-
-
-
-
-
-
-
-
 
 
 Auth::routes();

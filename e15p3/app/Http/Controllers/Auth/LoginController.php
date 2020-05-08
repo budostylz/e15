@@ -35,6 +35,12 @@ class LoginController extends Controller
      */
     public function __construct()
     {
+        //dd('login', $this);
         $this->middleware('guest')->except('logout');
+    }
+
+    public function username() //override username() at vendor/AuthenticateUsers
+    {
+        return 'user_name';
     }
 }

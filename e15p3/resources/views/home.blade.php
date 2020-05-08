@@ -60,7 +60,7 @@
 <div class="container">
   <div class="row">
     <div class="col">
-        <a href="/signin"><div id="myBtn">Sign In</div></a>
+        <a href="/login"><div id="myBtn">Sign In</div></a>
     </div>
     <div class="col-5">
     <h1>Welcome to Bar App</h1>

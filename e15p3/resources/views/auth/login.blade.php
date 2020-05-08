@@ -11,28 +11,13 @@
                         <nav class="navbar navbar-expand-xl navbar-dark bg-dark">
                                 <div class="collapse navbar-collapse" id="navbarNav">
                                     <ul class="navbar-nav">
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="/barlocator">Home</a>
-                                        </li>
-
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="/bartenderreview">Review Order(Bar Tender)</a>
-                                        </li>
-
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="/checkoutdrinks">Review Order(Customer)</a>
-                                        </li>
-
-
                                         <li class="nav-item active">
-                                            <a class="nav-link" href="/signin">Login</a>
+                                            <a class="nav-link" href="/register">Register</a>
                                         </li>
-                                        
 
-
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="/">Logout</a>
-                                        </li>
+                                         <li class="nav-item">
+                                            <a class="nav-link" href="/">Home</a>
+                                         </li>
 
 
 
@@ -59,24 +44,20 @@
                         <div class="col-sm"></div>
                         <div class="col-sm">
 
-                            <div class="form-group">
-                                <label>User Name</label>
-                                <input type="text" class="form-control" id='username' type='username' name='username' value='{{ old('username') }}' required autofocus>
-                                @include('includes.error-field', ['fieldName' => 'username'])
+                                <label for='user_name'>User Name</label>
+                                <input id='user_name' dusk='user_name-input' class="form-control"  type='text' name='user_name' value='{{ old('user_name') }}' required autofocus>                        @include('geterrors.error-field', ['fieldName' => 'email'])
+                                @include('geterrors.error-field', ['fieldName' => 'user_name'])
 
-                            </div>
-                            <div class="form-group">
-                                <label>Password</label>
-                                <input type="password" class="form-control" id='password' name='password' required>
-                                @include('includes.error-field', ['fieldName' => 'password'])
-                            </div>
+                                <label class="pt-3">Password</label>
+                                <input type="password" dusk='password-input' class="form-control" id='password' name='password'>
+                                @include('geterrors.error-field', ['fieldName' => 'password'])
 
                         
                         </div>
                         <div class="col-sm"></div>
                     </div>
 
-                    <div class="row">
+                    <div class="row pt-3">
                         <div class="col-sm text-center">
                             <button type="submit" class="btn btn-primary bg-dark">Sign In</button> 
                         </div>

@@ -23,23 +23,39 @@ class OrdersTableSeeder extends Seeder
         
     
         foreach ($orders as $slug => $orderJSON){
+
+
+            $orderArr = array(
+                array(
+                    "drink_id" => 1,
+                    "price" => 3.10
+                ),
+                array(
+                    "drink_id" => 2,
+                    "price" => 3.00
+                )
+                
+            );
         
             $json_bar_id = $orderJSON['bar_id'];
+            $json_user_id = $orderJSON['user_id'];
             $json_customer_id = $orderJSON['customer_id'];
             $json_bartender_id = $orderJSON['bartender_id'];
     
     
             $bar_id = Bar::where('id', '=', $json_bar_id)->pluck('id')->first();
-            $customer_id = Customer::where('user_id', '=', $json_customer_id)->pluck('user_id')->first();
-            $bartender_id = Bartender::where('user_id', '=', $json_bartender_id)->pluck('user_id')->first();
+            $user_id = User::where('id', '=',  $json_user_id)->pluck('id')->first();
+            $customer_id = Customer::where('id', '=', $json_customer_id)->pluck('id')->first();
+            $bartender_id = Bartender::where('id', '=', $json_bartender_id)->pluck('id')->first();
     
     
             $order = new Order();
             $order->created_at = Carbon\Carbon::now()->subDays($counter)->toDateTimeString();//differentiate created_at timestamp:subDays($counter)
             $order->updated_at = Carbon\Carbon::now()->subDays($counter)->toDateTimeString();//differentiate updated_at timestamp:subDays($counter)
             $order->slug = $slug;
-            $order->customer_order = json_encode($orderJSON['customer_order']);
+            $order->customer_order = json_encode($orderArr);
             $order->bar_id = $bar_id;
+            $order->user_id = $user_id;
             $order->customer_id = $customer_id;
             $order->bartender_id = $bartender_id;
             $order->save();

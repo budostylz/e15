@@ -8,6 +8,7 @@ use App\Customer;
 use App\Bartender;
 use App\Order;
 
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -27,38 +28,50 @@ use App\Order;
     dump($app);
 */
 
+
+Route::get('/query1', 'QueryTestController@getBarInfo');
+Route::get('/query2', 'QueryTestController@getBarDrinks');
+Route::get('/query3', 'QueryTestController@getBarDrink');
+Route::get('/query4', 'QueryTestController@placeCustomerOrder');
+Route::get('/query5', 'QueryTestController@reviewCustomerOrder');
+Route::get('/query6', 'QueryTestController@processCustomerOrder');
+Route::get('/query7', 'QueryTestController@bartenderReview');
+Route::get('/query8', 'QueryTestController@createCustomer');
+Route::get('/query9', 'QueryTestController@createBartender');
+
+
+
+
+
+
+
 Route::get('/test', function(){
 
-    $barDrinksJSON = file_get_contents(database_path('bar_drink.json'));
-    $barDrinks = json_decode($barDrinksJSON, true);
-    $counter = count($barDrinks['bar_drinks']);
+    $customersJSON = file_get_contents(database_path('customers.json'));
+    $customers = json_decode($customersJSON, true);
+    $counter = count($customers['customers']);
 
-    dump($counter);
-    
+    for($i = 0; $i < $counter; $i++){
 
-    for ($i = 0; $i < $counter; $i++){
-    
-        $barID = $barDrinks['bar_drinks'][$i]['bar_id'];
-        $drinkID = $barDrinks['bar_drinks'][$i]['drink_id'];
 
-        $bar = Bar::where('id', '=', $barID)->first();
-        $drink = Drink::where('id', '=', $drinkID)->first();
+        $json_user_id = $customers['customers'][$i]['user_id'];
+        dump($json_user_id);
+        $user_id = User::where('id', '=', $json_user_id)->pluck('id')->first();
 
 
 
-        //$drink->bars()->save($bar);
+        $customer = new Customer();
+        $customer->created_at = Carbon\Carbon::now()->subDays($i)->toDateTimeString();//differentiate created_at timestamp:subDays($counter)
+        $customer->updated_at = Carbon\Carbon::now()->subDays($i)->toDateTimeString();//differentiate updated_at timestamp:subDays($counter)
+        $customer->user_id = $user_id;
 
-
-       //dump('$bar_id', $customer_id);
-       //dump($bar->slug);
-       //dump($drink->title);
-       //dump('drink id:',$drinkID);
+       //$customer->save();
 
 
 
 
-   }
 
+    }
    
 
 

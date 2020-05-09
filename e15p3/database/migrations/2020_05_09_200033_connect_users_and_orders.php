@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class ConnectBartendersAndOrders extends Migration
+class ConnectUsersAndOrders extends Migration
 {
     /**
      * Run the migrations.
@@ -14,10 +14,10 @@ class ConnectBartendersAndOrders extends Migration
     public function up()
     {
         Schema::table('orders', function (Blueprint $table) {
- 
-            //set foreign key for bartender
-            $table->bigInteger('bartender_id')->unsigned();   
-            $table->foreign('bartender_id')->references('id')->on('bartenders');
+    
+            //set foreign key for users
+            $table->bigInteger('user_id')->unsigned();   
+            $table->foreign('user_id')->references('id')->on('users');
     
         });
     }
@@ -30,11 +30,11 @@ class ConnectBartendersAndOrders extends Migration
     public function down()
     {
         Schema::table('orders', function (Blueprint $table) {
-            //drop bartender relationship
-            $table->dropForeign('bartenders_bartender_id_foreign');
-            $table->dropColumn('bartender_id');
 
+            //drop users relationship
+            $table->dropForeign('users_user_id_foreign');
+            $table->dropColumn('user_id');
+    
         });
-
     }
 }

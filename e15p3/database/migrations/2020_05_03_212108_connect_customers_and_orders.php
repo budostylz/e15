@@ -17,7 +17,7 @@ class ConnectCustomersAndOrders extends Migration
     
             //set foreign key for customers
             $table->bigInteger('customer_id')->unsigned();   
-            $table->foreign('customer_id')->references('user_id')->on('customers');
+            $table->foreign('customer_id')->references('id')->on('customers');
     
         });
 

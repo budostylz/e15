@@ -15,11 +15,12 @@ class CreateDrinksTable extends Migration
     {
         Schema::create('drinks', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->timestamps();
             $table->string('slug');
             $table->string('title');
             $table->text('drink_image');
             $table->text('ingredient');
+            $table->timestamps();
+
 
         });
     }

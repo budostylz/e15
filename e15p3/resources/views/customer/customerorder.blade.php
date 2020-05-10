@@ -34,15 +34,10 @@
     
   </div>
 
-  <div class="row">
-    <div class="col-sm pt-5 text-center">
-        <p class="text-left"><h3>Total Price $9.99</h3></p>
-    </div>
-  </div>
 
     <div class="row">
     <div class="col-sm pt-5 text-center">
-          <a href="/drinkinfo" class="text-dark"><h2>Click Here To Order More Drinks</h2></a>
+          <a href="/barlocator" class="text-dark"><h2>Click Here To Order More Drinks</h2></a>
 
     </div>
   </div>

@@ -27,11 +27,11 @@ class OrdersTableSeeder extends Seeder
 
             $orderArr = array(
                 array(
-                    "drink_id" => 1,
-                    "price" => 3.10
+                    "drink_title" => "Alfie Cocktail",
+                    "price" => 3.00
                 ),
                 array(
-                    "drink_id" => 2,
+                    "drink_title" => "Alfie Cocktail",
                     "price" => 3.00
                 )
                 
@@ -45,18 +45,15 @@ class OrdersTableSeeder extends Seeder
     
             $bar_id = Bar::where('id', '=', $json_bar_id)->pluck('id')->first();
             $user_id = User::where('id', '=',  $json_user_id)->pluck('id')->first();
-            $customer_id = Customer::where('id', '=', $json_customer_id)->pluck('id')->first();
             $bartender_id = Bartender::where('id', '=', $json_bartender_id)->pluck('id')->first();
     
     
             $order = new Order();
             $order->created_at = Carbon\Carbon::now()->subDays($counter)->toDateTimeString();//differentiate created_at timestamp:subDays($counter)
             $order->updated_at = Carbon\Carbon::now()->subDays($counter)->toDateTimeString();//differentiate updated_at timestamp:subDays($counter)
-            $order->slug = $slug;
             $order->customer_order = json_encode($orderArr);
             $order->bar_id = $bar_id;
             $order->user_id = $user_id;
-            $order->customer_id = $customer_id;
             $order->bartender_id = $bartender_id;
             $order->save();
 

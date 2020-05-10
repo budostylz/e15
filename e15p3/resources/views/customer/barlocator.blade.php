@@ -6,7 +6,8 @@
 
 @section('content')
 
-    <form>
+    <form method='POST' action='/bardetails'>
+        {{ csrf_field() }}
 
             <div class="row pt-3">
                 <div class="col-sm"></div>
@@ -26,15 +27,17 @@
 
                 <div class="col-sm pt-2 text-center">
 
-                    <select class="custom-select">
+                    <select class="custom-select" id="bar" name="bar" value='{{ old("bar") }}'>
                         <option selected disabled>Choose a Bar</option>
                         <option>Bar Louie</option>
-                        <option>Irish Pub</option>
-                        <option>Bar Miami</option>
-                        <option>Saisaki Bar</option>
-                        <option>Wild West Tavern</option>
+                        <option>Mulligan’s Irish Pub</option>
+                        <option>Astra Miami</option>
+                        <option>The Oden</option>
+                        <option>Mr. Wright's Gold Digger Saloon</option>
 
                     </select> 
+                    @include('geterrors.error-field', ['fieldName' => 'bar'])
+
 
 
 
@@ -42,63 +45,10 @@
                 </div>
                 <div class="col-sm pt-2">
                     <button type="submit" class="btn btn-primary bg-dark">Get Bar Info</button>
-
-
-                
+   
                 </div>
             </div>
 
-            <div class="row">
-                <div class="col-sm"></div>
-                <div class="col-sm text-center pt-5">
-                    <!--<h3>No Image Available</h3>-->
-                <img src="images/bar/bar1.PNG" alt="" style="width:300px;height:300px;">
-
-                </div>
-                <div class="col-sm">
-                
-                </div>
-            </div>
-
-
-
-            <div class="row">
-                <div class="col-sm">
-                </div>
-                
-                <div class="col-sm text-center pt-5">
-
-                    <h4>Bar Louie</h4>
-
-                    <p class="text-justify">Ambitioni dedisse scripsisse iudicaretur. Cras mattis iudicium purus sit amet fermentum. Donec sed odio operae, eu vulputate felis rhoncus. Praeterea iter est quasdam res quas ex communi. At nos hinc posthac, sitientis piros Afros. Petierunt uti sibi concilium totius Galliae in diem certam indicere. Cras mattis iudicium purus sit amet fermentum.</p>
-
-                </div>
-                <div class="col-sm">
-                
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-sm">
-                </div>
-                <div class="col-sm">
-                </div>
-                <div class="col-sm">
-
-
-
-                </div>
-            </div>
-
-
-            <div class="row">
-                <div class="col-sm"></div>
-                <div class="col-sm text-center pt-5">
-                    <a href="/drinkinfo"><div type="submit" class="btn btn-primary bg-dark">Get Drinks</div></a>
-
-                </div>
-                <div class="col-sm"></div>
-            </div>
 
 
     </form>

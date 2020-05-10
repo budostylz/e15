@@ -125,13 +125,18 @@ Route::group(['middleware' => 'App\Http\Middleware\BartenderMiddleware'], functi
 
 Route::group(['middleware' => 'auth'], function(){
 
-    Route::get('/barlocator', 'BarLocatorController@index');
-    Route::get('/bartenderreview', 'BartenderReviewController@index');
-    Route::post('/checkoutdrinks', 'CheckoutDrinksController@index');
-    Route::get('/drinkdetails', 'DrinkDetailsController@index');
-    Route::get('/drinkinfo', 'DrinkInfoController@index');
-    Route::get('/processcustomerorder', 'ProcessCustomerOrderController@index');
-    Route::post('/customerconfirmation', 'CustomerConfirmationController@index');
+    Route::match(['get', 'post'], '/barlocator', 'BarLocatorController@index');
+    Route::match(['get', 'post'], '/bardetails', 'BarDetailsController@index');
+    Route::match(['get', 'post'], '/checkoutdrinks', 'CheckoutDrinksController@index');
+    Route::match(['get', 'post'], '/drinkinfo', 'DrinkInfoController@index');
+    Route::match(['get', 'post'], '/bartenderreview', 'BartenderReviewController@index');
+    Route::match(['get', 'post'], '/drinkdetails', 'DrinkDetailsController@index');
+    Route::match(['get', 'post'], '/processcustomerorder', 'ProcessCustomerOrderController@index');
+    Route::match(['get', 'post'], '/customerconfirmation', 'CustomerConfirmationController@index');
+    Route::match(['get', 'post'], '/customerorder', 'CustomerOrderController@index');
+
+
+
 
 
 });

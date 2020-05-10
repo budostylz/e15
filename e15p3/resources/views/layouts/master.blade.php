@@ -10,7 +10,6 @@
 
 <body>
 
-
     <div class="container-fluid">
         <div class="row">
             <div class="col-xl">
@@ -30,7 +29,7 @@
                                             <a class="nav-link" href="/bartenderreview">Review Customer Order</a>
 
                                         @else
-                                            <a class="nav-link" href="/checkoutdrinks">Review Your Order</a>
+                                            <a class="nav-link" href="/customerorder">Review Your Order Status</a>
                                         @endif
                                     @endif
 
@@ -55,6 +54,19 @@
             </div>
         
         </div>
+
+    @if(session('order-confirmation'))
+
+        <div class="row">
+            <div class="col-xl">
+            <div class="alert alert-success text-center" role="alert">
+               {{ session('order-confirmation') }}
+
+            </div>
+            </div>
+        </div>
+    @endif
+
 
 
            <section id='main'>

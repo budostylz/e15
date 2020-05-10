@@ -121,15 +121,18 @@ Route::group(['middleware' => 'App\Http\Middleware\BartenderMiddleware'], functi
 });*/
 
 
+
+
 Route::group(['middleware' => 'auth'], function(){
 
     Route::get('/barlocator', 'BarLocatorController@index');
     Route::get('/bartenderreview', 'BartenderReviewController@index');
-    Route::get('/checkoutdrinks', 'CheckoutDrinksController@index');
-    Route::get('/customerconfirmation', 'CustomerConfirmationController@index');
+    Route::post('/checkoutdrinks', 'CheckoutDrinksController@index');
     Route::get('/drinkdetails', 'DrinkDetailsController@index');
     Route::get('/drinkinfo', 'DrinkInfoController@index');
     Route::get('/processcustomerorder', 'ProcessCustomerOrderController@index');
+    Route::post('/customerconfirmation', 'CustomerConfirmationController@index');
+
 
 });
 

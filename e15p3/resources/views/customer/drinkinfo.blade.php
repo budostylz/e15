@@ -1,62 +1,14 @@
-<!DOCTYPE html>
-<html>
-<head>
+@extends('layouts.master')
 
-    <link rel="stylesheet" href="/css/bootstrap.min.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-</head>
-
-<body>
+@section('title')
+    Drink Info
+@endsection
 
 
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-xl">
+@section('content')
+<form method='POST' action='/checkoutdrinks'>
+                    {{ csrf_field() }}
 
-                <nav class="navbar navbar-expand-xl navbar-dark bg-dark">
-                        <div class="collapse navbar-collapse" id="navbarNav">
-                            <ul class="navbar-nav">
-                                <li class="nav-item active">
-                                    <a class="nav-link" href="/customer/barlocator">Home</a>
-                                </li>
-
-
-                                 <li class="nav-item">
-
-                                    @if(Auth::user())
-                                        @if(Auth::user()->entity_type == 'Bartender')
-                                            <a class="nav-link" href="/bartender/bartenderreview">Review Customer Order</a>
-
-                                        @else
-                                            <a class="nav-link" href="/customer/checkoutdrinks">Review Your Order</a>
-                                        @endif
-                                    @endif
-
-                                 </li>
-
-
-
-                                <li class="nav-item">
-                                    @if(!Auth::user())
-                                            <a class="nav-link" href="/login">Login</a>
-                                    @else
-                                        <form method='POST' id='logout' action='/logout'>
-                                            {{ csrf_field() }}
-                                            <a class="nav-link" href='#' onClick='document.getElementById("logout").submit();'>Logout {{ Auth::user()->first_name }}</a>
-                                        </form>
-                                    @endif
-                                </li>
-
-                            </ul>
-                        </div>
-                </nav>
-            </div>
-        
-        </div>
-
-
-    
 
             <div class="row">
                 <div class="col-sm text-center"></div>
@@ -65,9 +17,6 @@
                 </div>
                 <div class="col-sm"></div>
             </div>
-
-           
-
 
 
             <div class="row pt-5">
@@ -78,7 +27,7 @@
                     <img src="https://www.thecocktaildb.com/images/media/drink/yyrwty1468877498.jpg" alt="" style="width:200px;height:200px;">
                 </div>
                 <div class="col-sm">
-                    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">Check to Order
+                    <input type="checkbox" id="vehicle12" name="vehicle12" value="Bike2">Check to Order
                     <p class="text-left">Drink2<br/> $3.00</p>
                     <p class="text-left"><a href="/drinkdetails">Drink Details</a></p>
                     <img src="https://www.thecocktaildb.com/images/media/drink/yyrwty1468877498.jpg" alt="" style="width:200px;height:200px;">
@@ -147,7 +96,7 @@
                 <div class="col-sm"></div>
                 <div class="col-sm ml-5">
 
-                    <a href="/checkoutdrinks"><div type="submit" class="btn btn-primary bg-dark">Order Drinks</div></a>
+                    <button type="submit" class="btn btn-primary bg-dark">Order Drinks</button>
 
                 
                 </div>
@@ -157,21 +106,13 @@
             
             </div>
 
-            
-
-
-
-
-            
-
-
-
-
-        </div>
+    </form>     
 
 
 
 
 
-</body>
-</html>
+
+
+
+@endsection

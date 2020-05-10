@@ -6,8 +6,9 @@ use Illuminate\Http\Request;
 
 class CheckoutDrinksController extends Controller
 {
-    public function index()
+    public function index(Request $request)
     {
+        dump($request->all());
         return view('customer.checkoutdrinks');
 
 

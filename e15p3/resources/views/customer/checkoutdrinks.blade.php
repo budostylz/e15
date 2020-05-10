@@ -1,66 +1,30 @@
-<!DOCTYPE html>
-<html>
-<head>
+@extends('layouts.master')
 
-    <link rel="stylesheet" href="/css/bootstrap.min.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+@section('title')
 
-</head>
+Check Out Drinks
 
-<body>
+@endsection
 
-
-<div class="container-fluid">
-        <div class="row">
-            <div class="col-xl">
-
-                <nav class="navbar navbar-expand-xl navbar-dark bg-dark">
-                        <div class="collapse navbar-collapse" id="navbarNav">
-                            <ul class="navbar-nav">
-                                <li class="nav-item active">
-                                    <a class="nav-link" href="/customer/barlocator">Home</a>
-                                </li>
-
-
-                                 <li class="nav-item">
-
-                                    @if(Auth::user())
-                                        @if(Auth::user()->entity_type == 'Bartender')
-                                            <a class="nav-link" href="/bartender/bartenderreview">Review Customer Order</a>
-
-                                        @else
-                                            <a class="nav-link" href="/customer/checkoutdrinks">Review Your Order</a>
-                                        @endif
-                                    @endif
-
-                                 </li>
-
-
-
-                                <li class="nav-item">
-                                    @if(!Auth::user())
-                                            <a class="nav-link" href="/login">Login</a>
-                                    @else
-                                        <form method='POST' id='logout' action='/logout'>
-                                            {{ csrf_field() }}
-                                            <a class="nav-link" href='#' onClick='document.getElementById("logout").submit();'>Logout {{ Auth::user()->first_name }}</a>
-                                        </form>
-                                    @endif
-                                </li>
-
-                            </ul>
-                        </div>
-                </nav>
-            </div>
-        
-        </div>
+@section('content')
 
     <div class="row">
         <div class="col-sm"></div>
-        <div class="col-sm text-center pt-2"><a href="/drinkinfo" class="text-dark"><h2>Click Here To Change Order</h2></a></div>
+        <div class="col-sm text-center pt-2">
+
+            <form method='POST' id='logout' action='/drinkinfo'>
+                    {{ csrf_field() }}
+                <a href="/drinkinfo" class="text-dark"><h2>Click Here To Change Order</h2></a>
+            </form>
+
+        </div>
 
         <div class="col-sm"></div>
     </div>
+
+
+<form method='POST' id='customerconfirmation' action='/customerconfirmation'>
+                    {{ csrf_field() }}
 
   <div class="row">
     <div class="col-sm text-center">
@@ -158,12 +122,7 @@
     </div>
   </div>
 
+  </form>
 
 
-</div>
-
-
-
-
-</body>
-</html>
+@endsection

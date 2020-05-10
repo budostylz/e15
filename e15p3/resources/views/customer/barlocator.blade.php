@@ -1,78 +1,28 @@
-<!DOCTYPE html>
-<html>
-<head>
+@extends('layouts.master')
 
+@section('title')
+    Bar Locator
+@endsection
 
-    <link rel="stylesheet" href="/css/bootstrap.min.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-</head>
-
-<body>
-
-
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-xl">
-
-                <nav class="navbar navbar-expand-xl navbar-dark bg-dark">
-                        <div class="collapse navbar-collapse" id="navbarNav">
-                            <ul class="navbar-nav">
-                                <li class="nav-item active">
-                                    <a class="nav-link" href="/barlocator">Home</a>
-                                </li>
-
-
-                                 <li class="nav-item">
-
-                                    @if(Auth::user())
-                                        @if(Auth::user()->entity_type == 'Bartender')
-                                            <a class="nav-link" href="/bartenderreview">Review Customer Order</a>
-
-                                        @else
-                                            <a class="nav-link" href="/checkoutdrinks">Review Your Order</a>
-                                        @endif
-                                    @endif
-
-                                 </li>
-
-
-
-                                <li class="nav-item">
-                                    @if(!Auth::user())
-                                            <a class="nav-link" href="/login">Login</a>
-                                    @else
-                                        <form method='POST' id='logout' action='/logout'>
-                                            {{ csrf_field() }}
-                                            <a class="nav-link" href='#' onClick='document.getElementById("logout").submit();'>Logout {{ Auth::user()->first_name }}</a>
-                                        </form>
-                                    @endif
-                                </li>
-
-                            </ul>
-                        </div>
-                </nav>
-            </div>
-        
-        </div>
-
-        <div class="row pt-3">
-            <div class="col-sm"></div>
-            <div class="col-sm text-center">
-                <h2>
-                    @if(Auth::user())
-                        Welcome Back {{ Auth::user()->first_name }}                                
-                    @endif            
-                </h2>            
-            </div>
-            <div class="col-sm"></div>
-        </div>
+@section('content')
 
     <form>
 
-            <div class="row">
-                <div class="col-sm">
+            <div class="row pt-3">
+                <div class="col-sm"></div>
+                <div class="col-sm text-center">
+                    <h2>
+                        @if(Auth::user())
+                            Welcome Back {{ Auth::user()->first_name }}                                
+                        @endif            
+                    </h2>            
                 </div>
+                <div class="col-sm"></div>
+            </div>
+
+
+            <div class="row">
+                <div class="col-sm"></div>
 
                 <div class="col-sm pt-2 text-center">
 
@@ -154,15 +104,4 @@
     </form>
 
 
-            
-
-
-    </div>
-
-    
-
-
-
-
-</body>
-</html>
+@endsection

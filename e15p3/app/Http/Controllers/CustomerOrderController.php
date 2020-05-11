@@ -5,7 +5,6 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\User;
 use Auth;
-//use App\Actions\CustomerConfirmation\AddCustomerOrder;
 
 
 class CustomerOrderController extends Controller
@@ -15,7 +14,7 @@ class CustomerOrderController extends Controller
         dump($request->all());
 
 
-        dump(Auth::user()->id);
+        //dump(Auth::user()->id);
 
         //validate
         /*$request->validate([
@@ -24,8 +23,7 @@ class CustomerOrderController extends Controller
         ]);*/
 
 
-
-        //$action = new AddCustomerOrder((object) $request->all());
+        //$action = new GetCustomer((object) $request->all());
 
         /*dump($action->drinkArr);
         dump($action->drinkArr['barTitle']);

@@ -174,7 +174,7 @@ class QueryTestController extends Controller
     public function processCustomerOrder()
     {
         //processcustomerorder
-        Order::where('customer_id', '=', 2)
+        Order::where('user_id', '=', 2)
                             ->where('status', '=', null)->update(['status' => 'complete']);
   
         Order::dump();

@@ -20,6 +20,8 @@
 3. It's better to sign in as either Shaun or Fernando since they can order drinks, process their order and review their order confirmation. The bartenders have no limits on what they can see in the navigation.
 
 4. Crud operations include create, read and update.
+`
+5. Users credentials located in `UsersTableSeeder.php`
 
 
 

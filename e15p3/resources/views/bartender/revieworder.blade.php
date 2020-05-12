@@ -1,7 +1,7 @@
 @extends('layouts.master')
 
 @section('title')
-    Customer Confirmation
+    Process Customer Order
 @endsection
 
 @section('content')
@@ -14,7 +14,8 @@
 
     <div class="col-sm text-center pt-2">
 
-        <h2>Your Drink Order</h2>
+        <h2>{{ '@'. $userName }} Drink Order</h2>
+        <h5><a class="text-dark" href="/bartenderreview">Click Here to Return to Customer List</a></h5>
         
     </div>
         <table class="table table-hover table-dark">
@@ -54,6 +55,9 @@
   <div class="row">
     <div class="col-sm pt-5 text-center">
         <p class="text-left"><h3>Total Price {{ $totalPrice }}</h3></p>
+        <p class="text-left"><h3>Process Order for Customer to Confirm.</h3></p>
+        <button type="submit" class="btn btn-primary bg-dark">Process Order</button> 
+        <input style="display:none" type="text" dusk='user_id-input' id='user_id' name='user_id' value='{{ $userID }}'>
 
 
 

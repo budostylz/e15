@@ -46,7 +46,7 @@ class UsersTableSeeder extends Seeder
                 'last_name' => 'Harvard',
                 'first_name' => 'Jill',
                 'middle_initial' => null,
-                'entity_type' => 'Bartender',
+                'entity_type' => 'Customer',
                 'email' => 'jill@harvard.edu', 
                 
             ],

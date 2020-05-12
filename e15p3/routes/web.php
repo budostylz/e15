@@ -134,6 +134,8 @@ Route::group(['middleware' => 'auth'], function(){
     Route::match(['get', 'post'], '/processcustomerorder', 'ProcessCustomerOrderController@index');
     Route::match(['get', 'post'], '/customerconfirmation', 'CustomerConfirmationController@index');
     Route::match(['get', 'post'], '/customerorder', 'CustomerOrderController@index');
+    Route::match(['get', 'post'], '/revieworder', 'ReviewOrderController@index');
+
 
 
 

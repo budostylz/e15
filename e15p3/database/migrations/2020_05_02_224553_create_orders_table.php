@@ -17,6 +17,7 @@ class CreateOrdersTable extends Migration
             $table->bigIncrements('id');
             $table->string('status')->nullable();
             $table->json('customer_order');
+            $table->string('total_price');
             $table->timestamps();
 
           

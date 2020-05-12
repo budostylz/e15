@@ -5,26 +5,6 @@
         {{ csrf_field() }}
 
         <div class="container-fluid">
-            <div class="row">
-                <div class="col-xl">
-
-                    <nav class="navbar navbar-expand-xl navbar-dark bg-dark">
-                            <div class="collapse navbar-collapse" id="navbarNav">
-                                <ul class="navbar-nav">
-                                    <li class="nav-item active">
-                                        <a class="nav-link" href="/login">Sign In</a>
-                                    </li>
-                                    <li class="nav-item">
-                                            <a class="nav-link" href="/">Home</a>
-                                    </li>
-
-
-                                </ul>
-                            </div>
-                    </nav>
-                </div>
-            
-            </div>
 
             <div class="row">
                 <div class="col-sm"></div>
@@ -100,19 +80,11 @@
                 <div class="row pt-3">
                     <div class="col-sm">
                     </div>
-                    <div class="col-sm">
-
-                     <label>Are you a Bartender or Customer Ordering Drinks?</label>
-                        <select dusk='entity_type-input'  class="custom-select" id='entity_type' name='entity_type' value='{{ old('entity_type') }}'>
-                                        <option selected disabled value="">Choose...</option>
-                                        <option>Customer</option>
-                                        <option>Bartender</option>
-                        </select> 
-                        @include('geterrors.error-field', ['fieldName' => 'entity_type'])
-
-                    
+                    <div class="col-sm"></div>
+                    <div class="col-sm text-center pt-5">
+                        <button type="submit" class="btn btn-primary bg-dark">Register</button>
                     </div>
-
+                    <div class="col-sm"></div>
                     
                     <div class="col-sm">
                     </div>
@@ -123,13 +95,7 @@
 
             
 
-                <div class="row">
-                    <div class="col-sm"></div>
-                    <div class="col-sm text-center pt-5">
-                        <button type="submit" class="btn btn-primary bg-dark">Register</button>
-                    </div>
-                    <div class="col-sm"></div>
-                </div>
+               
 
         </div>
 

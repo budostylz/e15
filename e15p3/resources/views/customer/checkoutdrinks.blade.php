@@ -145,6 +145,7 @@ Check Out Drinks
   </div>
 
     <input  style="display:none" type="text" dusk='bar_id-input' id='bar_id' name='bar_id' value='{{ $barID }}'>
+    <input  style="display:none" type="text" dusk='total_price-input' id='total_price' name='total_price' value='{{ $totals }}'>
 
 
   </form>

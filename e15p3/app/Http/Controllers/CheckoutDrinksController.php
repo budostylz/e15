@@ -17,7 +17,7 @@ class CheckoutDrinksController extends Controller
             
         ]);
 
-        //($request->all());
+        //dump($request->all());
 
 
         $action = new ListDrinks((object) $request->all());

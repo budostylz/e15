@@ -25,17 +25,9 @@ class OrdersTableSeeder extends Seeder
         foreach ($orders as $slug => $orderJSON){
 
 
-            $orderArr = array(
-                array(
-                    "drink_title" => "Alfie Cocktail",
-                    "price" => 3.00
-                ),
-                array(
-                    "drink_title" => "Alfie Cocktail",
-                    "price" => 3.00
-                )
-                
-            );
+            $obj1 = (object) ['Old_Fashioned' => '4.00'];
+            $obj1->total_price = '4.00';
+           
         
             $json_bar_id = $orderJSON['bar_id'];
             $json_user_id = $orderJSON['user_id'];
@@ -51,7 +43,8 @@ class OrdersTableSeeder extends Seeder
             $order = new Order();
             $order->created_at = Carbon\Carbon::now()->subDays($counter)->toDateTimeString();//differentiate created_at timestamp:subDays($counter)
             $order->updated_at = Carbon\Carbon::now()->subDays($counter)->toDateTimeString();//differentiate updated_at timestamp:subDays($counter)
-            $order->customer_order = json_encode($orderArr);
+            $order->customer_order = json_encode($obj1);
+            $order->total_price = '4.00';
             $order->bar_id = $bar_id;
             $order->user_id = $user_id;
             $order->bartender_id = $bartender_id;

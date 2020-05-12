@@ -32,14 +32,15 @@
                         @foreach( $userArr as $key => $value )
 
                             <li class="list-group-item">
-                                <form method='POST' id='processcustomerorder' action='/processcustomerorder'>
+                                <form method='POST' id='revieworder' action='/revieworder'>
                                     {{ csrf_field() }}
-                                    <button type="submit" class="btn btn-primary bg-dark">{{ $value }}</button>
+                                    <button type="submit" class="btn btn-primary bg-dark">{{ '@'.$value }}</button>
                                     <input readonly style="display:none" type="text" dusk='user_id-input' id='user_id' name='user_id' value='{{ $key }}'>
                                     <input readonly style="display:none" type="text" dusk='user_name-input' id='user_name' name='user_name' value='{{ $value }}'>
                                 </form> 
                             </li>
-                            
+                           
+
                         @endforeach
             @endif
 

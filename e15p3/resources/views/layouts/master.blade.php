@@ -35,6 +35,17 @@
 
                                  </li>
 
+                                 <li class="nav-item">
+
+                                    @if(Auth::user())
+                                        @if(Auth::user()->entity_type == 'Bartender')
+                                            <a class="nav-link" href="/customerorder">Review Your Order Status</a>
+
+                                        @endif
+                                    @endif
+
+                                 </li>
+
 
 
                                 <li class="nav-item">

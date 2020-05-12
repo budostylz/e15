@@ -12,20 +12,9 @@ class CustomerOrderController extends Controller
 {
     public function index(Request $request)
     {
-        dump($request->all());
-
-
-        dump('user id', Auth::user()->id);
-
         
-
-
         $action = new ReviewOrder((object) $request->all());
 
-        /*dump($action->drinkArr);
-        dump($action->drinkArr['barTitle']);
-        dump($action->drinkArr['drinkList']);
-        dump($action->drinkArr['totalPrice']);*/
 
         return view('customer.customerorder')->with([
             'userID' => $request->user_id,
@@ -33,9 +22,6 @@ class CustomerOrderController extends Controller
             'totalPrice' => $action->carryOver[0],
             'orderArr' => $action->carryOver[1]
         ]);
-
-        //return view('customer.customerorder');
-
 
 
 

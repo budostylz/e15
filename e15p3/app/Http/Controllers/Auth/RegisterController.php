@@ -57,7 +57,7 @@ class RegisterController extends Controller
             'middle_initial' => ['string', 'max:255', 'nullable'],
             'entity_type' => ['required', 'string', 'max:255'],
             'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
-            'password' => ['required', 'string', 'min:8', 'confirmed'],
+            'password' => ['required', 'string', 'min:8', 'confirmed']
         ]);
     }
 

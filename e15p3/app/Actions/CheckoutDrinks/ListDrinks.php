@@ -15,16 +15,10 @@ class ListDrinks
         $barTitle = $bar->bar_title;
         $drinkArr = array();
         
-        //dump($bar);
-        //dump($barTitle);
-
         foreach( $bar as $key => $value ){
 
           if($key != 'bar_id' && $key != '_token'){
-            //dump($key, $value);
               if(is_numeric($value)){
-                //dump($drinkPrice, is_numeric($drinkPrice));
-                //dump((float)($drinkPrice));
                 $drinkArr[$key] = '$'.$value;
                 $sum += (float)($value);
               }
@@ -36,9 +30,6 @@ class ListDrinks
 
 
           $sumFormat = '$'.number_format($sum, 2, '.', ' ');
-          //$drinkArr['totalPrice'] = '$'.$sumFormat;
-
-          //dump($drinkArr);
 
           $this->drinkArr = [
             'barTitle' => $barTitle,

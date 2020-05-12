@@ -27,7 +27,7 @@
 
                 <div class="col-sm pt-2 text-center">
 
-                    <select class="custom-select" id="bar" name="bar" value='{{ old("bar") }}'>
+                    <select dusk='bar-input' class="custom-select" id="bar" name="bar" value='{{ old("bar") }}'>
                         <option selected disabled>Choose a Bar</option>
                         <option>Bar Louie</option>
                         <option>Mulligan’s Irish Pub</option>
@@ -44,7 +44,7 @@
                 
                 </div>
                 <div class="col-sm pt-2">
-                    <button type="submit" class="btn btn-primary bg-dark">Get Bar Info</button>
+                    <button dusk='bar_submit-input' id="bar_submit" type="submit" class="btn btn-primary bg-dark">Get Bar Info</button>
    
                 </div>
             </div>

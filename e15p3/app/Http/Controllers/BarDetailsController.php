@@ -13,9 +13,6 @@ class BarDetailsController extends Controller
 {
     public function index(Request $request)
     {   
-        //dump(Auth::user()->id);
-
-        //validate
         $request->validate([
             'bar' => 'required',
             
@@ -23,11 +20,6 @@ class BarDetailsController extends Controller
 
 
         $action = new GetBarDetails((object) $request->all());
-
-        /*dump($action->barArr['barDetails']);
-        dump($action->barArr['barDetails']['title']);
-        dump($action->barArr['barDetails']['description']);
-        dump($action->barArr['barDetails']['image_path']);*/
 
         return view('customer.bardetails')->with([
             'barID' => $action->barArr['barDetails']['id'],

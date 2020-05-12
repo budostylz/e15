@@ -18,7 +18,7 @@
                         <div class="collapse navbar-collapse" id="navbarNav">
                             <ul class="navbar-nav">
                                 <li class="nav-item active">
-                                    <a class="nav-link" href="/barlocator">Home</a>
+                                    <a dusk='home_link-input' class="nav-link" href="/barlocator">Home</a>
                                 </li>
 
 
@@ -26,10 +26,10 @@
 
                                     @if(Auth::user())
                                         @if(Auth::user()->entity_type == 'Bartender')
-                                            <a class="nav-link" href="/bartenderreview">Review Customer Order</a>
+                                            <a dusk='review_link-input' class="nav-link" href="/bartenderreview">Review Customer Order</a>
 
                                         @else
-                                            <a class="nav-link" href="/customerorder">Review Your Order Status</a>
+                                            <a dusk='status_link-input' class="nav-link" href="/customerorder">Review Your Order Status</a>
                                         @endif
                                     @endif
 
@@ -39,7 +39,7 @@
 
                                     @if(Auth::user())
                                         @if(Auth::user()->entity_type == 'Bartender')
-                                            <a class="nav-link" href="/customerorder">Review Your Order Status</a>
+                                            <a dusk='status_link-input' class="nav-link" href="/customerorder">Review Your Order Status</a>
 
                                         @endif
                                     @endif
@@ -54,7 +54,7 @@
                                     @else
                                         <form method='POST' id='logout' action='/logout'>
                                             {{ csrf_field() }}
-                                            <a class="nav-link" href='#' onClick='document.getElementById("logout").submit();'>Logout {{ Auth::user()->first_name }}</a>
+                                            <a dusk='logout-input'class="nav-link" href='#' onClick='document.getElementById("logout").submit();'>Logout {{ Auth::user()->first_name }}</a>
                                         </form>
                                     @endif
                                 </li>
@@ -70,7 +70,7 @@
 
         <div class="row">
             <div class="col-xl">
-            <div class="alert alert-success text-center" role="alert">
+            <div dusk='order_success-input' class="alert alert-success text-center" role="alert">
                {{ session('order-confirmation') }}
 
             </div>

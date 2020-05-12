@@ -60,13 +60,13 @@
 <div class="container">
   <div class="row">
     <div class="col">
-        <a href="/login"><div id="myBtn">Sign In</div></a>
+        <a dusk='app-signin' id='signin' href="/login"><div id="myBtn">Sign In</div></a>
     </div>
     <div class="col-5">
     <h1>Welcome to Bar App</h1>
     </div>
     <div class="col">
-        <a href="/register"><div id="myBtn">Register</div></a>
+        <a dusk='app-register' id='register' href="/register"><div id="myBtn">Register</div></a>
     </div>
   </div>
 

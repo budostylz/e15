@@ -11,7 +11,6 @@ class GetBarDrinks
     public function __construct($bar)
     {
 
-        //dump('entry GetBarDrinks', $bar->bar_id);
 
         $barID = $bar->bar_id;
         $barModel = Bar::where('id', '=', $barID)->first();
@@ -22,16 +21,6 @@ class GetBarDrinks
                             'barDrinks' => $drinks->toArray()
                           ];
 
-        //dump($this->drinkArr);
-
-        /*dump($bar->title);
-
-        foreach ($drinks as $drink) {
-            dump($drink->toArray());
-            dump($drink->toArray()['title']);
-            dump($drink->toArray()['drink_image']);
-            dump((float)$drink->toArray()['pivot']['price']);
-        }*/
 
         
 

@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Order extends Model
 {
-    /*public function bar()
+    public function bar()
     {
         return $this->belongsTo('App\Bar');
     }
@@ -19,7 +19,7 @@ class Order extends Model
     public function bartender()
     {
         return $this->belongsTo('App\Bartender');
-    }*/
+    }
 
 
 }

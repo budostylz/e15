@@ -12,11 +12,9 @@ class BartenderReviewController extends Controller
 {
     public function index(Request $request)
     {
-        dump($request->all());
 
         $action = new GetCustomer();
 
-        dump($action->userArr);
 
           return view('bartender.bartenderreview')->with([
             'userArr' => $action->userArr

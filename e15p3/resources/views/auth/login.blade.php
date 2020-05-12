@@ -53,11 +53,11 @@
                         <div class="col-sm">
 
                                 <label for='user_name'>User Name</label>
-                                <input id='user_name' dusk='user_name-input' class="form-control"  type='text' name='user_name' value='{{ old('user_name') }}' required autofocus>                        @include('geterrors.error-field', ['fieldName' => 'email'])
+                                <input id='user_name' dusk='user_name-input' class="form-control"  type='text' name='user_name' value='{{ old('user_name') }}' autofocus>                        @include('geterrors.error-field', ['fieldName' => 'email'])
                                 @include('geterrors.error-field', ['fieldName' => 'user_name'])
 
                                 <label class="pt-3">Password</label>
-                                <input type="password" dusk='password-input' class="form-control" id='password' name='password'>
+                                <input type="password" dusk='password-app-input' class="form-control" id='password' name='password'>
                                 @include('geterrors.error-field', ['fieldName' => 'password'])
 
                         
@@ -65,9 +65,9 @@
                         <div class="col-sm"></div>
                     </div>
 
-                    <div class="row">
+                    <div class="row pt-5">
                         <div class="col-sm text-center">
-                            <button type="submit" class="btn btn-primary bg-dark">Sign In</button> 
+                            <button type="submit" dusk='signin-input' id="signin" class="btn btn-primary bg-dark">Sign In</button> 
                         </div>
                     </div>
 

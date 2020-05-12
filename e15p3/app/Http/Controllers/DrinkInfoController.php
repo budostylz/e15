@@ -10,10 +10,6 @@ class DrinkInfoController extends Controller
 {
     public function index(Request $request)
     {
-        //dump(Auth::user()->id);
-
-        //dump($request->bar_id);
-        //validate
         $request->validate([
             'bar_id' => 'required',
             
@@ -21,8 +17,6 @@ class DrinkInfoController extends Controller
 
         $action = new GetBarDrinks((object) $request->all());
 
-        //dump($action->drinkArr);
-        //dump($action->drinkArr['barTitle']);
 
         return view('customer.drinkinfo')->with([
             'barID' => $request->bar_id,

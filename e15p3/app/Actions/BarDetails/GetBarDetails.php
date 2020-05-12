@@ -9,7 +9,6 @@ class GetBarDetails
     public function __construct($bar)
     {
 
-        //dump('entry GetBarDetails', $bar->bar);
         $barTitle = $bar->bar;
         $bar = Bar::where('title', '=', $barTitle)->first();
 

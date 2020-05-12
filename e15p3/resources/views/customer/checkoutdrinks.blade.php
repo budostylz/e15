@@ -140,7 +140,7 @@ Check Out Drinks
 
   <div class="row">
     <div class="col-sm pt-5 text-center">
-        <button style="{{ ( count($barDrinks) == 0) ? 'display:none' : ''  }}"type="submit" class="btn btn-primary bg-dark">Place Order</button> 
+        <button dusk='place_order-input'style="{{ ( count($barDrinks) == 0) ? 'display:none' : ''  }}"type="submit" class="btn btn-primary bg-dark">Place Order</button> 
     </div>
   </div>
 

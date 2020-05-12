@@ -12,9 +12,9 @@ class GetCustomer
 
         dump('entry');
 
-        //$orders = Order::distinct()->select('user_id')->where('status', '=', null)->orderBy('updated_at', 'desc')->get();
+        $orders = Order::distinct()->select('user_id')->where('status', '=', null)->orderBy('updated_at', 'desc')->get();
         //$userArr = array();
-        //dump($orders);
+        dump($orders);
 
         /*foreach ($orders as $order) {
 

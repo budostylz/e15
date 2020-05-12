@@ -15,7 +15,7 @@ class GetCustomer
         //$orders = Order::distinct()->select('user_id')->where('status', '=', null)->orderBy('updated_at', 'desc')->get();
         //$userArr = array();
         //Order::dump();
-        dump( Order::distinct()->select('user_id') );
+        dump( Order::distinct()->select('user_id')->where('status', '=', null) );
 
         /*foreach ($orders as $order) {
 

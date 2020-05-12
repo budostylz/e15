@@ -10,7 +10,7 @@
     <p>
         Welcome to Bookmark&mdash; an online book journal that let’s you track and share a history of books you’ve read.
 
-        <a href='/register'>Register now to get started...</a>
+        <a id="register-link" href='/register'>Register now to get started...</a>
     </p>
 @else
     <p>

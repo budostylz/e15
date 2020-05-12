@@ -7,6 +7,7 @@ use Arr;
 use Str;
 use App\Book;
 use App\Author;
+use App\Actions\Books\StoreNewBook;
 
 class BookController extends Controller
 {
@@ -21,13 +22,10 @@ class BookController extends Controller
             ->select(['id', 'first_name', 'last_name'])
             ->get();
 
-        //dump($authors);
-
         return view('books.create')->with([
             'authors' => $authors
         ]);
     }
-
 
     /**
     * POST /books
@@ -42,35 +40,23 @@ class BookController extends Controller
         $request->validate([
             'slug' => 'required|unique:books,slug|alpha_dash',
             'title' => 'required',
-            'author_id' => 'required',
+            //'author_id' => 'required', # Giving the option of choosing "None specified"
             'published_year' => 'required|digits:4',
             'cover_url' => 'url',
             'info_url' => 'url',
             'purchase_url' => 'required|url',
-            'description' => 'required|min:255'
+            'description' => 'required|min:100'
         ]);
-
-        //dd($request->all());
 
         # Note: If validation fails, it will automatically redirect the visitor back to the form page
         # and none of the code that follows will execute.
 
-        # Add the book to the database
-        $newBook = new Book();
-        $newBook->slug = $request->slug;
-        $newBook->title = $request->title;
-        $newBook->author_id = $request->author_id;
-        $newBook->published_year = $request->published_year;
-        $newBook->cover_url = $request->cover_url;
-        $newBook->info_url = $request->info_url;
-        $newBook->purchase_url = $request->purchase_url;
-        $newBook->description = $request->description;
-        $newBook->save();
+        # Week 13 example of streamlining controllers by outsourcing the storing of the book to an action class
+        $action = new StoreNewBook((object) $request->all());
 
-        return redirect('/books/create')->with([
-            'flash-alert' => 'Your book '.$newBook->title.' was added.'
+        return redirect('/books/'.$request->slug)->with([
+            'flash-alert' => 'Your book '.$action->rda['title'].' was added.'
         ]);
-        
     }
 
     /**
@@ -125,9 +111,6 @@ class BookController extends Controller
             'searchResults' => $searchResults
         ]);
     }
-
-
-   
 
     /**
      * GET /books
@@ -233,11 +216,9 @@ class BookController extends Controller
     */
     public function destroy($slug)
     {
-
-        //set delete operation for users
         $book = Book::findBySlug($slug);
 
-        $book->users()->detach();//delete relationship
+        $book->users()->detach();
 
         $book->delete();
 
@@ -245,22 +226,4 @@ class BookController extends Controller
             'flash-alert' => '“' . $book->title . '” was removed.'
         ]);
     }
-
-    /**
-     * GET /filter/{$category}/{subcategory?}
-     * Example demonstrating multiple parameters
-     * Not a feature we're actually building, so I'm commenting out
-     */
-    /*
-    public function filter($category, $subcategory = null)
-    {
-        $output = 'Here are all the books under the category '.$category;
-
-        if ($subcategory) {
-            $output .= ' and also the subcategory '.$subcategory;
-        }
-
-        return $output;
-    }
-    */
 }

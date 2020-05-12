@@ -13,6 +13,15 @@ use Illuminate\Http\Request;
 |
 */
 
-Route::middleware('auth:api')->get('/user', function (Request $request) {
+Route::middleware('auth:api')->get('/user', function () {
     return $request->user();
+});
+
+# Two example routes to show how our application could serve up JSON data
+Route::get('/books', function (Request $request) {
+    return App\Book::all();
+});
+
+Route::get('/books/{slug}', function ($slug) {
+    return App\Book::findBySlug($slug);
 });

@@ -2,6 +2,8 @@
 
 return [
 
+    'supportEmail' => 'support@bookmark.com',
+
     /*
     |--------------------------------------------------------------------------
     | Mail Driver

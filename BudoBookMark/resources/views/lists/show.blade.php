@@ -12,7 +12,7 @@
 
     <h1>My List</h1>
     @if($books->count() == 0)
-        <p>You have not added any books to your list yet.</p>
+        <p dusk='no-books-message'>You have not added any books to your list yet.</p>
         <p>Start building your list by checking out the <a href='/books'>books in our library...</a></p>
     @else
 
@@ -24,9 +24,7 @@
             @endif
 
             <form method='POST' action='#'>
-                <textarea class='notes'>
-                    {{ $book->pivot->notes }}
-                </textarea>
+                <textarea class='notes'>{{ $book->pivot->notes }}</textarea>
                 <input type='submit' class='btn btn-primary' value='Update notes'>
             </form>
 

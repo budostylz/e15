@@ -22,8 +22,6 @@ class ListController extends Controller
      */
     public function add($slug)
     {
-
-        //dump($slug);
         $book = Book::findBySlug($slug);
 
         # TODO: Handle case where book isn't found for the given slug
@@ -36,8 +34,6 @@ class ListController extends Controller
      */
     public function save(Request $request, $slug)
     {
-
-        //dump($request->all());
         # TODO: Validate incoming data, making sure they entered a note
 
         $book = Book::findBySlug($slug);
@@ -50,6 +46,4 @@ class ListController extends Controller
             'flash-alert' => 'The book ' .$book->title. ' was added to your list.'
         ]);
     }
-
-    
 }

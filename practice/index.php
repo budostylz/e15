@@ -26,19 +26,8 @@ $total = ($pennies * $penny_value) +
 		 ($dimes * $dime_value) + 
 		 ($quarters * $quarter_value);
 	
-/*
-	//create redis instance
-    $redis = new Redis();
-	//connect with server and port
-    $redis->connect('localhost', 6379);
-	//set value
-    $redis->set('website', 'www.phpflow.com');
-	//get value
-    $website = $redis->get('website');
-	//print www.phpflow.com
-	echo $website;
 
-*/
+
 	
 require 'indexview.php';
 

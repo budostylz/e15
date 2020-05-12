@@ -13,8 +13,8 @@
         {{ csrf_field() }}
 
         <label for='notes'>YOUR NOTES ON THIS BOOK</label>
-        <textarea name='notes'>{{ old('notes') }}</textarea>
+        <textarea dusk='notes-input' name='notes'>{{ old('notes') }}</textarea>
 
-        <input type='submit' class='btn btn-primary' value='Save'>
+        <input type='submit' dusk='save-button' class='btn btn-primary' value='Add to my list'>
     </form>
 @endsection

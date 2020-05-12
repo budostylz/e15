@@ -16,7 +16,7 @@ class BartenderReviewController extends Controller
 
         $action = new GetCustomer();
 
-        //dump($action->userArr);
+        dump($action->userArr);
 
           return view('bartender.bartenderreview')->with([
             'userArr' => $action->userArr

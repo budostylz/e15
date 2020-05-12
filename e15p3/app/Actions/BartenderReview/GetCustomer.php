@@ -7,7 +7,7 @@ use App\Order;
 
 class GetCustomer
 {
-    public function __construct($bar)
+    public function __construct()
     {
 
         $orders = Order::distinct()

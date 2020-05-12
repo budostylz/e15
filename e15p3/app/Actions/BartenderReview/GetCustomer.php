@@ -10,18 +10,16 @@ class GetCustomer
     public function __construct()
     {
 
-
+        $this->userArr = [];
+        $userArr = array();
         $orders =  Order::distinct()
             ->select('user_id')
             ->where('status', '=', null)
+            //->orderBy('updated_at', 'desc')
             ->get();
         
-        //where('status', '=', null)->orderBy('updated_at', 'desc');
-        //$userArr = array();
-        //Order::dump();
-        dump("Order::distinct()->select('user_id')->get()");
-        //dump( Order::distinct()->select('user_id')->where('status', '=', null)->orderBy('updated_at', 'desc')->get() );
         dump($orders);
+        
         foreach ($orders as $order) {
 
             //dump($order->user_id);

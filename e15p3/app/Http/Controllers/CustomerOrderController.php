@@ -12,10 +12,10 @@ class CustomerOrderController extends Controller
 {
     public function index(Request $request)
     {
-        //dump($request->all());
+        dump($request->all());
 
 
-        //dump(Auth::user()->id);
+        dump(Auth::user()->id);
 
         
 

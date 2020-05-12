@@ -21,7 +21,7 @@
 
 4. Crud operations include create, read and update.
 `
-5. Users credentials located in `UsersTableSeeder.php`
+5. Users credentials located in `UsersTableSeeder.php`.
 
 
 

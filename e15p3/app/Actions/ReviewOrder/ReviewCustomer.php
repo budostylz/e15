@@ -15,8 +15,8 @@ class ReviewCustomer
         //dump('entry ReviewCustomer', $bar);
         $userID = $bar->user_id;
         $orders = Order::where('status', '=', null)
-                        ->where('user_id', '=', $userID)
-                        ->orderBy('updated_at', 'desc')->get();
+                        ->where('user_id', '=', $userID)->get();
+                        //->orderBy('updated_at', 'desc')->get();
         $orderArr = array();
         $totals = 0;
         //dump($orders);

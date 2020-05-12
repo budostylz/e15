@@ -7,14 +7,14 @@ use App\Order;
 
 class GetCustomer
 {
-    public function __construct($bar)
+    public function __construct()
     {
 
         dump('entry');
 
-        $orders = Order::distinct()->select('user_id')->where('status', '=', null)->orderBy('updated_at', 'desc')->get();
-        $userArr = array();
-        dump($orders);
+        //$orders = Order::distinct()->select('user_id')->where('status', '=', null)->orderBy('updated_at', 'desc')->get();
+        //$userArr = array();
+        //dump($orders);
 
         /*foreach ($orders as $order) {
 

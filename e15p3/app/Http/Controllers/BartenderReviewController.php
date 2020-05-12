@@ -14,7 +14,7 @@ class BartenderReviewController extends Controller
     {
         dump($request->all());
 
-        $action = new GetCustomer((object) $request->all());
+        $action = new GetCustomer();
 
         //dump($action->userArr);
 

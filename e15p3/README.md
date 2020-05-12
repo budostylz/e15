@@ -1,7 +1,7 @@
 # Project 3
 + By: *Shaun Lewis*
 + Production URL: <http://e15p3.budoapps.com/>
-+ Project Synopsis: Drink Ordering Website which allows you to order drinks as customers and bartenders.
++ Project Synopsis: Drink ordering website which allows you to order drinks as customers and bartenders.
 
 
 ## Outside resources
@@ -19,7 +19,7 @@
 
 3. It's better to sign in as either Shaun or Fernando since they can order drinks, process their order and review their order confirmation. The bartenders have no limits on what they can see in the navigation.
 
-
+4. Crud operations include create, read and update.
 
 
 

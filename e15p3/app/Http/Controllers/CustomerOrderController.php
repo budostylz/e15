@@ -15,7 +15,7 @@ class CustomerOrderController extends Controller
         dump($request->all());
 
 
-        dump(Auth::user()->id);
+        dump('user id', Auth::user()->id);
 
         
 

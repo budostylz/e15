@@ -12,7 +12,7 @@ class ReviewOrder
     public function __construct($bar)
     {
 
-        //dump('entry');
+        dump('entry');
         
 
         //dump('entry ReviewCustomer', $bar);
@@ -22,7 +22,7 @@ class ReviewOrder
                         ->orderBy('updated_at', 'desc')->get();
         $orderArr = array();
         $totals = 0;
-        //dump($orders);
+        dump($orders);
 
         //dump('orders count', count($orders));
 

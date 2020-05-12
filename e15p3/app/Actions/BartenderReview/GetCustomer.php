@@ -12,27 +12,28 @@ class GetCustomer
 
         dump('entry');
 
-        //$orders = Order::distinct()->select('user_id')->where('status', '=', null)->orderBy('updated_at', 'desc')->get();
+        $orders = Order::distinct()->select('user_id')->where('status', '=', null)->orderBy('updated_at', 'desc');
         //$userArr = array();
         //Order::dump();
-        dump("Order::distinct()->select('user_id')->where('status', '=', null)->orderBy('updated_at', 'desc')->get()");
-        dump( Order::distinct()->select('user_id')->where('status', '=', null)->orderBy('updated_at', 'desc')->get() );
-
+        dump('$orders->get()');
+        //dump( Order::distinct()->select('user_id')->where('status', '=', null)->orderBy('updated_at', 'desc')->get() );
+        dump($orders->get());
         /*foreach ($orders as $order) {
 
-            $user_id = $order->user_id;
-            $user_title = User::where('id', '=', $user_id)->get()->first()->user_name;
-            $userArr[$user_id] = $user_title;
+            //dump($order);
+            //$user_id = $order->user_id;
+            //$user_title = User::where('id', '=', $user_id)->get()->first()->user_name;
+            //$userArr[$user_id] = $user_title;
             //dump($user_title);
 
 
-        }
+        }*/
 
-        $this->userArr = $userArr;
+        //$this->userArr = $userArr;
 
         //dump($this->userArr);
 
-        */
+        
 
     }
 }

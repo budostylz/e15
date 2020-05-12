@@ -1,10 +1,41 @@
-@extends('layouts.master')
+<!DOCTYPE html>
+<html>
+<head>
 
-@section('content')
+    <title>@yield('title', 'Bar App')</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+<body>
 
 
 
     <div class="container-fluid">
+            <div class="row">
+                <div class="col-xl">
+
+                        <nav class="navbar navbar-expand-xl navbar-dark bg-dark">
+                                <div class="collapse navbar-collapse" id="navbarNav">
+                                    <ul class="navbar-nav">
+                                        <li class="nav-item active">
+                                            <a class="nav-link" href="/register">Register</a>
+                                        </li>
+
+                                         <li class="nav-item">
+                                            <a class="nav-link" href="/">Home</a>
+                                         </li>
+
+
+
+
+                                    </ul>
+                                </div>
+                        </nav>
+                </div>
+            
+            </div>
 
             <form method='POST' action='{{ route('login') }}'>
                 {{ csrf_field() }}
@@ -34,7 +65,7 @@
                         <div class="col-sm"></div>
                     </div>
 
-                    <div class="row pt-3">
+                    <div class="row">
                         <div class="col-sm text-center">
                             <button type="submit" class="btn btn-primary bg-dark">Sign In</button> 
                         </div>
@@ -45,5 +76,6 @@
     </div>
 
 
-           
-@endsection
+
+</body>
+</html>

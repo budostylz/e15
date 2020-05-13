@@ -8,7 +8,7 @@
 
 [Bootstrap CSS](https://getbootstrap.com/)
 
-+ Last Commit(Forgot to Add This)
+Last Commit(Forgot to Add This)
 
 [How TO - Fullscreen Video](https://www.w3schools.com/howto/howto_css_fullscreen_video.asp)
 
